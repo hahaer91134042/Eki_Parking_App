@@ -1,0 +1,36 @@
+# Built application files
+*.apk
+*.apks
+*.aar
+*.ipa
+
+# Project files
+.gradle/
+build/
+bin/
+out/
+.idea/
+.cxx/
+.externalNativeBuild/
+local.properties
+*.iml
+
+# Android Studio generated files
+.DS_Store
+*.log
+captures/
+
+# Gradle files
+*.keystore
+
+# Local configuration files (replace with your specific files)
+secrets.properties
+*.jks
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Other files
+.externalNativeBuild/cmake/
+.externalNativeBuild/ndkBuild/
