@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="32dp"
+    android:layout_height="32dp"
+    android:layout_gravity="center"
+    android:background="@null"
+    >
+
+    <ImageView
+        android:id="@+id/shopCarIcon"
+        android:layout_width="@dimen/menu_item_icon_size"
+        android:layout_height="@dimen/menu_item_icon_size"
+        android:layout_gravity="center"
+        android:src="@drawable/icon_shopping_car"/>
+
+    <FrameLayout
+        android:id="@+id/redCircle"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_gravity="top|end"
+        android:background="@drawable/shape_circle_red"
+        android:visibility="invisible"
+        >
+
+        <TextView
+            android:id="@+id/shopNumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="@color/color_white"
+            android:textSize="8sp"
+            />
+
+    </FrameLayout>
+
+</FrameLayout>

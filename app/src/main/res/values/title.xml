@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_member">Login member</string>
+    <string name="register_member">Register member</string>
+    <string name="member_setting">Basic setting</string>
+    <string name="Notice">Notice</string>
+</resources>

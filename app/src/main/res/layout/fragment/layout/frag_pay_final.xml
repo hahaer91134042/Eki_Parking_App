@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img_checkout_bg"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="結帳完成"
+                android:textColor="@color/Eki_orange_4"
+                android:textSize="@dimen/text_size_30" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="40dp"
+                android:paddingEnd="40dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <com.hill.devlibs.widget.AutoSizeTextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center_vertical|right"
+                        android:text="結帳金額"
+                        android:textColor="@color/text_color_1" />
+
+                    <com.hill.devlibs.widget.AutoSizeTextView
+                        android:id="@+id/amountText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|left"
+                        android:text=""
+                        android:textColor="@color/text_color_1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <com.hill.devlibs.widget.AutoSizeTextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center_vertical|right"
+                        android:text="訂單編號"
+                        android:textColor="@color/text_color_1" />
+
+                    <com.hill.devlibs.widget.AutoSizeTextView
+                        android:id="@+id/serialText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|left"
+                        android:text=""
+                        android:textColor="@color/text_color_1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <com.hill.devlibs.widget.AutoSizeTextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center_vertical|right"
+                        android:text="支付方法"
+                        android:textColor="@color/text_color_1" />
+
+                    <com.hill.devlibs.widget.AutoSizeTextView
+                        android:id="@+id/methodText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|left"
+                        android:text=""
+                        android:textColor="@color/text_color_1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <com.hill.devlibs.widget.AutoSizeTextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center_vertical|right"
+                        android:text="支付時段"
+                        android:textColor="@color/text_color_1" />
+
+                    <com.hill.devlibs.widget.AutoSizeTextView
+                        android:id="@+id/timeText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|left"
+                        android:text=""
+                        android:textColor="@color/text_color_1" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.eki.parking.View.libs.StateButton
+                android:id="@+id/toRatingBtn"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/Rating"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_16"
+
+                app:btn_radius="5dp"
+                app:normalBackgroundColor="@color/Eki_orange_4"
+
+                app:pressedBackgroundColor="@color/Eki_orange_4" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

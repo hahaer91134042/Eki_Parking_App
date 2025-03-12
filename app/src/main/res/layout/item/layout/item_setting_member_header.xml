@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="130dp">
+
+    <com.hill.devlibs.widget.libs.CircleImageView
+        android:id="@+id/iconImg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/none_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintStart_toEndOf="@+id/iconImg"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/userNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_1"
+            android:textSize="@dimen/text_size_20"
+            android:textStyle="bold"
+            android:text="1111"
+            />
+
+        <com.eki.parking.View.libs.StateButton
+            android:id="@+id/editBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/Edit_profile"
+            android:paddingBottom="1dp"
+            android:paddingTop="1dp"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            app:btn_radius="2dp"
+            android:textSize="@dimen/text_size_12"
+
+            app:normalStrokeColor="@color/Eki_orange_4"
+            app:normalTextColor="@color/Eki_orange_4"
+            app:normalStrokeWidth="1dp"
+            app:normalBackgroundColor="@color/color_white"
+
+            app:pressedStrokeColor="@color/Eki_orange_4"
+            app:pressedTextColor="@color/Eki_orange_4"
+            app:pressedStrokeWidth="1dp"
+            app:pressedBackgroundColor="@color/color_white"
+
+            />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

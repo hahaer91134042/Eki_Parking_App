@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    >
+
+    <gradient
+        android:angle="90"
+        android:endColor="@color/Eki_green_4"
+        android:centerColor="@color/Eki_green_4"
+        android:startColor="@color/color_white" />
+    <!--漸變角度: 0° 為水平由左至右，90° 為垂直由下至上。
+    // 起始顏色
+    // 結束顏色-->
+
+</shape>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_locomotive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:orientation="vertical"
+        android:theme="@style/RippleGreen2"
+        app:layout_constraintEnd_toStartOf="@+id/ll_car"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.hill.devlibs.widget.AutoSizeTextView
+            android:id="@+id/tv_locomotive"
+            style="@style/dark_gray_20dp_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Locomotive" />
+
+        <ImageView
+            android:id="@+id/iv_locomotive"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/icon_motor_logo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:orientation="vertical"
+        android:theme="@style/RippleGreen2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ll_locomotive"
+        app:layout_constraintTop_toTopOf="@id/ll_locomotive">
+
+        <com.hill.devlibs.widget.AutoSizeTextView
+            android:id="@+id/tv_car"
+            style="@style/dark_gray_20dp_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Car" />
+
+        <ImageView
+            android:id="@+id/iv_car"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/icon_car_logo" />
+
+    </LinearLayout>
+
+    <com.hill.devlibs.widget.AutoSizeTextView
+        android:id="@+id/tv_notice"
+        style="@style/dark_gray_16dp_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_locomotive"
+        android:text="@string/Select_parking_space_type"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

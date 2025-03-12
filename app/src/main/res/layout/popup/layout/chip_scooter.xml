@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scooter_chip_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.hill.devlibs.widget.AutoSizeTextView
+        android:id="@+id/chip_emoving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chip_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:paddingHorizontal="14dp"
+        android:paddingVertical="8dp"
+        android:text="@string/eMoving"
+        android:textColor="@color/selector_text_color_green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.hill.devlibs.widget.AutoSizeTextView
+        android:id="@+id/chip_pbgn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/chip_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:paddingHorizontal="14dp"
+        android:paddingVertical="8dp"
+        android:text="@string/PBGN"
+        android:textColor="@color/selector_text_color_green"
+        app:layout_constraintStart_toEndOf="@+id/chip_emoving"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.hill.devlibs.widget.AutoSizeTextView
+        android:id="@+id/chip_ionex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chip_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:paddingHorizontal="14dp"
+        android:paddingVertical="8dp"
+        android:text="@string/ionex"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/selector_text_color_green"
+        app:layout_constraintStart_toEndOf="@+id/chip_pbgn"
+        app:layout_constraintTop_toTopOf="@+id/chip_pbgn" />
+
+    <com.hill.devlibs.widget.AutoSizeTextView
+        android:id="@+id/chip_house"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chip_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:paddingHorizontal="14dp"
+        android:paddingVertical="8dp"
+        android:text="@string/Household_socket"
+        android:textColor="@color/selector_text_color_green"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chip_emoving" />
+</androidx.constraintlayout.widget.ConstraintLayout>

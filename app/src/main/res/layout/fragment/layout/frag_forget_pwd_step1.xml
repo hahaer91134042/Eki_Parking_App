@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:paddingStart="30dp"
+    android:paddingEnd="30dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="40dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/text_color_1"
+            android:layout_marginBottom="5dp"
+            />
+
+        <com.eki.parking.View.widget.UnderLineEditTextView
+            android:id="@+id/phoneText"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:ule_inputType="NUMBER"
+            app:ule_input_textSize="@dimen/text_size_6"
+            app:ule_line_color="@color/light_gray5"
+            app:ule_line_error_color="@color/color_red"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/toNextBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:enabled="false"
+        android:background="@drawable/selector_next_step_green"
+        />
+
+</LinearLayout>

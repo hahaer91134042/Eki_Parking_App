@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                    android:id="@+id/card_view"
+                                    android:layout_gravity="center"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    card_view:cardCornerRadius="5dp">
+
+
+        <com.eki.parking.View.widget.AutoLoadImgView
+            android:id="@+id/imgView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            />
+    <!--android:contentDescription="TODO"-->
+
+        <TextView
+            android:id="@+id/texView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            android:padding="3dp"
+            android:textColor="#EEEEEE"
+            android:textSize="@dimen/catalog_text_size"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+
+
+</androidx.cardview.widget.CardView>

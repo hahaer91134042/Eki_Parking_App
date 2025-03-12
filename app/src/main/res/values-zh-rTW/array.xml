@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="responseMsg">
+        <item>帳號不存在</item>
+        <item>帳號已存在</item>
+        <item>密碼錯誤</item>
+        <item>失敗</item>
+        <item>密碼格式錯誤</item>
+        <item>連線失敗</item>
+        <item>身份證字號已存在</item>
+        <item>身份證字號未輸入</item>
+    </string-array>
+
+
+
+
+    <string-array name="leftMenuOptionArray">
+        <item>會員中心</item>
+        <item>尋找門市</item>
+        <item>公司介紹</item>
+        <item>線上客服</item>
+    </string-array>
+
+    <string-array name="monthNumberArray">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+    </string-array>
+
+
+</resources>

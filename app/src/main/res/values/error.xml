@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="E000">Success</string>
+    <string name="E001">Input error</string>
+    <string name="E002">Exceed time</string>
+    <string name="E003">No Data</string>
+    <string name="E004">Unknow Error</string>
+    <string name="E005">No Such Account</string>
+    <string name="E006">Data Format Error</string>
+    <string name="E007">No input address</string>
+    <string name="E008">E-mail already exists</string>
+    <string name="E009">Mobile number already exists</string>
+    <string name="E010">Token has expired</string>
+    <string name="E011">Token verification error</string>
+    <string name="E012">Account or Password incorrect</string>
+    <string name="E013">File format error</string>
+    <string name="E014">No file</string>
+    <string name="E015">Mobile number error</string>
+    <string name="E016">Exceed quantity</string>
+    <string name="E017">Insufficient permissions</string>
+    <string name="E018">Appointment failed</string>
+    <string name="E019">Insufficient number</string>
+    <string name="E020">Bill not paid</string>
+    <string name="E021">Time overlap</string>
+    <string name="E022">Permission error</string>
+    <string name="E023">Join error</string>
+    <string name="E024">Account suspension</string>
+    
+    <string name="Please_turn_on_location_permissions">Please turn on location permissions</string>
+</resources>

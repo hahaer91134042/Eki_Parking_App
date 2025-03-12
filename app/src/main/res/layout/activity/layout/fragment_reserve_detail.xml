@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.activity.frag.Main.child.UnpaidFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/detail_address_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/address"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/detail_address_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintStart_toEndOf="@+id/detail_address_image"
+                app:layout_constraintBottom_toBottomOf="@+id/detail_address_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="台北市信義區101大樓" />
+
+            <ImageView
+                android:id="@+id/detail_start_date_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/time_range"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="@+id/detail_address_image"
+                app:layout_constraintTop_toBottomOf="@+id/detail_address_image" />
+
+            <TextView
+                android:id="@+id/detail_start_date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@+id/detail_start_date_image"
+                app:layout_constraintTop_toTopOf="@+id/detail_start_date_image"
+                tools:text="01-02 Fri. 16:00" />
+
+            <TextView
+                android:id="@+id/detail_end_date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/btn_disable_red_light"
+                android:textSize="16sp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintStart_toEndOf="@+id/detail_start_date_image"
+                app:layout_constraintBottom_toBottomOf="@+id/detail_start_date_image"
+                tools:text="01-02 Fri. 17:00" />
+
+            <TextView
+                android:id="@+id/estimated_cost_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/btn_disable_red_light"
+                android:layout_marginTop="32dp"
+                android:text="@string/Estimated_cost"
+                app:layout_constraintStart_toStartOf="@+id/detail_start_date_image"
+                app:layout_constraintTop_toBottomOf="@+id/detail_start_date_image" />
+
+            <TextView
+                android:id="@+id/price_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/estimated_cost_text"
+                app:layout_constraintTop_toTopOf="@+id/estimated_cost_title"
+                tools:text="($10/半小時)" />
+
+            <TextView
+                android:id="@+id/estimated_cost_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/btn_disable_red_light"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/estimated_cost_title"
+                tools:text="$20" />
+
+            <TextView
+                android:id="@+id/car_place_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/Parking_number"
+                app:layout_constraintStart_toStartOf="@+id/estimated_cost_title"
+                app:layout_constraintTop_toBottomOf="@+id/estimated_cost_title" />
+
+            <TextView
+                android:id="@+id/car_place_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/car_place_title"
+                tools:text="ASD456" />
+
+            <TextView
+                android:id="@+id/order_number_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/Order_number"
+                app:layout_constraintStart_toStartOf="@+id/estimated_cost_title"
+                app:layout_constraintTop_toBottomOf="@+id/car_place_title" />
+
+            <TextView
+                android:id="@+id/order_number_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/order_number_title"
+                tools:text="APPP7777111" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/reserve_detail_delete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/shape_round_orange_10"
+                android:text="@string/Delete"
+                android:textColor="@color/white_ffffff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/order_number_title" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

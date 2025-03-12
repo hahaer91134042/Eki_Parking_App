@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_white_to_green">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Congratulations_on_becoming_landlord"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_size_28"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/icon_landlord"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+    <com.eki.parking.View.libs.StateButton
+        android:id="@+id/determinBtn"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="32dp"
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/Eki_orange_4"
+        android:text="@string/Open_parking_spaces_in_three_steps"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:normalBackgroundColor="@color/color_white"
+        app:normalStrokeColor="@color/Eki_orange_4"
+        app:normalStrokeWidth="1dp"
+        app:pressedBackgroundColor="@color/color_white"
+        app:pressedStrokeColor="@color/Eki_orange_4"
+        app:pressedStrokeWidth="1dp"
+        app:round="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

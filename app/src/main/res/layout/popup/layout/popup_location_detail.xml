@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_eki_dialog_bg"
+    android:padding="10dp"
+    android:id="@+id/parentView">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:paddingTop="7dp"
+        >
+        <TextView
+            android:id="@+id/totalNumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="1111"
+            android:textColor="@color/Eki_orange_3"
+            android:textSize="@dimen/text_size_14"
+            android:layout_alignParentTop="true"
+            />
+        <ImageView
+            android:id="@+id/cancelBtn"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/icon_close_orange"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+
+        >
+<!--        android:clipChildren="false"-->
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/pageIndicatorView"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+<!--        android:clipChildren="false"-->
+<!--        android:overScrollMode="never"-->
+
+        <com.chahinem.pageindicator.PageIndicator
+            android:id="@+id/pageIndicatorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:theme="@style/PageIndicatorAutoZoomStyle"
+            />
+<!--        android:theme="@style/PageIndicatorStyle"-->
+<!--        app:piv_animationType="worm"-->
+<!--        app:piv_autoVisibility="true"-->
+<!--        app:piv_orientation="horizontal"-->
+<!--        app:piv_interactiveAnimation="true"-->
+<!--        app:piv_selectedColor="@color/Eki_orange_2"-->
+<!--        app:piv_unselectedColor="@color/light_gray3"-->
+<!--        app:piv_padding="5dp"-->
+<!--        app:piv_radius="5dp"-->
+
+    </RelativeLayout>
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            app:layout_constraintBottom_toTopOf="@+id/reservaBtn"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/serialText"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="22222"-->
+<!--                android:textColor="@color/text_color_1"-->
+<!--                android:textSize="@dimen/text_size_16"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/priceTextView"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="1111"-->
+<!--                android:textColor="@color/text_color_1"-->
+<!--                android:textSize="@dimen/text_size_24"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                >-->
+<!--            </TextView>-->
+<!--            <LinearLayout-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/priceTextView"-->
+<!--                >-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/Remark"-->
+<!--                    android:textSize="@dimen/text_size_16"-->
+<!--                    />-->
+<!--                <TextView-->
+<!--                    android:id="@+id/remarkText"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textSize="@dimen/text_size_16"-->
+<!--                    android:text="4444"-->
+<!--                    android:textColor="@color/text_color_1"-->
+<!--                    android:layout_marginRight="5dp"-->
+<!--                    android:layout_marginLeft="5dp"-->
+<!--                    />-->
+
+<!--            </LinearLayout>-->
+
+<!--        </RelativeLayout>-->
+
+
+<!--        <com.eki.parking.View.libs.StateButton-->
+<!--            android:id="@+id/reservaBtn"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="3dp"-->
+<!--            android:padding="5dp"-->
+<!--            android:text="@string/Reservation"-->
+<!--            android:textColor="@color/text_color_1"-->
+<!--            android:textSize="@dimen/text_size_16"-->
+
+<!--            app:btn_radius="@dimen/btn_radius_5"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+
+<!--            app:normalBackgroundColor="@color/Eki_orange_2"-->
+<!--            app:pressedBackgroundColor="@color/orange_btn_click_color" />-->
+
+<!--&lt;!&ndash;        <androidx.constraintlayout.widget.Barrier&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/barrier"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            app:barrierDirection="top" />&ndash;&gt;-->
+
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+</LinearLayout>

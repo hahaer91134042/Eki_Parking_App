@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/shape_round_corner_top_left_right_white_15dp"
+        android:layout_marginTop="25dp"
+        android:divider="@drawable/divider_light_gray3"
+        android:showDividers="middle"
+        android:padding="10dp"
+
+        >
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:paddingStart="100dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/cancelBtn"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                >
+                <com.hill.devlibs.widget.AutoSizeTextView
+                    android:id="@+id/startTimeText"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:text="16:00"
+                    android:gravity="center"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_arrow_time"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    />
+                <com.hill.devlibs.widget.AutoSizeTextView
+                    android:id="@+id/endTimeText"
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:text="17:45"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/cancelBtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_close_orange"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="15dp"
+                />
+        </RelativeLayout>
+
+        <com.eki.parking.View.widget.TimeRangeSelectView
+            android:id="@+id/timeSelectView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            >
+
+        </com.eki.parking.View.widget.TimeRangeSelectView>
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            >
+
+            <com.eki.parking.View.libs.StateButton
+                android:id="@+id/extenBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="@string/Overtime"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_size_18"
+                android:stateListAnimator="@null"
+                android:enabled="true"
+                app:btn_radius="@dimen/btn_radius_10"
+                app:normalBackgroundColor="@color/Eki_orange_4"
+                app:pressedBackgroundColor="@color/Eki_orange_1"
+                app:unableBackgroundColor="@color/Eki_orange_1"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+
+        android:background="@drawable/shape_round_corner_gray6_10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.hill.devlibs.widget.AutoSizeTextView
+            android:id="@+id/monthText"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:gravity="center"
+            android:text="1月"
+            android:textColor="@color/text_color_1" />
+
+        <com.hill.devlibs.widget.AutoSizeTextView
+            android:id="@+id/dayText"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="7"
+            android:textColor="@color/text_color_1" />
+
+        <com.hill.devlibs.widget.AutoSizeTextView
+            android:id="@+id/weekText"
+            android:layout_width="match_parent"
+            android:layout_height="19dp"
+            android:gravity="center"
+            android:text="week"
+            android:textColor="@color/text_color_1" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

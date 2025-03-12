@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:gravity="start"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_parking_space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Parking_site"
+        android:textColor="@color/dark_gray1"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/positionSelector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:checkedButton="@id/outdoor"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/indoor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="-6dp"
+            android:buttonTint="@color/Eki_green_2"
+            android:checked="true"
+            android:text="@string/indoor"
+            android:textColor="@color/text_color_1"
+            android:textSize="@dimen/text_size_16" />
+
+        <RadioButton
+            android:id="@+id/outdoor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:buttonTint="@color/Eki_green_2"
+            android:text="@string/outdoor"
+            android:textColor="@color/dark_gray1"
+            android:textSize="@dimen/text_size_16" />
+
+    </RadioGroup>
+
+</LinearLayout>

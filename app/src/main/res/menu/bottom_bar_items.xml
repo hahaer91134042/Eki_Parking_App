@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/mapOption"
+        android:title="@string/Map_option"
+        android:icon="@drawable/icon_map_option"
+        android:orderInCategory="1"
+
+        />
+
+    <item
+        android:id="@+id/checkoutOption"
+        android:title="@string/CheckOut_option"
+        android:icon="@drawable/icon_checkout_option"
+        android:orderInCategory="2"
+        />
+    <item
+        android:id="@+id/notifyOption"
+        android:title="@string/Notify_option"
+        android:icon="@drawable/icon_notify_option"
+        android:orderInCategory="3"
+        />
+    <item
+        android:id="@+id/settingOption"
+        android:title="@string/Setting_option"
+        android:icon="@drawable/icon_setting_option"
+        android:orderInCategory="4"
+        />
+</menu>

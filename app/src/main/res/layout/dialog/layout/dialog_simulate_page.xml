@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:id="@+id/parentView">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/toolbar_color"
+        android:elevation="@dimen/toolbar_elevation">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_18" />
+
+        <ImageView
+            android:id="@+id/cancelBtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_close_white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:contentDescription="@string/todo" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/dialog_content_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"/>
+
+</LinearLayout>

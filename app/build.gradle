@@ -1,0 +1,189 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-parcelize'
+apply plugin: 'kotlin-kapt'
+
+
+android {
+//    compileSdkVersion 27
+    compileSdkVersion project.COMPILE_SDK
+    defaultConfig {
+        applicationId "com.eki.parking"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+
+        minSdkVersion project.MIN_SDK
+        targetSdkVersion project.TARGET_SDK
+//        minSdkVersion 21
+//        targetSdkVersion 26
+        versionCode 20220712
+        //0開頭=測試版
+        versionName 'v0.3.5'
+        //0.1.x:Hill
+        //0.2.x:Tony
+        //0.3.x:Linda
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+//    repositories {
+//        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+//    }
+    //使這方式分類整理layout 會出現錯誤的標示 但不會真的影響到執行 之後看看新的build tool會不會有改善
+    sourceSets {//以後在改吧 先暫時取消
+        main {
+            res.srcDirs = [
+                    'src/main/res/layout/activity',
+                    'src/main/res/layout/dialog',
+                    'src/main/res/layout/popup',
+                    'src/main/res/layout/page',
+                    'src/main/res/layout/fragment',
+                    'src/main/res/layout/item',
+                    'src/main/res/layout/include',
+                    'src/main/res/layout',
+                    'src/main/res'
+            ]
+
+//            assets.srcDirs = ['assets']
+
+        }
+//        debug.setRoot('build-types/debug')
+//        release.setRoot('build-types/release')
+    }
+    lintOptions {
+        disable 'MissingTranslation'
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField("Boolean", "LOGGER_VISIABLE", "false")
+        }
+        debug {
+            buildConfigField("Boolean", "LOGGER_VISIABLE", "true")
+        }
+    }
+    buildToolsVersion = '30.0.3'
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    } // 29.0.3 官網已聲明不能用 by 2021/05/07
+//    viewBinding {
+//        enabled = true
+//    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"//JAVA kotlin interface 混用有問題時加這個 可是這其實是kotlin的reflect包...
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation "androidx.appcompat:appcompat:1.4.2"
+    implementation "androidx.vectordrawable:vectordrawable:1.0.0"
+    implementation "androidx.annotation:annotation:1.0.0"
+    implementation 'com.google.android.material:material:1.0.0-rc01'
+    implementation "androidx.mediarouter:mediarouter:1.0.0"
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+    implementation "androidx.fragment:fragment-ktx:1.4.1"
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation "androidx.legacy:legacy-support-v4:1.0.0"
+    implementation "androidx.percentlayout:percentlayout:1.0.0"
+    implementation "com.google.android.gms:play-services-location:20.0.0"
+    implementation "com.google.android.gms:play-services-maps:18.0.2"
+    implementation "com.google.android.gms:play-services-places:17.0.0"
+    //更新用lib
+    implementation 'com.google.android.play:core-ktx:1.8.1'
+
+    //    implementation "com.google.android.gms:play-services:16.0.0"//之後要各別匯入
+
+    //    implementation 'com.google.firebase:firebase-core:16.0.1'
+
+    //    implementation 'com.google.firebase:firebase-messaging:11.8.0'
+    implementation 'com.google.firebase:firebase-core:21.0.0'
+    implementation 'com.google.firebase:firebase-messaging:23.0.5'
+
+    //    implementation 'com.google.firebase:firebase-core:11.0.4'
+
+    //    implementation 'com.google.firebase:firebase-messaging:11.0.4'
+
+    //    implementation 'com.google.android.gms:play-services-gcm:10.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha2'
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.14.9'
+    implementation 'com.squareup.okio:okio:2.2.2'
+    implementation 'com.youth.banner:banner:1.4.10'
+
+    //https://github.com/romandanylyk/PageIndicatorView
+//    implementation 'com.romandanylyk:pageindicatorview:1.0.3@aar'
+    implementation 'com.romandanylyk:pageindicatorview:1.0.3'
+    //https://github.com/chahine/pageindicator
+    implementation 'com.github.chahine:pageindicator:0.2.8'
+    implementation "androidx.core:core-ktx:1.0.0"
+    implementation "androidx.legacy:legacy-support-core-ui:1.0.0"
+
+    //    implementation 'de.greenrobot:eventbus:2.4.0'
+    implementation project(':NumberPicker')
+//    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+//    implementation 'com.facebook.android:facebook-share:[4,5)'
+
+    //    implementation 'com.github.florent37:expansionpanel:1.1.1'
+    implementation project(':expansionpanel')
+    implementation project(':viewpagerlib')
+
+    //    implementation 'com.seatgeek:placesautocomplete:0.3-SNAPSHOT'
+    //implementation project(':placesautocomplete')
+
+    //    implementation 'org.dom4j:dom4j:2.1.1'
+    implementation 'com.shawnlin:number-picker:2.4.8'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.google.zxing:core:3.2.1'
+    implementation 'com.journeyapps:zxing-android-embedded:3.2.0@aar'
+    implementation 'com.haibin:calendarview:3.6.9'
+//    implementation 'com.haibin:calendarview:3.4.8'
+    implementation project(':CalendarView')
+    implementation project(':DevLibs')
+    implementation project(path: ':sublimepickerlibrary')
+    implementation project(path: ':TimePicker')
+
+    //kotlin thread control tool
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.2'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.2'
+    implementation 'com.github.kizitonwose.time:time-android:1.0.3'
+    implementation 'com.xw.repo:bubbleseekbar:3.20-lite'
+
+    implementation 'com.github.razerdp:BasePopup:2.2.3'
+//    implementation 'com.github.razerdp:BasePopup-compat-androidx:2.2.3'
+    implementation 'com.opencsv:opencsv:5.0'
+    implementation 'com.airbnb.android:lottie:3.3.1'
+
+    implementation 'com.king.zxing:zxing-lite:1.1.9-androidx'
+    implementation 'androidx.work:work-runtime:2.7.1'
+
+    //監聽app背景 還是前景時使用
+    implementation "androidx.lifecycle:lifecycle-runtime:2.4.1"
+    implementation "androidx.lifecycle:lifecycle-extensions:2.0.0"
+
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:2.0.0"
+
+    implementation 'com.google.android.flexbox:flexbox:3.0.0' // Rv用
+
+    //def fragment_version = "1.3.6" //JetPack版的改良Fragment
+
+    // Java language implementation
+    //implementation "androidx.fragment:fragment:$fragment_version"
+    // Kotlin
+    //implementation "androidx.fragment:fragment-ktx:$fragment_version"
+    // Testing Fragments in Isolation
+    //debugImplementation "androidx.fragment:fragment-testing:$fragment_version"
+
+}
+apply plugin: 'com.google.gms.google-services'

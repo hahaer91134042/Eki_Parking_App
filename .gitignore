@@ -9,6 +9,7 @@
 build/
 bin/
 out/
+release/
 .idea/
 .cxx/
 .externalNativeBuild/

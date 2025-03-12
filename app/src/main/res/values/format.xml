@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="dateFormate_y_m_d">{0}/{1}/{2}</string>
+    <string name="date_time_format">{0}year {1}month {2}day {3}</string>
+    <string name="month_day_format">{0}month {1}day</string>
+    <string name="billing_method_30min">${0}/30min</string>
+    <string name="serial_number_str">Serial:{0}</string>
+    <string name="Amount_price_format">(30min${0})${1}</string>
+    <string name="Price_format">${0}</string>
+    <string name="Minus_Price_format">-${0}</string>
+    <string name="Reservation_space_must_be_greater_than_min">Reservation space must be greater than {0} min</string>
+    <string name="CheckOut_list_title">{0} {1}orders</string>
+    <string name="CheckOut_order_info">{0} - {1} ({2}hour)</string>
+    <string name="pwd_num_format">{0}/32</string>
+    <string name="country_code_format">+{0}</string>
+    <string name="Intervals">Intervals({0})</string>
+    <string name="There_are_parking_spaces_at_this_address">There are {0} parking spaces at this address</string>
+    <string name="Can_still_add_car">Can still add {0} car</string>
+    <string name="Are_you_sure_you_want_to_delete_cart_information">Are you sure you want to delete {0} cart information</string>
+    <string name="Hour_formate">{0}Hour</string>
+    <string name="Month_formate">{0}Month</string>
+    <string name="Total_spending_records">Total {0}</string>
+    <string name="Confirm_to_delete_appointment_information">Confirm to delete appointment information {0}</string>
+    <string name="Are_you_sure_want_to_close_this_position">Are you sure want to close this position? {0}</string>
+    <string name="Are_you_sure_want_to_open_this_position">Are you sure want to open this position? {0}</string>
+    <string name="Open_time_remain_hour">(Time left {0}/{1}hour)</string>
+    <string name="Total_amount_formate">Amount ${0}</string>
+    <string name="Total_mins_formate">{0}mins</string>
+    <string name="Deleted_successfully_Today_delete_the_remaining_times">Deleted successfully\nDelete the remaining {0} times in 24 hour</string>
+    <string name="The_penalty_for_breach_of_contract_is">The penalty for breach of contract is ${0} NTD</string>
+
+    <string name="Minutes_remaining">{0}minutes remaining at the end of the time</string>
+
+    <!-- 廣播 -->
+    <string name="The_landlord_cancels_the_scheduled_itinerary"> "the landlord cancels the appointment itinerary"</string>
+    <string name="Cancel_the_scheduled_itinerary">"Sorry! Your appointment {0} located at {1} will be cancelled by the landlord. We will issue compensation coupons according to the degree of impact of your cancellation. Please check the coupons in the coupons. You may need to book a new location again to avoid delaying your itinerary"</string>
+    <string name="Car_owner_payment_completed">"Car owner payment completed"</string>
+    <string name="Payment_completed">"Order number {0}, parking time is {1}"</string>
+    <string name="The_owner_successfully_withdraws_the_lease"> "The owner withdraws the lease successfully"</string>
+    <string name="Successfully_surrendered">"Order number {0}, parking time is {1}"</string>
+    <string name="The_owner_extends_order">"The owner extends order"</string>
+    <string name="The_owner_extends_order_msg">"The order: {0},extends to {1}"</string>
+
+
+    <string name="Appointment_is_about_to_start">"Appointment is about to start"</string>
+    <string name="Appointment_detail">"Bookings made on {0} {1} will start billing in 15 minutes, please be sure to be there on time, if you have cancelled the order, please ignore this order"</string>
+    <string name="The_owner_cancels_the_appointment">"The owner cancels the appointment"</string>
+    <string name="Cancels_appointment">"Location: {0}&#x000A; Time: {1}&#x000A; License plate: {2}"</string>
+    <string name="Receive_new_appointment">"Receive new appointment"</string>
+    <string name="Get_order_message">"Location: {0}&#x000A; Time: {1}&#x000A; License Plate: {2}&#x000A; Note: If you cannot park as scheduled for some reason, please cancel the reservation before the start of the reservation time, otherwise it will be checked after the reservation starts. Start billing for general parking. &#x000A; Note: If you have any doubts about the parking space, please take a photo to protect the rights of both parties."</string>
+    <string name="There_are_still_unreturned_orders">"There are still unreturned orders"</string>
+    <string name="Order_no_checkout">"Location: {0}\nTime: {1}&#x000A;License Plate: {2}&#x000A; You have an order that has not been refunded, and you have been charged a high fine. The fine is continuously accumulated. Please cancel the rental as soon as possible."</string>
+    <string name="Landlord_receipt_notice">"Landlord receipt notice"</string>
+    <string name="Manager_bank_transfer">"We have been in {0},&#x000A; the total transferable amount is ${1},&#x000A; the amount is deducted from the remittance fee,&#x000A; and may include past Cumulative amount of less than $1000,&#x000A;If you have any questions, please check the billing overview or contact us"</string>
+    <string name="Monthly_report_delivery">"Monthly report delivery"</string>
+    <string name="PaySumReport">"Final settlement date: ${0},&#x000A;Total revenue: ${1},&#x000A;Accumulated penalty: ${2}"</string>
+
+</resources>

@@ -1,0 +1,25 @@
+<resources>
+
+
+
+    <dimen name="catalog_text_size">12sp</dimen>
+
+
+    <dimen name="toolbar_height">50dp</dimen>
+    <dimen name="toolbar_expand_height">170dp</dimen>
+
+    <dimen name="btn_radius_3">3dp</dimen>
+    <dimen name="btn_radius_5">5dp</dimen>
+    <dimen name="btn_radius_6">6dp</dimen>
+    <dimen name="btn_radius_10">10dp</dimen>
+    <dimen name="btn_radius_15">15dp</dimen>
+
+    <dimen name="car_type_dialog_height">150dp</dimen>
+
+    <dimen name="option_item_height">65dp</dimen>
+    <dimen name="divider_padding">2dp</dimen>
+
+    <dimen name="item_dimen_30">30dp</dimen>
+    <dimen name="item_dimen_40">40dp</dimen>
+    <dimen name="item_dimen_50">50dp</dimen>
+</resources>

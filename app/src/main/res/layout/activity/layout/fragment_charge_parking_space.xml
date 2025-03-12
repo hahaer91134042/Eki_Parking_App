@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/charge_coodinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.activity.frag.Main.ChargeParkingSpaceActivity">
+
+    <LinearLayout
+        android:id="@+id/charge_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/charge_close_button"
+            android:src="@drawable/icon_close_orange"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="8dp"
+            android:padding="15dp"
+            android:layout_gravity="end"/>
+
+        <ImageView
+            android:id="@+id/charge_car_image"
+            android:src="@drawable/insert_charger"
+            android:layout_marginTop="84dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/charge_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/confirm_charge"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/charge_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/open_charge"
+            android:textColor="@color/color_white"
+            android:background="@color/Eki_orange_3"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="16dp" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/charge_order_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bottom_popup_bg"
+        android:elevation="16dp"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="100dp">
+
+        <View
+            android:id="@+id/top_view"
+            android:layout_width="36dp"
+            android:layout_height="4dp"
+            android:background="@color/Eki_orange_4"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/text_bold_14sp_707070"
+            android:text="@string/Parking_location"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/top_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/parking_location_text"
+            style="@style/text_18sp_707070"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/top_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="台北市信義區信義路50號"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/text_bold_14sp_707070"
+            android:text="@string/Appointment_start"
+            android:layout_marginTop="12dp"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/parking_location_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/appointment_start_text"
+            style="@style/text_18sp_707070"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/parking_location_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="2022/03/05 16:35"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/text_bold_14sp_707070"
+            android:text="@string/Appointment_end"
+            android:layout_marginTop="12dp"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/appointment_start_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/appointment_end_text"
+            style="@style/text_18sp_707070"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/appointment_start_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="2022/03/05 16:35"/>
+
+        <TextView
+            android:id="@+id/estimated_cost_text"
+            style="@style/text_20sp_d35757"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/appointment_end_text"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="@string/Estimated_cost"/>
+
+        <Button
+            android:id="@+id/estimate_button"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:text="@string/Go_checkout"
+            android:background="@color/Eki_orange_3"
+            android:layout_marginTop="12dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/estimated_cost_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

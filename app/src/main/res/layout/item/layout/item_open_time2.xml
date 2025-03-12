@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp">
+
+    <com.eki.parking.View.libs.StateButton
+        android:id="@+id/openTimeBtn"
+        android:layout_width="125dp"
+        android:layout_height="35dp"
+        android:stateListAnimator="@null"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/text_size_14"
+        android:padding="0dp"
+        android:gravity="center"
+
+        app:round="true"
+
+        app:normalBackgroundColor="@color/Eki_green_5"
+        app:pressedBackgroundColor="@color/Eki_green_5"
+
+        app:normalTextColor="@color/text_color_1"
+        app:pressedTextColor="@color/text_color_1"
+
+        />
+
+
+</RelativeLayout>

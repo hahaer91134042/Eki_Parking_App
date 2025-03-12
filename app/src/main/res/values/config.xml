@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<string name="appPackageName">com.eki.parking</string>-->
+    <string name="appCameraDir">EkiCamera</string>
+
+
+    <bool name="isOpenTest">true</bool>
+
+<!--    <string name="facebook_app_id">1580175858758126</string>-->
+<!--    <string name="fb_login_protocol_scheme">fb1580175858758126</string>-->
+
+    <string name="eki_google_api_key">AIzaSyAL2nD8mR11QwuOWo49IEIF80vD9awGrNQ</string>
+<!--    <string name="eki_google_api_key">AIzaSyDzawQDDnl2psVF-v0L4w7Cn8wdH3x0hsA</string>-->
+
+    <string name="action_settings">Setting</string>
+    <string name="search_title">search</string>
+
+    <!--<string name="web_googleMapApiKey">AIzaSyAV1Bww15nimw5TI9CUOzbIOEyW6Ul2Pls</string>-->
+
+    <string name="server_scheme">Eki</string>
+
+
+    <!-- Accessibility -->
+    <string name="drawer_open">drawer open</string>
+    <string name="drawer_close">drawer closed</string>
+    <dimen name="left_drawer_radius">10dp</dimen>
+
+<!--    Broadcast-->
+    <string name="alarmTag">AlarmTag</string>
+
+    <string name="support_mail">support@ppyp.app</string>
+</resources>

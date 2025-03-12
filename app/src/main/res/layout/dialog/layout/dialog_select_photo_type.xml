@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:divider="@drawable/divider_light_gray3"
+    android:showDividers="middle"
+    >
+    <TextView
+        android:id="@+id/openCamera"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="開啟相機"
+        android:textColor="@color/text_color_1"
+        android:textSize="@dimen/text_size_16"
+        android:paddingStart="50dp"
+        />
+    <TextView
+        android:id="@+id/openAlbum"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="開啟相簿"
+        android:textColor="@color/text_color_1"
+        android:textSize="@dimen/text_size_16"
+        android:paddingStart="50dp"
+        />
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="responseMsg">
+        <item>Account does not exist</item>
+        <item>Account already exists</item>
+        <item>Wrong password</item>
+        <item>Fail</item>
+        <item>Password format error</item>
+        <item>Connecting Fail</item>
+        <item>IdentityCardNumber already exists</item>
+        <item>IdentityCardNumber need enter</item>
+    </string-array>
+
+    <string-array name="fastSearchKey">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>F</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>V</item>
+    </string-array>
+
+    <string-array name="leftMenuOptionArray">
+        <item>Member Center</item>
+        <item>Find a store</item>
+        <item>Company Introduction</item>
+        <item>Online customer service</item>
+    </string-array>
+
+    <string-array name="monthNumberArray">
+        <item>Jan.</item>
+        <item>Feb.</item>
+        <item>Mar.</item>
+        <item>Apr.</item>
+        <item>May.</item>
+        <item>Jun.</item>
+        <item>Jul.</item>
+        <item>Aug.</item>
+        <item>Sep.</item>
+        <item>Oct.</item>
+        <item>Nov.</item>
+        <item>Dec.</item>
+    </string-array>
+
+
+</resources>

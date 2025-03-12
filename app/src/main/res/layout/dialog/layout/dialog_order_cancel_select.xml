@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:showDividers="middle"
+    android:divider="@drawable/divider_light_gray3"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/text_color_1"
+        android:text="非個人因素取消，可申請補償。因需經 過人工審核，審核成功約在一個月發放 補償。"
+        />
+
+    <TextView
+        android:id="@+id/cancelByPerson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/text_color_1"
+        android:text="個人因素取消"
+        />
+    <TextView
+        android:id="@+id/cancelNonPerson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/text_color_1"
+        android:text="非個人因素取消"
+        />
+    <TextView
+        android:id="@+id/cancelBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/Eki_orange_3"
+        android:text="@string/Cancel"
+        />
+
+</LinearLayout>

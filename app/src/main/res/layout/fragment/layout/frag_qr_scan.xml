@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.king.zxing.ViewfinderView
+        android:id="@+id/viewfinderView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="250dp"
+        app:labelText=""
+        app:labelTextSize="@dimen/text_size_16"
+        app:laserColor="@color/Eki_orange_2"
+        app:frameColor="@color/zxing_transparent"
+        app:cornerColor="@color/Eki_orange_3"
+
+        app:labelTextLocation="bottom"
+        app:laserStyle="line"
+        />
+
+
+</RelativeLayout>

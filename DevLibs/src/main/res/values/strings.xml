@@ -1,0 +1,37 @@
+<resources>
+
+    <string name="error">Error!!</string>
+    <string name="Sign_in">Login...</string>
+    <string name="Connecting">Connecting...</string>
+    <string name="Now_loading">Now Loading...</string>
+    <string name="Processing">Processing...</string>
+    <string name="Error_Message">Error Message</string>
+
+    <string name="Password_must_be_between_6_and_12_characters">Password must be between 6 and 12 characters</string>
+    <string name="Password_requires_at_least_one_English_word">Password requires at least one English word</string>
+    <string name="Password_requires_at_least_one_number">Password requires at least one Number</string>
+    <string name="At_least_one_capitalized_English">At least one capitalized English</string>
+    <string name="At_least_one_lowercase_English">At least one lowercase English</string>
+    <string name="At_least_8_characters">At least 8 characters</string>
+    <string name="Please_enter_password">Please enter password</string>
+    <string name="Please_enter_phone_number">Please enter phone number</string>
+
+    <string name="Share_to">Share To:</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="register">Register New Account</string>
+    <string name="submit">Submit</string>
+    <string name="Determine">Determine</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Loading_fail">Loading Fail</string>
+    <string name="Loading_finish">Loading Finish</string>
+    <string name="No_input">No Input</string>
+    <string name="Wrong_input_format">Wrong input format</string>
+    <string name="Account_input_format_error">Account input format error</string>
+    <string name="Please_enter_your_account">Please enter your account</string>
+    <string name="Bad_password_format">Bad password format</string>
+    <string name="Please_enter_email">Please enter email</string>
+    <string name="Mail_format_error">E-mail format error</string>
+    <string name="Phone_format_error">Phone format error</string>
+
+</resources>

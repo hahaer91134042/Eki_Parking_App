@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="always"
+    android:paddingEnd="3.5dp"
+    android:paddingStart="0dp"
+    android:scrollbars="vertical"
+    android:scrollbarThumbVertical="@drawable/layer_progress_green2_20dp"
+    android:scrollbarTrackVertical="@color/color_transparent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.hill.devlibs.widget.AutoSizeTextView
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="28.5dp">
+
+    <include
+        android:id="@+id/itemParkingType"
+        layout="@layout/item_parking_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" />
+
+    <include
+        android:id="@+id/itemParkingSpace"
+        layout="@layout/item_parking_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" />
+
+    <include
+        android:id="@+id/itemHighParkingSpace"
+        layout="@layout/item_high_parking_space"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" />
+
+    <include
+        android:id="@+id/itemWeightLimit"
+         layout="@layout/item_weight_limit"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="15dp" />
+
+    <include
+        android:id="@+id/itemOtherNotice"
+        layout="@layout/item_other_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" />
+
+    <include
+        android:id="@+id/itemAddlocStopBtn"
+        layout="@layout/item_addloc_stop_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="15dp"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="year_month_format">%1$d年 %2$d月</string>
+    <string name="billing_method_half_hour">$%1$d/半小時</string>
+
+    <!-- 主 -->
+    <string name="todo">TODO</string>
+    <string name="Steam_locomotive">汽機車</string>
+    <string name="Car">汽車</string>
+    <string name="Locomotive">機車</string>
+    <string name="You_still_have_unpaid_orders">"你还有未付款的订单"</string>
+
+    <string name="Sign_in">登入中...</string>
+    <string name="Connecting">連線中...</string>
+    <string name="Now_loading">下載中...</string>
+    <string name="Processing">處理中...</string>
+    <string name="Error_Message">錯誤訊息</string>
+    <string name="Reconnecting">重新連線中...</string>
+
+    <string name="Warning">警告</string>
+    <string name="Your_email">電子郵件</string>
+    <string name="pwd">密碼</string>
+    <string name="phone">手機</string>
+    <string name="Confirm_pwd">確認密碼</string>
+    <string name="Phone_number">手機號碼</string>
+    <string name="Your_name">姓名</string>
+    <string name="Your_birthday">生日</string>
+    <string name="ID_number">身分證字號</string>
+    <string name="Nickname">暱稱</string>
+    <string name="Address">地址</string>
+
+
+    <string name="register">註冊</string>
+    <string name="submit">送出</string>
+    <string name="Creat_your_acc">創建新帳號</string>
+    <string name="Forget_pwd">忘記密碼?</string>
+    <string name="Start">開始</string>
+
+    <string name="Please_enter_email">請輸入電子信箱</string>
+    <string name="Please_enter_password">請輸入密碼</string>
+    <string name="Please_enter_a_valid_email">請輸入有效的信箱</string>
+    <string name="Please_enter_a_valid_pwd">請輸入有效的密碼</string>
+    <string name="Please_enter_phone_number">請輸入手機號碼</string>
+
+    <string name="Please_enter_a_name">請輸入姓名</string>
+    <string name="Please_enter_a_birthday">請輸入生日</string>
+    <string name="Please_enter_ID_card_number">請輸入身份證字號</string>
+    <string name="ID_card_number_formate_error">身份證字號錯誤</string>
+    <string name="Server_connect_error">伺服器連線錯誤</string>
+    <string name="Determine">確定</string>
+    <string name="Cancel">取消</string>
+    <string name="inputemail">請輸入email,來收取密碼</string>
+    <string name="Account_already_exists">信箱已存在</string>
+    <string name="Password_must_be_between_6_and_12_characters">密碼需在6~12字元之間</string>
+    <string name="Password_requires_at_least_one_English_word">密碼至少需要一個英文字</string>
+    <string name="Password_requires_at_least_one_number">密碼至少需要一個數字</string>
+    <string name="Please_enter_a_SMS_verification_code">請輸入簡訊驗證碼</string>
+    <string name="SMS_verification_code_error">簡訊驗證碼錯誤</string>
+    <string name="Please_start_with_SMS_authentication">請先進行簡訊認證</string>
+    <string name="Please_enter_comfirm_password">請輸入確認密碼</string>
+    <string name="Confirmation_password_does_not_match">確認密碼不相符</string>
+    <string name="Forget_pwd_descript">請輸入您的信箱\n我們將會發送新的密碼</string>
+
+    <string name="Verification_code">驗證碼</string>
+
+    <string name="Rating_value">(評分:%s)</string>
+    
+    <string name="stage">期</string>
+    <string name="rate">利率</string>
+    <string name="Excluding_in_the_first_period">除不盡餘數於第一期收取</string>
+    <string name="issue">每期</string>
+    <string name="dollar">元</string>
+    <string name="Share_to">分享到</string>
+    <string name="Share">分享</string>
+
+
+    <string name="Search_Error">搜尋結果錯誤，請重新輸入</string>
+    <string name="Try_again">再試一次</string>
+    <string name="Shopping_car_no_item">購物車內沒有商品</string>
+
+    <string name="male">男</string>
+    <string name="female">女</string>
+
+    <string name="server_disconnection">與伺服器連線中斷</string>
+    <string name="OR">或</string>
+    <string name="Dont_have_account_yet">還沒帳號?</string>
+
+    <string name="Authentication_code_is_being_sent">認證碼發送中({0})...</string>
+
+    <string name="This_name_field_is_required">此暱稱欄位為必填</string>
+    <string name="Pwd_rule_list_msg">1.密碼至少8碼\n2.至少1個大寫英文 1個小寫英文\n3.至少一個數字</string>
+
+    <string name="Congratulations_on_becoming_a_member">恭喜您成為會員</string>
+    <string name="Are_you_sure_you_want_to_log_out">確定要進行登出?</string>
+    <string name="Please_turn_on_permissions_to_enjoy_full_functionality">請開啟權限以享受完整功能</string>
+    <string name="Search_Address">搜尋地址</string>
+    <string name="Select_Search_Time">選擇查詢時間</string>
+    <string name="Please_choose_an_option_first">請先選擇一個選項</string>
+    <string name="End_time_must_be_greater_than_start_time">結束時間必須大於開始時間</string>
+    <string name="Please_select_at_least_one_date">請至少選擇一個日期</string>
+    <string name="Max_Range">350公里</string>
+    <string name="Search_range_KM">搜尋範圍{0}公里</string>
+    <string name="Please_set_the_search_distance">請設定搜尋距離</string>
+    <string name="Please_enter_a_search_address">請輸入搜尋地址</string>
+    <string name="Cannot_make_an_appointment_at_this_time">此時段無法預約</string>
+    <string name="Parking_location">停車位置</string>
+    <string name="Parking_number">車位編號</string>
+    <string name="Appointment_start">預約時間(始)</string>
+    <string name="License_plate_number">車牌號碼</string>
+    <string name="Please_enter_the_license_plate_number">請輸入車牌號碼</string>
+    <string name="Amount_of_consumption">消費金額</string>
+    <string name="Checkout_amount">結帳金額</string>
+    <string name="Appointment_failed_during_this_time_please_reselect">該時段預約失敗 請重新選擇</string>
+    <string name="Successful_appointment">預約成功</string>
+    <string name="Parking_fee">停車費用</string>
+    <string name="Additional_fee">附加費用</string>
+    <string name="Total_amount">總金額</string>
+    <string name="Order_number">訂單編號</string>
+    <string name="Unpaid">未付款</string>
+    <string name="Unclear_order">未退租訂單</string>
+    <string name="Go_extension">延時</string>
+    <string name="Go_checkout">退租</string>
+    <string name="Go_pay">付款</string>
+    <string name="Other_fee">其他費用</string>
+    <string name="Default_fee">違約費用</string>
+    <string name="Discount">優惠券(已含)</string>
+    <string name="Please_take_your_car_license_plate">請拍下您愛車車牌</string>
+    <string name="There_was_a_problem_with_the_network_connection">網路連線出現問題，請重新連線</string>
+    <string name="Search_Fail">搜尋失敗</string>
+    <string name="Guest">訪客</string>
+    <string name="Please_enter_phone_or_email">請輸入手機或電子郵件</string>
+    <string name="At_least_8_digits_in_case_and_1_each">大小寫英數共8位</string>
+    <string name="Phone_verification">手機驗證</string>
+    <string name="Send">送出</string>
+    <string name="Telephone_country">電話號碼國家/地區</string>
+    <string name="Please_enter_a_nickname">請輸入暱稱</string>
+    <string name="Please_enter_the_same_password_again">請再次輸入相同密碼</string>
+    <string name="Privacy_Policy">隱私政策</string>
+    <string name="Read_and_agree">已閱讀並同意</string>
+    <string name="Parking_Space_Number">停車位編號 |</string>
+    <string name="a_5_cars_and_locomotives_can_be_added">可新增5台汽、机车唷！\n来新增您的第一台爱车吧！</string>
+    <string name="Car_Name">愛車名稱</string>
+    <string name="Brand_series">品牌系列</string>
+    <string name="This_field_is_required">此欄位為必填</string>
+    <string name="Car_brand">汽車品牌</string>
+    <string name="Default">預設</string>
+    <string name="Set_as_default_car">已設為預設車</string>
+    <string name="Delete">刪除</string>
+    <string name="Parking_space_deleted">車位已刪除</string>
+    <string name="Select_date_time">選擇日期/時間</string>
+    <string name="Book_a_trip">預約行程</string>
+    <string name="Total_appointment_time">總預約時間</string>
+    <string name="Appointment_end">預約時間(終)</string>
+    <string name="Payment">進行付款</string>
+    <string name="Time">時間</string>
+    <string name="Estimated_cost">預估費用</string>
+    <string name="No_spending_history">目前無任何消費紀錄</string>
+    <string name="Display_time">顯示時間</string>
+    <string name="Sort_by">排序先後</string>
+    <string name="Date_new_to_old">日期新至舊</string>
+    <string name="Date_old_to_new">日期舊至新</string>
+    <string name="Preset">預設</string>
+    <string name="No_appointments_today">今日沒有任何預約</string>
+    <string name="Delete_number_of_times_was_used_up_in_today">24小時內刪除次數已用完</string>
+    <string name="This_order_cannot_be_deleted">該筆訂單無法刪除</string>
+    <string name="Cancellation_within_30_min_will_be_charged">30分鐘內取消將酌收費用</string>
+    <string name="Cannot_be_cancelled_at_this_time_please_go_to_checkout">現在無法取消，請在預約時間內至結帳進行退租程序</string>
+    <string name="Add_parking_spaces">新增車位</string>
+    <string name="Payment_page">付款頁面</string>
+    <string name="Parking_place">車位地點</string>
+    <string name="outdoor">室外車位</string>
+    <string name="indoor">室內車位</string>
+    <string name="indoor_outdoor">室內/室外</string>
+    <string name="Parking_name">車位名稱</string>
+    <string name="Standard_parking_spaces">標準車位</string>
+    <string name="Small_parking_spaces">小型車位</string>
+    <string name="Motorcycle_parking_space">摩托車位</string>
+    <string name="Parking_space">車位大小</string>
+    <string name="Parking_site_suggest_width_length">(寬100公分 長220公分)</string>
+    <string name="Parking_site_standard_width_length">(寬250公分 長600公分)</string>
+    <string name="Parking_site_small_width_length">(寬225公分 長575公分)</string>
+    <string name="Charging_interface">充電介面</string>
+    <string name="Car_Charging">汽車充電</string>
+    <string name="Locomotive_Charging">機車充電</string>
+    <string name="Add_time">新增時段</string>
+    <string name="Open_appointments">開放預約時段</string>
+    <string name="Select">選擇</string>
+    <string name="Repeat_this_week">重複開啟當月份同星期時段</string>
+    <string name="Insufficient_hours_left">剩餘時數不足</string>
+    <string name="Opening_hours_have_been_added">開放時間已新增</string>
+    <string name="Opening_hours_cancelled">開放時間已取消</string>
+    <string name="Deleting_the_open_period_may_result_in_fines">刪除開放時段可能會導致罰金的產生， 確定刪除該時段?</string>
+    <string name="Application">申請</string>
+    <string name="Charged_price">收費價格</string>
+    <string name="Enter_the_store_name_company_name_building_name_to_increase_the_recognition_of_the_car_owner">商店名/公司名/大楼名，可增加车主辨识度唷！</string>
+    <string name="Become_a_landlord">成為地主</string>
+    <string name="Bank_Code">銀行代碼</string>
+    <string name="Bank_branch_code">銀行分行代碼</string>
+    <string name="Bank_account">銀行帳戶</string>
+    <string name="Account_address">地址(申報薪資所得扣繳專用)</string>
+    <string name="Rental_income_above_20000">租金收入達兩萬元新台幣以上可能產生附加所得 稅率與補充健保費用</string>
+    <string name="Account_name">戶名</string>
+    <string name="Company_uniform_number">公司統一編號</string>
+    <string name="Skip">略過</string>
+    <string name="Congratulations_on_becoming_landlord">恭喜成為地主</string>
+    <string name="Open_parking_spaces_in_three_steps">開放停車位 三步驟</string>
+    <string name="teach_title_step1">點擊側邊選單</string>
+    <string name="teach_title_step2">點擊\"切換身分\"</string>
+    <string name="teach_title_step3">完成\"車位設定\"、\"開放車位\"</string>
+    <string name="Parking_space_information_will_be_set">接下來將設定車位資訊\n是否繼續?</string>
+    <string name="Please_enter_the_price_thank_you">請輸入價格, 謝謝</string>
+    <string name="Successfully_joined">加入地點成功</string>
+    <string name="Failed_to_join_location">加入地點失敗</string>
+    <string name="Please_enter_the_parking_space_name">請輸入車位名稱</string>
+    <string name="Flat_parking">平面車位</string>
+    <string name="Mechanical_parking">機械車位</string>
+    <string name="Parking_type">車位型態</string>
+    <string name="Suggest_parking_spaces_full_size">建議尺寸(寬≥1公尺、長≥2.2公尺)</string>
+    <string name="Standard_parking_spaces_full_size">標準車位(寬≥2.5公尺、長≥6公尺)</string>
+    <string name="Small_parking_spaces_full_size">小車位(寬≦2.25公尺、長≦5.75公尺)</string>
+    <string name="High_parking_space">車位限高</string>
+    <string name="Unlimited">不限</string>
+    <string name="Limit_high">限高</string>
+    <string name="Weight_limit">車位限重</string>
+    <string name="Limit_weight">限重</string>
+    <string name="Subtotal">小計</string>
+    <string name="Rating">給評分</string>
+    <string name="Appeal">申訴</string>
+    <string name="Finish">完成</string>
+    <string name="Evaluate_the_owner">評價該車主</string>
+    <string name="Please_select_your_appeal">請選擇您的申訴事項</string>
+    <string name="Evaluate_the_parking_space">評價該車位</string>
+    <string name="Edit">編輯</string>
+    <string name="Edit_profile">編輯個人資料</string>
+    <string name="Reset_phone">重設手機</string>
+    <string name="Successfully_modified">修改成功</string>
+    <string name="coupon">優惠券</string>
+    <string name="Code">序號</string>
+    <string name="You_have_no_coupons_available">您沒有可用的優惠券</string>
+    <string name="Join_failed">加入失敗</string>
+    <string name="Join_successfully">加入成功</string>
+    <string name="Event_information">活動訊息</string>
+    <string name="Opening_hours">開放時間</string>
+    <string name="Join">加入</string>
+    <string name="Time_overlap">時間重疊</string>
+    <string name="The_parking_space_has_been_deleted">該車位已刪除</string>
+    <string name="Parking_space_deletion_failed">車位刪除失敗</string>
+    <string name="Indoor_parking">室內車位</string>
+    <string name="Outdoor_parking">室外車位</string>
+    <string name="Basic_message">基本訊息</string>
+    <string name="Parking_restrictions">車位限制</string>
+    <string name="Address_Detail">詳細地址</string>
+    <string name="Other_notes">其他備註</string>
+    <string name="Choose_coupon_code">選擇優惠碼</string>
+    <string name="Enter_the_serial_number">輸入序號</string>
+    <string name="Scan_QR_Code">掃描QR Code</string>
+    <string name="Invoice_information">發票資料</string>
+    <string name="Charging_interface_l">充電介面 |</string>
+    <string name="Reset_pwd">重設密碼</string>
+    <string name="New_password">新密碼</string>
+    <string name="Questions_and_reactions">問題與反應</string>
+    <string name="About_me">關於我們</string>
+    <string name="Taiwan">台灣</string>
+    <string name="Invoice_number">發票編號</string>
+    <string name="Last_4_yards_of_credit_card">信用卡後4碼</string>
+    <string name="This_time_period_overlap_cannot_be_added_please_select_again">該時段重疊無法加入，請重新選擇</string>
+    <string name="Customer_Service_Code">客服代碼</string>
+    <string name="Please_enter_customer_service_code">請輸入客服代碼</string>
+    <string name="Reservation_status">預約狀況</string>
+    <string name="Income_of_the_month">當月收入</string>
+    <string name="Save">儲存</string>
+    <string name="Must_be_open_for_at_least_30_minutes">最少須開放30分鐘</string>
+    <string name="Ready_to_install_the_update">已經準備好安裝更新!</string>
+    <string name="Installation">安裝</string>
+    <string name="Alternating_current">AC交流電</string>
+    <string name="Direct_current">DC直流電</string>
+    <string name="Available_for_appointment">目前可預約</string>
+    <string name="Please_upload_three_photos_with_different_angles_thank_you">請上傳三張不同角度的照片,謝謝</string>
+    <string name="MemberShip_note">ppyp會員載具(使用EzPay，電子發票平台載具，中獎會祭出發票)</string>
+
+    <!-- 各車位實際收入 -->
+    <string name="Filter">篩選</string>
+    <string name="Restore_default">恢復預設</string>
+    <string name="Billing_overview_string">帳單總覽</string>
+    <string name="Enquiry_for_all_parking_spaces">全車位查詢</string>
+    <string name="Actual_income_of_each_parking_space">各車位實際收入</string>
+    <string name="Query_income_time">查詢收入時間</string>
+    <string name="Parking_space_income">車位收入</string>
+    <string name="Number_zero">0</string>
+    <string name="Actual_income">實際收入</string>
+    <string name="Date_End_Greater_Start">起始日期不可大於結束日期!</string>
+    <string name="No_data_available_on_this_date">此日期查無資料</string>
+    <string name="Please_enter_the_start_date">請輸入起始日期!</string>
+    <string name="Please_enter_the_end_date">請輸入結束日期!</string>
+    <string name="Default_details">違約明細</string>
+    <string name="No_record_of_default">無任何違約紀錄</string>
+    <string name="Cancellation_time">取消時間  %s</string>
+    <string name="Actual_income_of_the_month">當月實際收入</string>
+    <string name="No_orders_have_been_checked_out">無任何已結帳訂單</string>
+
+    <!-- 篩選 -->
+    <string name="Search_criteria">搜尋條件</string>
+    <string name="Custom">自訂</string>
+    <string name="Date_time_string">日期 / 時間</string>
+    <string name="Please_choose">請選擇</string>
+    <string name="Chosen">已選擇</string>
+    <string name="Distance_string">距離</string>
+    <string name="Range">範圍</string>
+    <string name="KM">公里</string>
+    <string name="eMoving">eMoving</string>
+    <string name="PBGN">PBGN</string>
+    <string name="ionex">ionex</string>
+    <string name="Household_socket">家用插座</string>
+    <string name="AC_Tesla">(AC) Tesla</string>
+    <string name="AC_J1772">(AC) J1772</string>
+    <string name="DC_Tesla">(DC) Tesla</string>
+    <string name="DC_CCS1_J1772">(DC) CCS1 - J1772</string>
+    <string name="DC_CCS2_IEC62196">(DC) CCS2 - IEC62196</string>
+    <string name="DC_CHAdeMO">(DC) CHAdeMO</string>
+    <string name="General_parking_space_string">一般車位</string>
+    <string name="Filter_locomotive_click_exception">汽機車點選不能為空, 請重新輸入</string>
+
+    <!-- 車位設定 -->
+    <string name="Select_parking_space_type">選擇您欲開放的車位類型</string>
+    <string name="Parking_space_name">車位名稱</string>
+    <string name="Only_one_type_of_parking_space_can_be_selected_thank_you">車位只能選擇一種類型，謝謝。</string>
+    <string name="Parking_space_noted">請輸入需要提醒車主之事項如：有高低落差注意車子底盤、有養狗請小心....等 (最多500字元)</string>
+    <string name="Start_joining_location">開始加入地點</string>
+    <string name="The_city_name_or_input_length_is_wrong_please_enter_it_again">城市名或輸入長度有誤，請再次輸入!</string>
+    <string name="Do_not_enter_any_special_symbols">不可輸入任何特殊符號</string>
+    <string name="The_input_length_is_wrong_please_input_the_correct_address">輸入長度有誤，請輸入正確地址</string>
+    <string name="Please_enter_your_native_language">請輸入母語</string>
+    <string name="Example_address">範例：台北市大安區信義路四段1號4樓</string>
+    <string name="This_unit_cannot_be_0_please_re_enter">此單位不得為0，請重新輸入</string>
+    <string name="Are_you_sure_you_want_to_delete_this_parking_space">"確定要刪除該車位?"</string>
+    <string name="Are_you_sure_you_want_to_modify_the_parking_space_information">"確定要修改車位資訊?"</string>
+    <string name="Please_upload_a_photo_of_your_parking_space">"請上傳您的車位照片"</string>
+    <string name="New_locomotive_parking_space">"新增机车车位"</string>
+    <string name="Add_car_parking_space">"新增汽车车位"</string>
+    <string name="Car_parking_space_size">"汽车车位大小"</string>
+    <string name="Locomotive_parking_size">"机车车位大小"</string>
+
+
+    <!-- 車位詳細 -->
+    <string name="Parking_space_type">車位種類</string>
+    <string name="Parking_site">車位位置</string>
+    <string name="One_slash_three"><![CDATA[&#8531;]]></string>
+
+    <!-- 車位資訊 -->
+    <string name="Please_log_in_as_a_member_to_make_an_appointment">请先登入会员才能进行预约</string>
+    <string name="Parking_information">车位资讯</string>
+    <string name="See_more">看更多</string>
+    <string name="Cooperative_Store">合作店家</string>
+    <string name="Cooperative_Store_Information">合作店家资讯</string>
+
+    <!-- 開放時間 -->
+    <string name="Single_add">单笔新增</string>
+    <string name="Repeat_next_week">下周重复</string>
+    <string name="Copy_and_paste">复制贴上</string>
+    <string name="The_number_of_hours_per_month_must_not_be_greater_than_240_hours">每月时数不得大于240小时</string>
+    <string name="Copy_date_must_be_greater_than_or_equal_to_today">复制日必须大于等于今日</string>
+    <string name="The_copy_date_must_be_less_than_7_days">复制日必须小于等于今日內</string>
+    <string name="No_appointment_record_this_month">这个月无预约纪录</string>
+    <string name="No_appointment_record_this_week">这周无预约纪录</string>
+    <string name="Choose_the_time_to_post">选择贴上的时间</string>
+    <string name="Choose_the_parking_space_posted">选择贴上的车位</string>
+    <string name="No_time_in_the_past_7_days_thank_you">过去7日无任何时间, 谢谢！</string>
+    <string name="Please_check_the_time_within_7_days_before_and_after_thank_you">请检查前后7日内的时间, 谢谢！</string>
+    <string name="Please_delete_the_duplicate_time_in_the_next_7_days_thank_you">请删除未来7日内的重复时间, 谢谢！</string>
+    <string name="The_following_parking_spaces_have_already_opened_dates">以下車位因已開放日期，為避免開放時段超過規定，無法進行貼上功能。</string>
+    <string name="No_time_to_join">沒有可加入時間</string>
+    <string name="Automatically_open_next_week">自動開放下周</string>
+    <!-- 問題與反應 -->
+    <string name="Q_and_A">问与答</string>
+
+    <!-- 結帳 -->
+    <string name="You_have_unsettled_paid_orders">您尚有未 結清/付款 訂單</string>
+    <string name="Insufficient_opening_hours_please_find_other_parking_spaces_thank_you">开放时间不足, 请找寻其他车位, 谢谢！</string>
+    <string name="Insufficient_opening_hours_please_choose_another_time_thank_you">开放时间不足, 请选择其他时间, 谢谢！</string>
+    <string name="The_opening_time_is_less_than_15_minutes_please_choose_again_thank_you">开放时间不足15分钟, 请重新选择, 谢谢！</string>
+    <string name="Extend_the_time_beyond_the_opening_hours_please_re_select_thank_you">延长时间超过开放时间, 请重新选择, 谢谢！</string>
+    <string name="You_can_only_extend_the_time_once_please_re_order_thank_you">延长时间只能一次, 请重新下单, 谢谢！</string>
+    <string name="The_start_time_must_be_greater_than_or_equal_to_the_current_time_thank_you">起始时间必须大于等于现在时间, 谢谢！</string>
+    <string name="The_extended_time_is_not_within_the_opening_hours_please_re_order_thank_you">延长时间不在开放时间内, 请重新下单, 谢谢！</string>
+    <string name="Timed_out">已超时, 请重新下单, 谢谢！</string>
+    <string name="Overtime">加时</string>
+    <string name="Please_select_a_delayed_end_time">请选择延时结束时间</string>
+    <string name="Delay_in_this_period_of_time_failed_please_select_again">该时段延时失败 请重新选择</string>
+    <string name="Delayed_completion">延时完成</string>
+    <string name="error_no_order">没有可过滤订单</string>
+    <string name="error_no_income">查无收入信息</string>
+    <string name="no_order_record">无订单记录</string>
+    <string name="no_location">无地点</string>
+    <string name="information_can_be_modified">以上信息可随时修改</string>
+    <string name="The_owner_extends_order">车主延长订单</string>
+
+    <string name="order">訂單</string>
+
+    <string name="no_order_description">是不是好一阵子没开车出门了</string>
+
+    <string name="Unpaid_orders">未付款%1$d笔</string>
+    <string name="Orders_not_return">未退租%1$d笔</string>
+
+    <string name="minutes_remaining">结束时间剩余 %1$d分钟</string>
+
+</resources>

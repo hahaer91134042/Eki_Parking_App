@@ -1,0 +1,229 @@
+package com.car1.tire.recycleview
+
+import android.content.Context
+import android.util.AttributeSet
+import android.view.View
+import android.view.ViewGroup
+import android.widget.TextView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import com.car1.tire.EnumClass.Car1ApiEnum
+import com.car1.tire.EnumClass.ViewTypeEnum
+import com.car1.tire.R
+import com.car1.tire.asynctask.abs.BaseAsyncTask
+import com.car1.tire.asynctask.task.sql.DbTask
+import com.car1.tire.recycleview.adapter.autoload.AutoLoadMoreAdapter
+import com.car1.tire.recycleview.item.ItemLayout
+import com.car1.tire.util.ScreenUtils
+import com.car1.tire.widget.AutoLoadImgView
+import com.car1.tire.widget.ShowPriceView
+
+/**
+ * Created by Hill on 2019/1/3.
+ */
+class LoadManufacturerTireRecycleView(context: Context?, attrs: AttributeSet?) : BaseRecycleView(context, attrs),
+                                                                                 AutoLoadMoreAdapter.OnLoadListener,
+                                                                                 BaseAsyncTask.onPostExecuteListener<SqlVO<*>>{
+
+    private var brand:BannerLinkVO.IndexBrand?=null
+    set(value) {
+        field=value
+        manufacturer= value?.brandId?:0
+        maxPage=value?.Page?:0
+    }
+
+    var manufacturer=0
+    var page=1
+    var maxPage=0
+    var listener:LoadTireListener?=null
+
+    private var tireList=ArrayList<CarGroupVO>()
+    private var isFirst=true
+    private var tireAdapter:LoadTireAdapter?=null
+    private var autoLoadAdapter: AutoLoadMoreAdapter? = null
+
+
+    fun init(data: BannerLinkVO.IndexBrand):LoadManufacturerTireRecycleView{
+        brand=data
+        loadData()
+        return this
+    }
+
+    fun reLoad() {
+        Log.w("reLoad Tire")
+        page=1
+//        removeAllViews()
+        tireList.clear()
+//        tireAdapter?.notifyDataSetChanged()
+        autoLoadAdapter?.notifyDataSetChanged()
+        autoLoadAdapter?.showLoadMore()
+//        isFirst=true
+//        tireAdapter=null
+//        autoLoadAdapter=null
+
+        loadData()
+    }
+
+    private fun loadData(){
+        Log.e("loadData")
+        if (page<=maxPage){
+            listener?.onLoadData()
+            Car1DataTask(
+                    context,
+                    DbTask.Action.Manufacturer
+                            .setApi(Car1ApiEnum.ManufacturerApi)
+                            .setMode(DbTask.Action.Mode.GET)
+                            .setTarget(DbTask.Action.Target.Sever).apply {
+                                var keyArr=getArray(Car1ApiEnum.ManufacturerApi.keyRes)
+                                setValuePaire(keyArr[0],manufacturer.toString())
+                                setValuePaire(keyArr[1],page.toString())
+                            }
+            ).setExecuteListener(this).start()
+        }else{
+            listener?.onEmpty()
+            tireList.add(CarGroupVO(ViewTypeEnum.Empty))
+            tireAdapter=LoadTireAdapter(context)
+            layoutManager=LinearLayoutManager(context)
+            adapter=tireAdapter
+        }
+    }
+
+    override fun onTaskPostExecute(data: SqlVO<*>?) {
+
+        when(data){
+            is ManufacturerVO->{
+                listener?.onLoadFinish()
+                Log.d("Manufacturer dataList size->${data.dataList?.size}")
+                data.dataList.forEach {
+                    tireList.add(CarGroupVO(ViewTypeEnum.CarGroup).apply {
+                        tire=it
+                    })
+                }
+                if (isFirst){
+                    isFirst=false
+                    tireAdapter=LoadTireAdapter(context).apply {
+                        setItemListClickListener(itemListener)
+                    }
+                    autoLoadAdapter = AutoLoadMoreAdapter(context, tireAdapter)
+                    autoLoadAdapter?.setOnLoadListener(this)
+                    val layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
+                    layoutManager.isAutoMeasureEnabled = true
+                    setLayoutManager(layoutManager)
+                    addItemDecoration(GridItemDivider(2, width * 2 / 100, true))
+                    adapter = autoLoadAdapter
+
+                    if (page==maxPage)
+                        autoLoadAdapter?.showLoadComplete()
+
+                }else{
+                    autoLoadAdapter?.finishLoading()
+                    if (page==maxPage)
+                        autoLoadAdapter?.showLoadComplete()
+                    adapter?.notifyDataSetChanged()
+                }
+            }
+            else->{
+                listener?.onLoadError()
+                if (isFirst){
+                    tireList.clear()
+                    tireList.add(CarGroupVO(ViewTypeEnum.Error))
+                    tireAdapter=LoadTireAdapter(context)
+                    layoutManager=LinearLayoutManager(context)
+                    adapter=tireAdapter
+                }else{
+                    autoLoadAdapter?.showLoadError()
+                }
+            }
+        }
+    }
+
+    private var itemListener= BaseAdapter.ItemClickListener {
+        Log.d("Click which->$it")
+        listener?.onProductSelected(tireList[it]?.tire?:null)
+    }
+
+    override fun onRetry() {
+        Log.i("onRetry")
+        reLoad()
+    }
+
+    override fun onLoadMore() {
+        Log.i("onLoadMore")
+        if (page<maxPage){
+            page++
+            loadData()
+        } else{
+            autoLoadAdapter?.showLoadComplete()
+        }
+    }
+
+
+
+    private inner class LoadTireAdapter(context: Context?) : BaseAdapter<ItemLayout<CarGroupVO>>(context) {
+
+        override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemLayout<CarGroupVO> {
+            return when(viewType){
+                ViewTypeEnum.CarGroup.type->{
+                    var view=inflater.inflate(R.layout.item_group_type_4,parent,false)
+                    return TireItem(view).also {
+                        it.init(height*30/100)
+                    }
+                }
+                ViewTypeEnum.Empty.type->{
+                    return getEmptyItem<CarGroupVO>(parent).apply {
+                        setMsg("查無商品")
+                    }
+                }
+                else->{
+                    return getErrorItem<CarGroupVO>(parent).apply {
+                        tex.text="下載錯誤"
+                    }
+                }
+            }
+
+        }
+
+        override fun onBindViewHolder(item: ItemLayout<CarGroupVO>, position: Int) {
+            super.onBindViewHolder(item, position)
+            item.refresh(tireList[position])
+        }
+
+        override fun getItemViewType(position: Int): Int {
+            return tireList[position].viewType?.type?:-1
+        }
+
+        override fun getItemCount(): Int {
+            return tireList.size
+        }
+    }
+
+    private class TireItem(itemView: View) : ItemLayout<CarGroupVO>(itemView),View.OnClickListener {
+
+        var parentView:View= itemView.findViewById(R.id.parentView)
+        var productImg: AutoLoadImgView =itemView.findViewById(R.id.productImgView)
+        var tireNameTex: TextView =itemView.findViewById(R.id.productNameText)
+        var showPriceView: ShowPriceView =itemView.findViewById(R.id.showPriceView)
+//        var toBuyBtn: Button =itemView.findViewById(R.id.toBuyBtn)
+        override fun init(lenght: Int) {
+            super.init(lenght)
+            parentView.layoutParams.height=lenght
+            parentView.layoutParams.width=width*50/100
+            showPriceView.setTextSize(ScreenUtils.dpToPx(4.5f).toFloat())
+
+//            toNextBtn.setBackgroundResource(R.drawable.icon_arrow_right_light_gray)
+            parentView.setOnClickListener(this)
+//            toBuyBtn.setOnClickListener(this)
+        }
+
+        override fun refresh(data: CarGroupVO?) {
+            super.refresh(data)
+            tireNameTex.text=data?.tire?.ProductName
+            productImg.loadUrl(data?.tire?.url)
+            showPriceView.setPrice(data?.tire?.Price?.toLong()!!,data?.tire?.SpecialPrice?.toLong()!!)
+        }
+        override fun onClick(v: View?) {
+            itemClick()
+        }
+    }
+
+}

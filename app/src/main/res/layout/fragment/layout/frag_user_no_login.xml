@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="請先進行登入"
+            android:textSize="@dimen/text_size_24"
+            android:textColor="@color/text_color_1"
+            android:layout_marginBottom="10dp"
+            />
+        <com.eki.parking.View.libs.StateButton
+            android:id="@+id/loginBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textSize="@dimen/text_size_16"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:padding="2dp"
+
+            app:btn_radius="2dp"
+
+            app:normalStrokeWidth="1dp"
+            app:normalStrokeColor="@color/Eki_orange_4"
+            app:normalBackgroundColor="@color/color_white"
+            app:normalTextColor="@color/Eki_orange_4"
+
+            app:pressedStrokeWidth="1dp"
+            app:pressedStrokeColor="@color/Eki_orange_4"
+            app:pressedBackgroundColor="@color/color_white"
+            app:pressedTextColor="@color/Eki_orange_4"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

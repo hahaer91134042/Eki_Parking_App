@@ -1,0 +1,44 @@
+package com.eki.parking.View.widget;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+
+import com.eki.parking.R;
+import com.eki.parking.View.abs.FrameCustomView;
+import com.hill.devlibs.tools.Log;
+
+
+/**
+ * Created by Hill on 2018/8/21.
+ */
+public class LineActionIcon extends FrameCustomView {
+//    @BindView(R.id.lineIcon)
+    ImageView mLineIcon;
+
+    public LineActionIcon(Context context, AttributeSet attrs) {
+        super(context, attrs);
+//        ButterKnife.bind(this,itemView);
+        initView();
+    }
+
+    private void initView() {
+
+        setOnClickListener(v -> {
+            Log.i("Line Action Btn press!");
+        });
+    }
+
+    @Override
+    public ViewGroup.LayoutParams initNewLayoutParams() {
+        return null;
+    }
+
+    @Override
+    public int setInflatView() {
+        return R.layout.item_line_action;
+    }
+
+
+}

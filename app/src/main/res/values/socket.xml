@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="socket_none">NONE</string>
+    <string name="socket_all">All</string>
+    <string name="socket_CCS2">CCS2</string>
+    <string name="socket_CHAdeMO">CHAdeMO</string>
+    <string name="socket_Tesla">Tesla</string>
+    <string name="socket_Type1CCS">Type1CCS</string>
+    <string name="socket_GBT20234">GB/T 20234</string>
+    <string name="socket_SAEJ1772">SAEJ1772</string>
+    <string name="socket_CNS15511">CNS15511</string>
+    <string name="socket_IEC621962">IEC62196-2</string>
+</resources>

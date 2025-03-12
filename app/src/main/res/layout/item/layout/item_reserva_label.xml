@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentView"
+    android:background="@color/Eki_green_5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <com.hill.devlibs.widget.AutoSizeTextView
+            android:id="@+id/timeSpanText"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/text_color_1"
+            android:layout_marginTop="5dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="2222"
+            android:layout_alignParentLeft="true"
+            android:layout_toStartOf="@+id/cancelBtn"
+            />
+
+        <ImageButton
+            android:id="@+id/cancelBtn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@color/color_transparent"
+            android:src="@drawable/icon_close_gray"
+            android:layout_marginStart="5dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:paddingStart="10dp"
+        android:gravity="center_vertical"
+        >
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="12dp"
+            android:src="@drawable/icon_license_plate"
+            />
+        <com.hill.devlibs.widget.AutoSizeTextView
+            android:id="@+id/licenseNum"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/text_color_1"
+            android:paddingStart="5dp"
+            android:paddingRight="10dp"
+            android:text="333"
+            />
+        
+    </LinearLayout>
+
+</LinearLayout>

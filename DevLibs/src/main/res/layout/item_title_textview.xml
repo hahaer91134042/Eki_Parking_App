@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/light_gray2"
+    android:text="text"
+    android:gravity="center_vertical"
+    android:paddingLeft="10dp"
+    android:textSize="15dp"
+    android:textColor="@color/color_black"
+    />
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_margin="2dp"-->
+        <!--android:text=""/>-->
+    <!--android:background="#00FFFF"-->
+<!--</TextView>-->

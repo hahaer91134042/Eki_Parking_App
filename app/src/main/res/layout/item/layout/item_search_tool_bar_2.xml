@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="5dp"
+    android:clipToPadding="false"
+
+
+    >
+<!--    android:clipToPadding="false" 去除按鈕陰影-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/stroke_round_corner_light_gray6"
+
+        >
+        <TextView
+            android:id="@+id/searchText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toStartOf="@+id/searchBtn"
+
+            android:padding="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_color_1"
+            android:textSize="@dimen/text_size_12"
+            android:textColorHint="@color/light_gray3"
+            android:hint="@string/Please_enter_a_search_address"
+            android:singleLine="true"
+            />
+
+        <com.eki.parking.View.libs.StateButton
+            android:id="@+id/searchBtn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="2dp"
+            android:padding="1dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/cleanBtn"
+            android:stateListAnimator="@null"
+            android:visibility="gone"
+            app:normalBackgroundColor="@color/color_white"
+            app:pressedBackgroundColor="@color/light_gray3"
+            app:btn_radius="@dimen/btn_radius_5"
+
+
+            />
+        <!--    去掉button自帶的陰影動畫-->
+        <!--    android:stateListAnimator="@null"-->
+
+        <com.eki.parking.View.libs.StateButton
+            android:id="@+id/cleanBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:padding="1dp"
+            android:layout_marginRight="5dp"
+
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:stateListAnimator="@null"
+            android:visibility="gone"
+
+            app:normalBackgroundColor="@color/color_white"
+            app:pressedBackgroundColor="@color/light_gray3"
+            app:btn_radius="@dimen/btn_radius_5"
+
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

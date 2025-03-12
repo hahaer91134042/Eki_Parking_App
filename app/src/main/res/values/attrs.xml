@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    共用的-->
+    <attr name="direction">
+        <enum name="rightToLeft" value="0" />
+        <enum name="bottomToTop" value="1" />
+        <enum name="leftToRight" value="2" />
+        <enum name="topToBottom" value="3" />
+    </attr>
+
+    <attr name="borderRadius" format="dimension" />
+
+    <attr name="type">
+        <enum name="circle" value="0" />
+        <enum name="rectangle" value="1" />
+        <enum name="square" value="2"/>
+    </attr>
+    <attr name="iconPosition">
+        <enum name="center" value="0"/>
+        <enum name="left" value="1"/>
+        <enum name="top" value="2"/>
+        <enum name="right" value="3"/>
+        <enum name="bottom" value="4"/>
+    </attr>
+    <attr name="defaultImg" format="reference"/>
+
+<!--    共用的-->
+
+    <declare-styleable name="SlidingDrawer">
+        <attr name="handle" format="reference" />
+        <attr name="content" format="reference" />
+        <attr name="direction" />
+    </declare-styleable>
+    
+    <declare-styleable name="AvatarWithShadow">
+        <attr name="picture" format="reference" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius" />
+        <attr name="type" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="StateButton">
+
+        <!--text color-->
+        <attr name="normalTextColor" format="color|reference"/>
+        <attr name="pressedTextColor" format="color|reference"/>
+        <attr name="unableTextColor" format="color|reference"/>
+
+        <!--stroke width and color, dash width, dash gap-->
+        <attr name="strokeDashWidth" format="dimension|reference"/>
+        <attr name="strokeDashGap" format="dimension|reference"/>
+        <attr name="normalStrokeWidth" format="dimension|reference"/>
+        <attr name="pressedStrokeWidth" format="dimension|reference"/>
+        <attr name="unableStrokeWidth" format="dimension|reference"/>
+        <attr name="normalStrokeColor" format="color|reference"/>
+        <attr name="pressedStrokeColor" format="color|reference"/>
+        <attr name="unableStrokeColor" format="color|reference"/>
+
+        <!--background color-->
+        <attr name="normalBackgroundColor" format="color|reference"/>
+        <attr name="pressedBackgroundColor" format="color|reference"/>
+        <attr name="unableBackgroundColor" format="color|reference"/>
+
+        <attr name="normalIcon" format="reference"/>
+        <attr name="pressedIcon" format="reference"/>
+        <attr name="unableIcon" format="reference"/>
+
+        <attr name="iconPosition" />
+        <attr name="iconSize" format="dimension|reference"/>
+        <attr name="iconGap" format="dimension|reference"/>
+        <!--<attr name="normalGradientBackground" format="reference"/>-->
+        <!--<attr name="pressGradientBackground" format="reference"/>-->
+        <!--<attr name="unableGradientBackground" format="reference"/>-->
+
+        <!--background radius-->
+        <attr name="btn_radius" format="dimension|reference"/>
+        <attr name="round" format="boolean|reference"/>
+
+        <!--animation duration-->
+        <attr name="animationDuration" format="integer|reference"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="StateImageView">
+        <attr name="normalBackground" format="color|reference"/>
+        <attr name="pressedBackground" format="color|reference"/>
+        <attr name="unableBackground" format="color|reference"/>
+
+        <!--animation duration-->
+        <attr name="AnimationDuration" format="integer|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CharFastSearchBar">
+        <attr name="searchTextSize" format="dimension"/>
+        <attr name="searchTextColor" format="color"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="AutoProgressBtn">
+        <attr name="afterProgressImg" format="reference" />
+        <attr name="afterProgressRefresh" format="reference"/>
+        <attr name="afterProgressText" format="string|reference"/>
+        <attr name="btn_textSize" format="dimension"/>
+        <attr name="btn_textColor" format="color"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="CheckCodeImgView">
+        <attr name="code_range_max" format="integer"/>
+        <attr name="code_range_min" format="integer"/>
+        <attr name="code_show_number" format="integer"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="TimerBtn">
+        <attr name="total_count_minute" format="float"/>
+        <attr name="period_sec" format="integer"/>
+        <attr name="timer_start_sec" format="integer"/>
+        <attr name="timer_btn_text" format="string|reference"/>
+        <attr name="timer_btn_textSize" format="dimension"/>
+        <attr name="timer_btn_textColor" format="color|reference"/>
+        <attr name="timer_msg_countTemp" format="string|reference"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="ExpandErrorPhoneText">
+        <attr name="input_label" format="string|reference"/>
+        <attr name="input_is_null" format="boolean"/>
+        <attr name="input_type">
+            <enum name="TEXT" value="0"/>
+            <enum name="PWD" value="1"/>
+            <enum name="NUMBER" value="2"/>
+        </attr>
+        <attr name="input_label_textSize" format="dimension"/>
+        <attr name="input_textSize" format="dimension"/>
+        <attr name="expan_error_msg" format="string|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="UserOptionBtn">
+        <attr name="option_str" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="DiscountSelectRow">
+        <attr name="dr_title_str" format="string"/>
+        <attr name="dr_title_textColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="InfoListRow">
+        <attr name="lr_title_str" format="string"/>
+        <attr name="lr_title_textColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="UnderLineEditTextView">
+        <attr name="ule_headerIcon" format="reference"/>
+        <attr name="ule_inputType">
+            <enum name="TEXT" value="0"/>
+            <enum name="PWD" value="1"/>
+            <enum name="NUMBER" value="2"/>
+        </attr>
+        <attr name="ule_input_enable" format="boolean"/>
+        <attr name="ule_input_textSize" format="dimension"/>
+        <attr name="ule_input_text" format="string" />
+        <attr name="ule_input_hint" format="string"/>
+        <attr name="ule_line_color" format="color|reference"/>
+        <attr name="ule_line_error_color" format="color|reference"/>
+        <attr name="ule_max_input_num" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="UnderLineEditTextMsgView">
+        <attr name="ule_headerIcon" />
+        <attr name="ule_inputType"/>
+        <attr name="ule_input_textSize" />
+        <attr name="ule_input_text"/>
+        <attr name="ule_input_hint" />
+        <attr name="ule_line_color" />
+        <attr name="ule_line_error_color" />
+        <attr name="ule_max_input_num" />
+    </declare-styleable>
+
+    <declare-styleable name="UserIconCameraView">
+        <attr name="defaultImg"/>
+    </declare-styleable>
+
+    <declare-styleable name="EkiRatingBar">
+        <attr name="fullStartIcon" format="reference"/>
+        <attr name="halfStarIcon" format="reference"/>
+        <attr name="emptyStarIcon" format="reference"/>
+        <attr name="maxStarNumber" format="integer"/>
+        <attr name="startWidth" format="dimension"/>
+        <attr name="startHeight" format="dimension"/>
+        <attr name="starMarginStart" format="dimension"/>
+        <attr name="starMarginEnd" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="ChatImageView">
+        <attr name="bg" format="reference" />
+    </declare-styleable>
+
+</resources>

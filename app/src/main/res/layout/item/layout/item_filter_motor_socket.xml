@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:paddingBottom="10dp">
+
+    <com.hill.devlibs.widget.AutoSizeTextView
+        android:id="@+id/title"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="@string/Locomotive"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.hill.devlibs.widget.AutoSizeTextView
+                android:id="@+id/eMovingBtn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/selector_filter_option"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="@string/eMoving"
+                android:textColor="@color/text_color_1" />
+
+            <com.hill.devlibs.widget.AutoSizeTextView
+                android:id="@+id/pbgnBtn"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/selector_filter_option"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="@string/PBGN"
+                android:textColor="@color/text_color_1" />
+
+            <com.hill.devlibs.widget.AutoSizeTextView
+                android:id="@+id/ionexBtn"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/selector_filter_option"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="@string/ionex"
+                android:textColor="@color/text_color_1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+            <com.hill.devlibs.widget.AutoSizeTextView
+                android:id="@+id/homeBtn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/selector_filter_option"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="@string/Household_socket"
+                android:textColor="@color/text_color_1" />
+            <com.hill.devlibs.widget.AutoSizeTextView
+                android:id="@+id/generalBtn"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/selector_filter_option"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="@string/General_parking_space"
+                android:textColor="@color/text_color_1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

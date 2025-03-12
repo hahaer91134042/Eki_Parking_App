@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_eki_dialog_bg"
+    android:padding="10dp"
+    android:id="@+id/parentView">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:paddingTop="7dp">
+
+        <com.hill.devlibs.widget.AutoSizeTextView
+            android:id="@+id/totalNumText"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="1111"
+            android:textColor="@color/Eki_orange_3"
+            android:layout_alignParentTop="true" />
+
+        <ImageView
+            android:id="@+id/cancelBtn"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/todo"
+            android:background="@drawable/icon_close_orange" />
+
+    </RelativeLayout>
+
+    <com.eki.parking.View.recycleview.BaseRecycleView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="210dp" />
+
+</LinearLayout>

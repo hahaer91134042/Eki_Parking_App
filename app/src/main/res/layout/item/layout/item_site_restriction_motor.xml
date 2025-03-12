@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        >
+        <com.hill.devlibs.widget.AutoSizeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textColor="@color/text_color_1"
+            android:text="@string/Locomotive_parking_size"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            />
+        <RadioButton
+            android:id="@+id/standard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Suggest_parking_spaces_full_size"
+            android:buttonTint="@color/Eki_green_2"
+            style="@style/radioBtnStyle_green"
+            android:checked="true"
+            />
+    </LinearLayout>
+</LinearLayout>

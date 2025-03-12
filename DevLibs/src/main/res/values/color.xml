@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color_transparent">#00000000</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black">#000000</color>
+    <color name="colorPink">#FF4081</color>
+    <color name="color_orange">#FF4400</color>
+    <color name="color_orange2">#FD790E</color>
+    <color name="colorless">#00000000</color>
+    <color name="color_red">#F00</color>
+    <color name="color_sky_blue">#11CCCC</color>
+
+    <color name="red_btn_color">#D42226</color>
+    <color name="red_btn_click_color">#A11A1D</color>
+
+    <color name="green_btn_color">#32b44a</color>
+    <color name="green_btn_click_color">#248235</color>
+
+    <color name="yellow_btn_color">#FFB726</color>
+    <color name="yellow_btn_click_color">#CC921E</color>
+
+    <color name="orange_btn_color">#FFB366</color>
+    <color name="orange_btn_click_color">#996B3D</color>
+
+    <color name="light_gray">#999</color>
+    <color name="light_gray2">#DDD</color>
+    <color name="btn_disable_red_light">#ffff3333</color>
+    <color name="btn_disable_gray">#55333333</color>
+
+    <color name="green_in_line_bg">#009245</color>
+    <color name="yellow_in_phone">#f7931e</color>
+
+
+
+</resources>

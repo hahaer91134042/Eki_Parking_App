@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_weight_limit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_weight_limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Weight_limit"
+        android:textColor="@color/dark_gray1"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/weightSelector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:checkedButton="@id/nonWeight"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/nonWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-6dp"
+            android:text="@string/Unlimited"
+            style="@style/radioBtnStyle"/>
+
+        <RadioButton
+            android:id="@+id/limitWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="@string/Limit_weight"
+            style="@style/radioBtnStyle"/>
+
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/weightInput"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="@string/Number_zero"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/dark_gray1"
+                android:textColorHint="@color/light_gray5"
+                android:textCursorDrawable="@drawable/cursor_green2_2dp"
+                android:textSize="@dimen/text_size_16"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/weightInput"
+                android:text="kg"
+                android:textColor="@color/text_color_2" />
+
+            <View
+                android:layout_width="120dp"
+                android:layout_height="1dp"
+                android:layout_alignBottom="@+id/weightInput"
+                android:background="@color/light_gray6" />
+        </RelativeLayout>
+
+    </RadioGroup>
+
+</LinearLayout>

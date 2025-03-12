@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="year_month_format">%1$d/%2$d</string>
+    <string name="billing_method_half_hour">$%1$d/30min</string>
+    <string name="price_half_hour">($%1$d/half an hour)</string>
+    <string name="price_half_hour_parking">($%1$d/half an hour) $%2$d</string>
+    <string name="hour_brackets">(%1$.2f/hour)</string>
+    <string name="date_time_week" translatable="false">%1$s/%2$s %3$s</string>
+
+    <!-- Main -->
+    <string name="todo">TODO</string>
+    <string name="Steam_locomotive">Steam locomotive</string>
+    <string name="Car">Car</string>
+    <string name="Locomotive">Locomotive</string>
+    <string name="You_still_have_unpaid_orders">You still have unpaid orders</string>
+
+    <string name="Sign_in">Login...</string>
+    <string name="Connecting">Connecting...</string>
+    <string name="Now_loading">Now Loading...</string>
+    <string name="Processing">Processing...</string>
+    <string name="Error_Message">Error Message</string>
+    <string name="Reconnecting">Reconnecting...</string>
+
+    <string name="Warning">Warning</string>
+    <string name="Your_email">Your Email</string>
+    <string name="pwd">Password</string>
+    <string name="Confirm_pwd">Comfirm Password</string>
+    <string name="Phone_number">Phone Number</string>
+    <string name="Your_name">Your Name</string>
+    <string name="Your_birthday">Your Birthday</string>
+    <string name="ID_number">ID Card Number</string>
+    <string name="Nickname">Nickname</string>
+    <string name="Address">Address</string>
+
+    <string name="register">Register</string>
+    <string name="submit">Submit</string>
+    <string name="Determine">Determine</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Start">Start</string>
+    <string name="Please_enter_email">Please enter email</string>
+    <string name="Please_enter_password">Please enter password</string>
+    <string name="Please_enter_a_valid_email">Please enter a valid email</string>
+    <string name="Please_enter_a_valid_pwd">Please enter a valid passworw</string>
+    <string name="Please_enter_phone_number">Please enter phone number</string>
+    <string name="Please_enter_a_birthday">Please enter birthday</string>
+    <string name="Please_enter_a_name">Please enter a name</string>
+    <string name="Server_connect_error">Server connection error</string>
+    <string name="inputemail">Please enter email for receive password.</string>
+    <string name="Account_already_exists">Email already exists</string>
+    <string name="Please_enter_a_SMS_verification_code">Please enter a SMS verification code</string>
+    <string name="SMS_verification_code_error">SMS verification code error</string>
+    <string name="Please_start_with_SMS_authentication">Please start with SMS authentication</string>
+    <!--<string name="Password_must_be_greater_than_8_characters">*Password must be greater than 8 characters</string>-->
+    <string name="Password_must_be_between_6_and_12_characters">Password must be between 6 and 12 characters</string>
+    <string name="Password_requires_at_least_one_English_word">Password requires at least one English word</string>
+    <!--<string name="Password_requires_at_least_one_number">*Password requires at least one Number</string>-->
+    <string name="Please_enter_ID_card_number">Please enter ID card number</string>
+    <string name="ID_card_number_formate_error">ID card number error</string>
+    <string name="Please_enter_comfirm_password">Please enter comfirm password</string>
+    <string name="Confirmation_password_does_not_match">Confirmation password does not match</string>
+    <string name="Creat_your_acc">CREAT YOUR ACCOUNT</string>
+    <string name="Forget_pwd">FORGET PASSWORD?</string>
+    <string name="Forget_pwd_descript">Please enter your email\nWe will send a new password to you</string>
+
+    <string name="Verification_code">Verification</string>
+
+
+    <string name="stage">Stage</string>
+    <string name="rate">Rate</string>
+    <string name="Excluding_in_the_first_period">Excluding the remaining amount in the first period</string>
+    <string name="issue">Issue</string>
+    <string name="dollar">Dollar</string>
+    <string name="Share_to">Share To:</string>
+    <string name="Share">Share</string>
+
+    <string name="Rating_value">(Rating:%s)</string>
+
+
+    <string name="Search_Error">Search result is wrong, please re-enter</string>
+
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="NT_price_string">NT$ {0}</string>
+    <string name="minus_NT_price_string">-NT$ {0}</string>
+    <string name="plus_NT_price_string">+NT$ {0}</string>
+    <string name="plus_price_string">+ {0}</string>
+
+    <string name="bussiness_hour">營業時間 {0}</string>
+    <string name="product_number_formater">數量 {0}</string>
+    <string name="Original_price_str">原價:{0}</string>
+    <string name="Special_price_str">特價:{0}</string>
+    <string name="Remaining_sec">發送剩餘{0}秒</string>
+    <string name="Try_again">Try again</string>
+    <string name="Shopping_car_no_item">There are no items in the shopping cart.</string>
+
+
+    <string name="shop_name">店名:{0}</string>
+    <string name="shop_address">地址:{0}</string>
+    <string name="shop_bussiness_time">營業時間:{0}</string>
+    <string name="shop_phone">電話:{0}</string>
+
+    <string name="input_name">姓名:</string>
+    <string name="input_email">Email:</string>
+    <string name="input_phone">電話:</string>
+
+    <string name="input_zipCode">郵遞區號:</string>
+    <string name="input_state">縣市:</string>
+    <string name="input_city">區域:</string>
+    <string name="input_address">街道地址:</string>
+
+    <string name="Please_enter_zipcode">請輸入郵遞區號</string>
+    <string name="Please_enter_state">*請輸入縣市</string>
+    <string name="Please_enter_city">*請輸入區域</string>
+    <string name="Please_enter_address">*請輸入街道地址</string>
+
+    <string name="server_disconnection">Server connection is broken</string>
+
+    <string name="phone">phone</string>
+    <string name="OR">OR</string>
+    <string name="Dont_have_account_yet">Don\'t have an account yet?</string>
+
+    <string name="Authentication_code_is_being_sent">Authentication code is being sent({0})...</string>
+
+    <string name="This_name_field_is_required">This "nick name" field is required</string>
+    <string name="Pwd_rule_list_msg">1. Password at least 8 yards\n2. At least 1 capitalized English 1 lowercase English\n3. At least 1 number</string>
+
+    <string name="Congratulations_on_becoming_a_member">Congratulations on becoming a member</string>
+    <string name="Are_you_sure_you_want_to_log_out">Are you sure you want to log out?</string>
+    <string name="Please_turn_on_permissions_to_enjoy_full_functionality">Please turn on permissions to enjoy full functionality</string>
+    <string name="Search_Address">Search Address</string>
+    <string name="Select_Search_Time">Select Search Time</string>
+    <string name="Please_choose_an_option_first">Please choose an option first</string>
+    <string name="End_time_must_be_greater_than_start_time">End time must be greater than start time</string>
+    <string name="Please_select_at_least_one_date">Please select at least one date</string>
+    <string name="Max_Range">350KM</string>
+    <string name="Search_range_KM">Search Range{0}KM</string>
+    <string name="Please_set_the_search_distance">Please set the search distance</string>
+    <string name="Please_enter_a_search_address">Please enter a search address</string>
+    <string name="Cannot_make_an_appointment_at_this_time">Cannot make an appointment at this time</string>
+    <string name="Parking_location">Parking location</string>
+    <string name="Parking_number">Parking number</string>
+    <string name="Appointment_start">Appointment(start)</string>
+    <string name="License_plate_number">License plate number</string>
+    <string name="Please_enter_the_license_plate_number">Please enter the license plate number</string>
+    <string name="Amount_of_consumption">Amount of consumption</string>
+    <string name="Checkout_amount">Checkout amount</string>
+    <string name="Appointment_failed_during_this_time_please_reselect">Appointment failed during this time, please re-select</string>
+    <string name="Successful_appointment">Successful appointment</string>
+    <string name="Parking_fee">Parking fee</string>
+    <string name="Additional_fee">Additional fee</string>
+    <string name="Total_amount">Total amount</string>
+    <string name="Order_number">Order number</string>
+    <string name="Unpaid">Unpaid</string>
+    <string name="Unclear_order">Unclear order</string>
+    <string name="Go_extension">Extension of time</string>
+    <string name="Go_checkout">Checkout</string>
+    <string name="Go_pay">Paid</string>
+    <string name="Other_fee">Other fee</string>
+    <string name="Default_fee">Default fee</string><!--    違約金-->
+    <string name="Discount">Discount</string>
+    <string name="Please_take_your_car_license_plate">Please take your car license plate</string>
+    <string name="There_was_a_problem_with_the_network_connection">There was a problem with the network connection. Please reconnect</string>
+    <string name="Search_Fail">Search fail</string>
+    <string name="Guest">Guest</string>
+    <string name="Please_enter_phone_or_email">Please enter phone or email</string>
+    <string name="Password_requires_at_least_one_number">Password requires at least one number</string>
+    <string name="At_least_8_digits_in_case_and_1_each">At least 8 digits in case and 1 each</string>
+    <string name="Phone_verification">Phone verification</string>
+    <string name="Send">Send</string>
+    <string name="Telephone_country">Telephone country</string>
+    <string name="Please_enter_a_nickname">Please enter a nickname</string>
+    <string name="Please_enter_the_same_password_again">Please enter the same password again</string>
+    <string name="Privacy_Policy">Privacy policy</string>
+    <string name="Read_and_agree">Read and agree</string>
+    <string name="Parking_Space_Number">Parking Space Number |</string>
+    <string name="a_5_cars_and_locomotives_can_be_added">5 cars and locomotives can be added!\nCome and add your first car!</string>
+    <string name="Car_Name">Car Name</string>
+    <string name="Brand_series">Brand series</string>
+    <string name="This_field_is_required">This field is required</string>
+    <string name="Car_brand">Car Brand</string>
+    <string name="Default">Default</string>
+    <string name="Set_as_default_car">Set as default car</string>
+    <string name="Delete">Delete</string>
+    <string name="Parking_space_deleted">Parking space deleted</string>
+    <string name="Select_date_time">Select date/time</string>
+    <string name="Book_a_trip">Book a trip</string>
+    <string name="Total_appointment_time">Total appointment time</string>
+    <string name="Appointment_end">Appointment(end)</string>
+    <string name="Payment">Payment</string>
+    <string name="Time">Time</string>
+    <string name="Estimated_cost">Estimated cost</string>
+    <string name="No_spending_history">No spending history</string>
+    <string name="Display_time">Display time</string>
+    <string name="Sort_by">Sort by</string>
+    <string name="Date_new_to_old">Date new to old</string>
+    <string name="Date_old_to_new">Date old to new</string>
+    <string name="Preset">Preset</string>
+    <string name="No_appointments_today">No appointments today</string>
+    <string name="Delete_number_of_times_was_used_up_in_today">Delete number of times was used up in 24 hour</string>
+    <string name="This_order_cannot_be_deleted">This order cannot be deleted</string>
+    <string name="Cancellation_within_30_min_will_be_charged">Cancellation within 30 min will be charged</string>
+    <string name="Cannot_be_cancelled_at_this_time_please_go_to_checkout">Cannot be cancelled at this time, please go to checkout within the reservation time to cancel the lease process</string>
+    <string name="Add_parking_spaces">Add parking spaces</string>
+    <string name="Payment_page">Payment page</string>
+    <string name="Parking_place">Parking place</string>
+    <string name="outdoor">outdoor place</string>
+    <string name="indoor">indoor place</string>
+    <string name="indoor_outdoor">indoor/outdoor</string>
+    <string name="Parking_name">Parking name</string>
+    <string name="Standard_parking_spaces">Standard parking spaces</string>
+    <string name="Small_parking_spaces">Small parking spaces</string>
+    <string name="Motorcycle_parking_space">Motorcycle parking spaces</string>
+    <string name="Parking_space">Parking space</string>
+    <string name="Parking_site_suggest_width_length">(100 cm wide and 220 cm long)</string>
+    <string name="Parking_site_standard_width_length">(250 cm wide and 600 cm long)</string>
+    <string name="Parking_site_small_width_length">(225 cm wide and 575 cm long)</string>
+    <string name="Charging_interface">Charging interface</string>
+    <string name="Car_Charging">Car Charging</string>
+    <string name="Locomotive_Charging">Locomotive Charging</string>
+    <string name="Add_time">Add time</string>
+    <string name="Open_appointments">Open appointments</string>
+    <string name="Select">Select</string>
+    <string name="Repeat_this_week">Repeat the same week period of the current month</string>
+    <string name="Insufficient_hours_left">Insufficient hours left</string>
+    <string name="Opening_hours_have_been_added">Opening hours have been added</string>
+    <string name="Opening_hours_cancelled">Opening hours cancelled</string>
+    <string name="Deleting_the_open_period_may_result_in_fines">Deleting the open period may result in fines, Are you sure to delete this period?</string>
+    <string name="Application">Application</string>
+    <string name="Charged_price">Charged price</string>
+    <string name="Enter_the_store_name_company_name_building_name_to_increase_the_recognition_of_the_car_owner">You can choose any name you like or store name</string>
+    <string name="Become_a_landlord">Be landlord</string>
+    <string name="Bank_Code">Bank Code</string>
+    <string name="Bank_branch_code">Bank branch code</string>
+    <string name="Bank_account">Bank account</string>
+    <string name="Account_address">Account address</string>
+    <string name="Rental_income_above_20000">Rental income above NT $ 20,000 may generate additional income Tax rate and supplementary health insurance costs</string>
+    <string name="Account_name">Account Name</string>
+    <string name="Company_uniform_number">Company uniform number</string>
+    <string name="uniform_number">Uniform number</string>
+
+    <string name="Skip">Skip</string>
+    <string name="Congratulations_on_becoming_landlord">Congratulations on becoming a landlord</string>
+    <string name="Open_parking_spaces_in_three_steps">Open parking spaces in three steps</string>
+    <string name="teach_title_step1">Click the side menu</string>
+    <string name="teach_title_step2">Click \"Switch Identity\"</string>
+    <string name="teach_title_step3">Complete \"Parking Setting\", \"Open Parking\"</string>
+    <string name="Parking_space_information_will_be_set">Next, the parking space information will be set \nWhether to continue?</string>
+    <string name="Please_enter_the_price_thank_you">Please enter the price thank you</string>
+    <string name="Successfully_joined">Successfully joined</string>
+    <string name="Failed_to_join_location">Failed to join location</string>
+    <string name="Please_enter_the_parking_space_name">Please enter the parking space name</string>
+    <string name="Flat_parking">Flat parking</string>
+    <string name="Mechanical_parking">Mechanical parking</string>
+    <string name="Parking_type">Parking type</string>
+    <string name="Suggest_parking_spaces_full_size">Suggest parking spaces (width ≥ 1 m, length ≥ 2.2 m)</string>
+    <string name="Standard_parking_spaces_full_size">Standard parking spaces (width ≥ 2.5 m, length ≥ 6 m)</string>
+    <string name="Small_parking_spaces_full_size">Small parking space (width ≦ 2.25 m, length ≦ 5.75 m)</string>
+    <string name="High_parking_space">High parking space</string>
+    <string name="Unlimited">Unlimited</string>
+    <string name="Limit_high">Limit high</string>
+    <string name="Weight_limit">Weight limit</string>
+    <string name="Limit_weight">Limit weight</string>
+    <string name="Subtotal">Subtotal</string>
+    <string name="Rating">Rating</string>
+    <string name="Appeal">Appeal</string>
+    <string name="Finish">Finish</string>
+    <string name="Evaluate_the_owner">Evaluate the owner</string>
+    <string name="Please_select_your_appeal">Please select your appeal</string>
+    <string name="Evaluate_the_parking_space">Evaluate the parking space</string>
+    <string name="Edit">Edit</string>
+    <string name="Edit_profile">Edit profile</string>
+    <string name="Reset_phone">Reset phone</string>
+    <string name="Successfully_modified">Successfully modified</string>
+    <string name="coupon">Coupon</string>
+    <string name="Code">Code</string>
+    <string name="You_have_no_coupons_available">You have no coupons available</string>
+    <string name="Join_failed">Join failed</string>
+    <string name="Join_successfully">Join successfully</string>
+    <string name="Event_information">Event information</string>
+    <string name="Opening_hours">Opening hours</string>
+    <string name="Join">Join</string>
+    <string name="Time_overlap">Time overlap</string>
+    <string name="The_parking_space_has_been_deleted">The parking space has been deleted</string>
+    <string name="Parking_space_deletion_failed">Parking space deletion failed</string>
+    <string name="Indoor_parking">Indoor parking space</string>
+    <string name="Outdoor_parking">Outdoor parking space</string>
+    <string name="Basic_message">Basic message</string>
+    <string name="Parking_restrictions">Parking restrictions</string>
+    <string name="Address_Detail">Address</string>
+    <string name="Other_notes">Other notes</string>
+    <string name="Choose_coupon_code">Choose coupon code</string>
+    <string name="Enter_the_serial_number">Enter the serial number</string>
+    <string name="Scan_QR_Code">Scan QR Code</string>
+    <string name="Invoice_information">Invoice information</string>
+    <string name="Charging_interface_l">Charging interface |</string>
+    <string name="Reset_pwd">Reset Password</string>
+    <string name="New_password">New password</string>
+    <string name="Questions_and_reactions">Questions and reactions</string>
+    <string name="About_me">About me</string>
+    <string name="Taiwan">Taiwan</string>
+    <string name="Invoice_number">Invoice number</string>
+    <string name="donate_receive">Donate receive</string>
+    <string name="mobile_barcode">Mobile barcode</string>
+    <string name="natural_barcode">Natural person barcode</string>
+    <string name="member_barcode">Member barcode</string>
+
+    <string name="credit_card">Credit card</string>
+    <string name="Last_4_yards_of_credit_card">Last 4 yards of credit card</string>
+    <string name="This_time_period_overlap_cannot_be_added_please_select_again">This time period overlap cannot be added, please select again</string>
+    <string name="Customer_Service_Code">Customer Service Code</string>
+    <string name="Please_enter_customer_service_code">Please enter customer service code</string>
+    <string name="Reservation_status">Reservation status</string>
+    <string name="Income_of_the_month">Income</string>
+    <string name="Save">Save</string>
+    <string name="Must_be_open_for_at_least_30_minutes">Must be open for at least 30 minutes</string>
+    <string name="Ready_to_install_the_update">Ready to install the update!</string>
+    <string name="Installation">Installation</string>
+    <string name="Alternating_current">AC alternating current</string>
+    <string name="Direct_current">DC direct current</string>
+    <string name="Available_for_appointment">Available for appointment</string>
+    <string name="Please_upload_three_photos_with_different_angles_thank_you">Please upload three photos with different angles, thank you</string>
+    <string name="MemberShip_note">PPYP member vehicle (using EzPay, electronic invoice platform vehicle, the winning will be issued by the invoice)</string>
+
+    <!-- Actual income of the month -->
+    <string name="Filter">Filter</string>
+    <string name="Restore_default">Restore_default</string>
+    <string name="Billing_overview_string">Billing overview</string>
+    <string name="Enquiry_for_all_parking_spaces">Enquiry for all parking spaces</string>
+    <string name="Actual_income_of_each_parking_space">Actual income of each parking space</string>
+    <string name="Query_income_time">Query income time</string>
+    <string name="Parking_space_income">Parking space income</string>
+    <string name="Number_zero">0</string>
+    <string name="Actual_income">Actual income</string>
+    <string name="Date_End_Greater_Start">The start date cannot be greater than the end date</string>
+    <string name="No_data_available_on_this_date">No data available on this date</string>
+    <string name="Please_enter_the_start_date">Please enter the start date!</string>
+    <string name="Please_enter_the_end_date">Please enter the end date!</string>
+    <string name="Default_details">Default details</string>
+    <string name="No_record_of_default">No record of default</string>
+    <string name="Cancellation_time">Cancellation time %s</string>
+    <string name="Actual_income_of_the_month">Actual income of the month</string>
+    <string name="No_orders_have_been_checked_out">No orders have been checked out</string>
+
+    <!-- Filter -->
+    <string name="Search_criteria">Search criteria</string>
+    <string name="Custom">Custom</string>
+    <string name="Date_time_string">Date / Time</string>
+    <string name="Please_choose">Please choose</string>
+    <string name="Chosen">Chosen</string>
+    <string name="Distance_string">Distance</string>
+    <string name="Range">Range</string>
+    <string name="KM">KM</string>
+    <string name="eMoving">eMoving</string>
+    <string name="PBGN">PBGN</string>
+    <string name="ionex">ionex</string>
+    <string name="Household_socket">Household socket</string>
+    <string name="AC_Tesla">(AC) Tesla</string>
+    <string name="AC_J1772">(AC) J1772</string>
+    <string name="DC_Tesla">(DC) Tesla</string>
+    <string name="DC_CCS1_J1772">(DC) CCS1 - J1772</string>
+    <string name="DC_CCS2_IEC62196">(DC) CCS2 - IEC62196</string>
+    <string name="DC_CHAdeMO">(DC) CHAdeMO</string>
+    <string name="General_parking_space_string">General parking space</string>
+    <string name="Filter_locomotive_click_exception">Motorcycle click cannot be empty, please re-enter</string>
+
+    <!-- 車位設定 -->
+    <string name="Select_parking_space_type">Choose the type of parking space you want to open</string>
+    <string name="Parking_space_name">Parking space name</string>
+    <string name="Only_one_type_of_parking_space_can_be_selected_thank_you">Only one type of parking space can be selected thank you.</string>
+    <string name="Parking_space_noted">Please enter the things that need to be reminded to the owner, such as: pay attention to the chassis of the car if there is a height difference, be careful if you have a dog… etc (Maximum 500 characters)</string>
+    <string name="Start_joining_location">Start joining location</string>
+    <string name="The_city_name_or_input_length_is_wrong_please_enter_it_again">The city name or input length is wrong, please enter it again!</string>
+    <string name="Do_not_enter_any_special_symbols">Do not enter any special symbols</string>
+    <string name="The_input_length_is_wrong_please_input_the_correct_address">The input length is wrong, please input the correct address</string>
+    <string name="Please_enter_your_native_language">Please enter your native language</string>
+    <string name="Example_address">Example address</string>
+    <string name="This_unit_cannot_be_0_please_re_enter">This unit cannot be 0, please re-enter</string>
+    <string name="Are_you_sure_you_want_to_delete_this_parking_space">"Are you sure you want to delete this parking space?"</string>
+    <string name="Are_you_sure_you_want_to_modify_the_parking_space_information">"Are you sure you want to modify the parking space information?"</string>
+    <string name="Please_upload_a_photo_of_your_parking_space">"Please upload a photo of your parking space"</string>
+    <string name="New_locomotive_parking_space">"New Locomotive Parking Space"</string>
+    <string name="Add_car_parking_space">"Add car parking space"</string>
+    <string name="Car_parking_space_size">"Car parking space size"</string>
+    <string name="Locomotive_parking_size">"Locomotive parking size"</string>
+
+    <!-- 車位詳細 -->
+    <string name="Parking_space_type">Parking space type</string>
+    <string name="Parking_site">Parking location</string>
+    <string name="One_slash_three"><![CDATA[&#8531;]]></string>
+
+    <!-- 車位資訊 -->
+    <string name="Please_log_in_as_a_member_to_make_an_appointment">Please log in as a member to make an appointment</string>
+    <string name="Parking_information">Parking information</string>
+    <string name="See_more">See more</string>
+    <string name="Cooperative_Store">Cooperative Store</string>
+    <string name="Cooperative_Store_Information">Cooperative Store Information</string>
+
+    <!-- 開放時間 -->
+    <string name="Single_add">Single add</string>
+    <string name="Repeat_next_week">Repeat next week</string>
+    <string name="Copy_and_paste">Copy and paste</string>
+    <string name="The_number_of_hours_per_month_must_not_be_greater_than_240_hours">The number of hours per month must not be greater than 240 hours</string>
+    <string name="The_copy_date_must_be_less_than_7_days">The copy date must be less than or equal to 7 days</string>
+    <string name="Copy_date_must_be_greater_than_or_equal_to_today">Copy date must be greater than or equal to today</string>
+    <string name="No_appointment_record_this_month">No appointment record this month</string>
+    <string name="No_appointment_record_this_week">No appointment record this week</string>
+    <string name="Choose_the_time_to_post">Choose the time to post</string>
+    <string name="Choose_the_parking_space_posted">Choose the parking space posted</string>
+    <string name="No_time_in_the_past_7_days_thank_you">No time in the past 7 days, thank you!</string>
+    <string name="Please_check_the_time_within_7_days_before_and_after_thank_you">Please check the time within 7 days before and after, thank you！</string>
+    <string name="Please_delete_the_duplicate_time_in_the_next_7_days_thank_you">Please delete the duplicate time in the next 7 days, thank you!</string>
+    <string name="The_following_parking_spaces_have_already_opened_dates">The following parking spaces have already opened dates, in order to avoid opening hours exceeding the regulations, they cannot be carried out Paste function.</string>
+    <string name="No_time_to_join">No time to join</string>
+    <string name="Automatically_open_next_week">Automatically open next week</string>
+
+    <!-- 問題與反應 -->
+    <string name="Q_and_A">Q&amp;A</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <!-- 結帳 -->
+    <string name="You_have_unsettled_paid_orders">You have unsettled paid orders</string>
+    <string name="Insufficient_opening_hours_please_find_other_parking_spaces_thank_you">Insufficient opening hours, please find other parking spaces, thank you!</string>
+    <string name="Insufficient_opening_hours_please_choose_another_time_thank_you">Insufficient opening hours, please choose another time, thank you!</string>
+    <string name="The_opening_time_is_less_than_15_minutes_please_choose_again_thank_you">The opening time is less than 15 minutes, please choose again, thank you!</string>
+    <string name="Extend_the_time_beyond_the_opening_hours_please_re_select_thank_you">Extend the time beyond the opening hours, please re-select, thank you!</string>
+    <string name="You_can_only_extend_the_time_once_please_re_order_thank_you">You can only extend the time once, please re-order, thank you!</string>
+    <string name="The_start_time_must_be_greater_than_or_equal_to_the_current_time_thank_you"> start time must be greater than or equal to the current time, thank you! </string>
+    <string name="The_extended_time_is_not_within_the_opening_hours_please_re_order_thank_you">The extended time is not within the opening hours, please re-order, thank you!</string>
+    <string name="Timed_out">It has timed out, please place another order, thank you!</string>
+    <string name="Overtime">Overtime</string>
+    <string name="Please_select_a_delayed_end_time">Please select a delayed end time</string>
+    <string name="Delay_in_this_period_of_time_failed_please_select_again">Delay in this period of time failed, please select again</string>
+    <string name="Delayed_completion">Delayed completion</string>
+    <string name="bill_setting">Bill Setting</string>
+    <string name="basic_info_error_msg">Please fill in the basic information</string>
+
+    <string name="date_time_slash" translatable="false">%1$s/%2$s/%3$s</string>
+    <string name="date_time_dash" translatable="false">%1$s-%2$s-%3$s</string>
+    <string name="time_dash" translatable="false">%1$s-%2$s</string>
+    <string name="price" translatable="false">$%1$d</string>
+    <string name="negative_price" translatable="false">-$%1$d</string>
+    <string name="error_no_order">No filterable orders</string>
+    <string name="error_no_income">No income information</string>
+    <string name="no_order_record">There is no order record at present</string>
+    <string name="no_location">No location</string>
+    <string name="information_can_be_modified">The above information can be modified at any time</string>
+    <string name="map_positioning">map positioning</string>
+    <string name="confirm_charge">After confirming the insertion of the gun, click the button again</string>
+    <string name="restart_charge">The charging device is not connected, please confirm</string>
+    <string name="appointment_time_not_yet">Appointment time not yet</string>
+    <string name="open_charge">Prepare charge</string>
+    <string name="charging">Charging</string>
+    <string name="Restart">Restart</string>
+    <string name="finish">Finish</string>
+    <string name="confirm_to_leave">Are you sure you want to leave?</string>
+    <string name="confirm_go_checkout">Are you sure you want to quit the booking?</string>
+
+    <string name="Estimated_cost_integer">Estimated cost:$%1$d</string>
+    <string name="cost_integer">cost:$%1$d</string>
+
+    <string name="Appointment_advice">It is recommended to lengthen the reservation time to facilitate the temporary extension of the fee based on the actual parking time</string>
+    <string name="reserve">reserve</string>
+    <string name="order">Order</string>
+    <string name="no_order_description">Haven\'t driven out in a while?</string>
+
+    <string name="Unpaid_orders">%1$d Unpaid orders</string>
+    <string name="Orders_not_return">%1$d Orders not return</string>
+    <string name="appointment_number">%1$d appointment</string>
+
+    <string name="minutes_remaining">%1$d minutes remaining at the end of the time</string>
+
+    <string name="Appointment_Details">Appointment Details</string>
+
+    <string name="consumption_record">Consumption record</string>
+    <string name="consumption_detail">Consumption detail</string>
+    <string name="record_size">%1$d</string>
+
+    <string name="camera_description">When the parking is over, please take a photo of the car and the parking environment. as the basis for the judgment of subsequent disputes.</string>
+    <string name="camera_description_old">Please take a photo of your car license plate</string>
+
+    <string name="payment_method">Payment method</string>
+    <string name="invoice_method">Invoice method</string>
+
+    <string name="car_owner_checkout">Checkout</string>
+
+
+</resources>

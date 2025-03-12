@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_white"
+    android:paddingTop="30dp"
+    android:paddingStart="40dp"
+    android:paddingEnd="40dp"
+    >
+
+
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guideline18"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintGuide_begin="40dp" />-->
+
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guideline20"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintGuide_end="40dp" />-->
+
+    <com.eki.parking.View.widget.RegisterProcessBar
+        android:id="@+id/registerProcessBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+<!--    app:layout_constraintEnd_toStartOf="@+id/guideline20"-->
+<!--    app:layout_constraintStart_toEndOf="@+id/guideline18"-->
+<!--    app:layout_constraintTop_toTopOf="parent"-->
+
+    <LinearLayout
+        android:id="@+id/smsInputFrame"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+
+        >
+<!--        app:layout_constraintEnd_toStartOf="@+id/guideline20"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/guideline18"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/registerProcessBar"-->
+        <com.eki.parking.View.widget.UnderLineSmsView
+            android:id="@+id/smsTexView"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+
+            />
+        <com.hill.devlibs.widget.AutoSizeTextView
+            android:id="@+id/smsMsg"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text=""
+            android:textColor="@color/color_red"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/checkCodeFrame"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        >
+<!--        app:layout_constraintEnd_toStartOf="@+id/guideline20"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/guideline18"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/smsInputFrame"-->
+        <com.eki.parking.View.widget.UnderLineEditTextView
+            android:id="@+id/checkCodeView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ule_headerIcon="@drawable/icon_check_code"
+            app:ule_inputType="NUMBER"
+            app:ule_input_textSize="@dimen/text_size_6"
+            app:ule_line_color="@color/light_gray5"
+            app:ule_line_error_color="@color/color_red"
+            app:ule_input_hint="@string/Verification_code"
+            />
+        <com.hill.devlibs.widget.AutoSizeTextView
+            android:id="@+id/checkErrorMsg"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text=""
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/color_red"
+
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/toNextBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        android:background="@drawable/selector_next_step_green"
+        android:layout_gravity="right"
+        />
+
+
+
+</LinearLayout>

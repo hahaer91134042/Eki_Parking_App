@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Other_notes"
+        android:textColor="@color/dark_gray1"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingHorizontal="8dp">
+
+        <EditText
+            android:id="@+id/remarkText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_gray4"
+            android:ems="16"
+            android:gravity="start|top"
+            android:hint="@string/Parking_space_noted"
+            android:importantForAutofill="no"
+            android:inputType="text|textAutoCorrect|textImeMultiLine|textMultiLine"
+            android:maxLength="500"
+            android:padding="16dp"
+            android:textColor="@color/dark_gray1"
+            android:textColorHint="@color/light_gray5"
+            android:textCursorDrawable="@drawable/cursor_green2_2dp"
+            android:textSize="@dimen/text_size_16" />
+
+    </FrameLayout>
+
+</LinearLayout>

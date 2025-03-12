@@ -1,0 +1,233 @@
+package com.car1.tire.recycleview;
+
+import android.content.Context;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.collection.SparseArrayCompat;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
+import android.util.AttributeSet;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.car1.tire.EnumClass.Car1ApiEnum;
+import com.car1.tire.asynctask.task.sql.Car1DataTask;
+import com.car1.tire.asynctask.task.sql.DbTask;
+import com.car1.tire.recycleview.adapter.autoload.AutoLoadMoreAdapter;
+import com.car1.tire.recycleview.item.ItemLayout;
+import com.car1.tire.recycleview.item.more.ItemProduct;
+import com.car1.tire.recycleview.item.more.ItemProductDetailWeb;
+import com.car1.tire.tool.Log;
+
+import java.util.ArrayList;
+
+
+/**
+ * Created by Hill on 2018/5/4.
+ */
+public class LoadDataRecycleView extends BaseRecycleView
+                                 implements AutoLoadMoreAdapter.OnLoadListener {
+
+
+    private OnLoadListener listener;
+    private ProductVO productVO;
+    private int totalPage = 0, nowPage = 0;
+    private SparseArrayCompat<ProductVO> productList = new SparseArrayCompat<>();
+
+    private Car1ProductAdapter productAdapter;
+    private AutoLoadMoreAdapter autoLoadAdapter;
+
+
+
+
+    public interface OnLoadListener {
+        void onLoadData();
+
+        void onLoadFinish();
+
+        void onProductSelected(ProductVO.Product product);
+
+        void onLoadError();
+    }
+
+    public LoadDataRecycleView(Context context, @Nullable AttributeSet attrs) {
+        super(context, attrs);
+    }
+
+
+    public LoadDataRecycleView init() {
+        productAdapter = new Car1ProductAdapter(context, new ArrayList<>(), ViewInflateEnum.ProductCard);
+        productAdapter.setItemListClickListener(which -> {
+            Log.INSTANCE.w("item click which->" + which);
+            if (listener != null)
+                listener.onProductSelected(productAdapter.list.get(which));
+        });
+        autoLoadAdapter = new AutoLoadMoreAdapter(context, productAdapter);
+        autoLoadAdapter.setOnLoadListener(this);
+        StaggeredGridLayoutManager layoutManager =
+                new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
+        layoutManager.setAutoMeasureEnabled(true);
+        setLayoutManager(layoutManager);
+        addItemDecoration(new GridItemDivider(2, getWidth() * 1 / 100, true));
+        setAdapter(autoLoadAdapter);
+
+        return this;
+    }
+
+
+    public LoadDataRecycleView setOnLoadListener(OnLoadListener l) {
+        listener = l;
+        return this;
+    }
+
+    @Override
+    public void onRetry() {
+        Log.INSTANCE.d("onRetry");
+        loadFromCatalogId(productList.get(nowPage).catalogID, nowPage+1);
+    }
+
+    @Override
+    public void onLoadMore() {
+        Log.INSTANCE.i("onLoad More");
+        if (nowPage < totalPage) {
+            loadFromCatalogId(productList.get(nowPage).catalogID, nowPage+1);
+        } else {
+            autoLoadAdapter.showLoadComplete();
+        }
+    }
+
+    public void loadFromCatalogId(int id, int page) {
+        if (listener != null)
+            listener.onLoadData();
+
+        new Car1DataTask(
+                context,
+                DbTask.Action.LoadProduct
+                        .setApi(Car1ApiEnum.PRODUCTLIST)
+                        .setTarget(DbTask.Action.Target.Sever)
+                        .setIndex(new DbTask.Action.Index(id, page))
+        ).setExecuteListener(o -> {
+            if (o != null && o instanceof ProductVO) {
+                productVO = (ProductVO) o;
+                totalPage = productVO.TotalPages;
+                nowPage = page;
+
+                if (listener != null)
+                    listener.onLoadFinish();
+
+                productList.append(nowPage, productVO);
+                autoLoadAdapter.finishLoading();
+                if (nowPage == totalPage)
+                    autoLoadAdapter.showLoadComplete();
+
+                creatProductItem();
+            } else {
+                autoLoadAdapter.showLoadError();
+                if (listener != null) {
+                    listener.onLoadError();
+                }
+            }
+
+        }).start();
+    }
+
+    private void creatProductItem() {
+        if (productAdapter != null) {
+            productAdapter.list.addAll(productList.get(nowPage).productList);
+            getAdapter().notifyDataSetChanged();
+        }
+    }
+    public void reloadPage(int id, int page) {
+
+        productVO = null;
+        totalPage = 0;
+        nowPage = page;
+        productList.clear();
+        removeAllViews();
+
+        productAdapter.list.clear();
+        productAdapter.notifyDataSetChanged();
+        productAdapter = null;
+        autoLoadAdapter = null;
+
+        init().loadFromCatalogId(id, page);
+    }
+
+    private static class Car1ProductAdapter extends BaseAdapter<ItemLayout> {
+        public ArrayList<ProductVO.Product> list;
+        private ViewInflateEnum viewInflate;
+
+//        private enum ViewInflateEnum {
+//            CatalogCard(R.layout.item_card_catalog),
+//            HotSellCard(R.layout.item_card_hotsell),
+//            ProductCard(R.layout.item_card_product),
+//            TireCard(R.layout.item_card_tire),
+//            ProductDetailWeb(R.layout.item_product_detail_descript_webview);
+//
+//            public int layoutRes;
+//
+//            ViewInflateEnum(int res) {
+//                layoutRes = res;
+//            }
+//        }
+
+        public Car1ProductAdapter(Context context, ArrayList<ProductVO.Product> data, ViewInflateEnum viewInflate) {
+            super(context);
+            list = data;
+            this.viewInflate = viewInflate;
+        }
+
+
+        @NonNull
+        @Override
+        public ItemLayout onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+            // create a new view
+            View view = inflater.inflate(viewInflate.layoutRes, parent, false);
+            ItemLayout holder = null;
+
+            switch (viewInflate) {
+//                case CatalogCard:
+//                    holder = new ItemCar1Catalog(view);
+//                    holder.init(getWidth()*30/100);
+//                    break;
+//                case HotSellCard:
+//                    holder = new ItemCar1HotSell(view);
+//                    holder.init(getWidth() * 30 / 100);
+//                    break;
+                case ProductCard:
+                    holder = new ItemProduct(view);
+                    holder.init(getWidth() * 50 / 100);
+                    break;
+//                case TireCard:
+//                    holder = new ItemCar1TireAndRing(view);
+//                    holder.init(getWidth() * 35 / 100);
+                case ProductDetailWeb:
+                    Web:
+                    holder = new ItemProductDetailWeb(view);
+                    holder.init(getWidth() * 50 / 100);
+
+                    break;
+            }
+
+            return holder;
+        }
+
+        @Override
+        public void onBindViewHolder(ItemLayout item, int position) {
+            super.onBindViewHolder(item, position);
+            item.refresh(list.get(position));
+
+        }
+
+//    @Override
+//    public int getItemViewType(int position) {
+//        return super.getItemViewType(position);
+//    }
+
+        @Override
+        public int getItemCount() {
+            if (list != null)
+                return list.size();
+            return 0;
+        }
+    }
+}

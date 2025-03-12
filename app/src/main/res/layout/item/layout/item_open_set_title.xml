@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/color_white"
+    android:layout_height="wrap_content"
+    >
+
+    <com.hill.devlibs.widget.AutoResizeTextView
+        android:id="@+id/text"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:textSize="100dp"
+        android:gravity="center_vertical"
+        android:text="@string/Open_appointments"
+        android:textColor="@color/text_color_2"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="20dp"
+        android:gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+<!--        <com.hill.devlibs.widget.AutoSizeTextView-->
+<!--            android:id="@+id/text"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:text="@string/Open_appointments"-->
+<!--            android:textColor="@color/text_color_2"-->
+<!--            android:gravity="center"-->
+<!--            />-->
+
+        <com.hill.devlibs.widget.AutoSizeTextView
+            android:id="@+id/openHour"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@color/text_color_2"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text=""
+            android:layout_marginEnd="10dp"
+            />
+        <CheckBox
+            android:id="@+id/autoCB"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="自動開放下周"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/text_color_1"
+            android:buttonTint="@color/Eki_green_2"
+            />
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

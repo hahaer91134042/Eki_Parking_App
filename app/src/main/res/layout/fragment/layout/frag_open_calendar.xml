@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <com.eki.parking.View.widget.CalendarMonthBar
+        android:id="@+id/calendarMonthBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.haibin.calendarview.CalendarLayout
+        android:id="@+id/calendarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:calendar_content_view_id="@+id/refreshView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarMonthBar">
+
+        <com.haibin.calendarview.CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/color_white"
+            app:calendar_height="45dp"
+            app:calendar_padding="0dp"
+            app:current_day_text_color="@color/color_red"
+            app:current_month_lunar_text_color="#CFCFCF"
+            app:current_month_text_color="#333333"
+            app:min_year="2019"
+
+            app:month_view="com.hill.calendarview.simple.SimpleMonthView"
+            app:month_view_show_mode="mode_only_current"
+
+            app:other_month_text_color="#c1c1c1"
+            app:scheme_text_color="#333333"
+
+            app:selected_text_color="@color/color_white"
+
+            app:selected_theme_color="@color/Eki_green_2"
+            app:week_background="@color/color_white"
+
+            app:week_text_color="#333333"
+            app:week_view="com.hill.calendarview.simple.SimpleWeekView" />
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/refreshView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.eki.parking.View.widget.OpenSetListView
+                android:id="@+id/openSetView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </com.haibin.calendarview.CalendarLayout>
+
+    <com.eki.parking.View.widget.AddOpenTimeView
+        android:id="@+id/addOpenTimeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/car_setting_recycler_view"
+        layout="@layout/recyclerview"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        style="@style/constraint_base" />
+
+    <LinearLayout
+        android:id="@+id/addCarFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/add_car_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="center"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/icon_steamlocomotive_gray"/>
+
+        <com.hill.devlibs.widget.AutoSizeTextView
+            android:id="@+id/add_car_text"
+            style="@style/default_detail_no_data_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/a_5_cars_and_locomotives_can_be_added"
+            android:layout_marginTop="15dp" />
+
+<!--        <com.hill.devlibs.widget.AutoSizeTextView-->
+<!--            android:id="@+id/text2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content" />-->
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/add_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/icon_add_new_orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

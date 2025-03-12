@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start"
+    android:orientation="vertical">
+
+    <com.hill.devlibs.widget.AutoSizeTextView
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="@string/Parking_space_type"
+        android:textColor="@color/dark_gray1"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold" />
+
+    <com.hill.devlibs.widget.AutoSizeTextView
+        android:id="@+id/carBTn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/Car"
+        android:textColor="@color/dark_gray1"
+        android:drawableEnd="@drawable/icon_car_button"
+        android:background="@drawable/shape_round_corner_gray4_18dp"
+        android:gravity="center_vertical"
+        android:paddingVertical="4dp"
+        android:paddingHorizontal="12dp"
+        android:layout_marginTop="8dp"/>
+
+    <com.hill.devlibs.widget.AutoSizeTextView
+        android:id="@+id/locomotiveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/Locomotive"
+        android:textSize="16sp"
+        android:textColor="@color/dark_gray1"
+        android:drawableEnd="@drawable/icon_motor_button"
+        android:background="@drawable/shape_round_corner_gray4_18dp"
+        android:gravity="center_vertical"
+        android:paddingVertical="4dp"
+        android:paddingHorizontal="12dp"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

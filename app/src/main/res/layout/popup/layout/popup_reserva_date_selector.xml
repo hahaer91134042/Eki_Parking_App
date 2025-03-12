@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:background="@drawable/shape_bottom_popup_bg"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.eki.parking.View.widget.CalendarMonthBar
+        android:id="@+id/calendarMonthBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <com.haibin.calendarview.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/calendarMonthBar"
+        android:layout_centerHorizontal="true"
+
+        android:background="@color/color_white"
+        app:calendar_height="45dp"
+        app:calendar_padding="0dp"
+        app:current_day_text_color="@color/color_red"
+        app:current_month_lunar_text_color="#CFCFCF"
+        app:current_month_text_color="#333333"
+        app:min_year="2019"
+
+        app:month_view="com.hill.calendarview.simple.SimpleMonthView"
+
+        app:month_view_show_mode="mode_only_current"
+        app:other_month_text_color="#c1c1c1"
+
+        app:scheme_text_color="#333333"
+
+
+        app:selected_text_color="@color/color_white"
+        app:selected_theme_color="@color/Eki_green_2"
+
+        app:week_background="@color/color_white"
+        app:week_text_color="#333333"
+
+        app:week_view="com.hill.calendarview.simple.SimpleWeekView" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            >
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/shape_circle_green"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/text_color_1"
+                android:text="開放預約的日子"
+                android:layout_marginLeft="10dp"
+                />
+        </LinearLayout>
+
+        <com.eki.parking.View.libs.StateButton
+            android:id="@+id/selectBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/pickerPanel"
+            android:padding="5dp"
+            android:text="@string/Select"
+            android:textColor="@color/color_white"
+
+            android:textSize="@dimen/text_size_16"
+            app:btn_radius="@dimen/btn_radius_5"
+
+            app:normalBackgroundColor="@color/Eki_orange_2"
+            app:pressedBackgroundColor="@color/orange_btn_click_color" />
+
+    </RelativeLayout>
+</RelativeLayout>

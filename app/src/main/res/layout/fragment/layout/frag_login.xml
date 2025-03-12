@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05"/>
+
+    <ImageView
+        android:id="@+id/logoimg"
+        android:layout_width="224dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="2dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline2"
+        app:layout_constraintBottom_toTopOf="@+id/loginPanel"
+        android:src="@drawable/papaya_logo_login"
+        android:contentDescription="@string/todo" />
+<!--    app:layout_constraintDimensionRatio="1:1"-->
+
+    <com.eki.parking.View.widget.PapayaLoginPanel
+        android:id="@+id/loginPanel"
+        android:layout_width="0dp"
+        android:layout_height="270dp"
+
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoimg">
+
+    </com.eki.parking.View.widget.PapayaLoginPanel>
+
+
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/gapLine"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="50dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginEnd="50dp"-->
+<!--        android:background="@drawable/middle_line_gray"-->
+<!--        android:gravity="center"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/guideline3">-->
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/orText"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:background="@color/color_white"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/OR"/>-->
+<!--    </RelativeLayout>-->
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_16"
+            android:text="@string/Dont_have_account_yet"/>
+
+        <TextView
+            android:id="@+id/registerTex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:text="@string/register"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/Eki_orange_4"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <FrameLayout
+        android:id="@+id/fragViewLoader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--    <TextView-->
+        <!--        android:id="@+id/textView4"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="This is Setting"-->
+        <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--    <com.eki.parking.View.recycleview.BaseRecycleView-->
+        <!--        android:id="@+id/recycleView"-->
+        <!--        android:orientation="vertical"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent">-->
+
+        <!--    </com.eki.parking.View.recycleview.BaseRecycleView>-->
+
+    </FrameLayout>
+
+<!--    <include-->
+<!--        layout="@layout/item_bottombar"-->
+<!--        android:id="@+id/bottomBar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/item_dimen_50"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:visibility="gone"/>-->
+
+</RelativeLayout>

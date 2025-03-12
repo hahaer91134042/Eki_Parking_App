@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".Controller.activity.MainActivity">
+
+
+    <item
+        android:id="@+id/my_search"
+        android:icon="@android:drawable/ic_search_category_default"
+        android:title="@string/search_title"
+        app:showAsAction="ifRoom" />
+<!--    app:actionViewClass="android.widget.TextView"-->
+
+    <!--<item-->
+        <!--android:id="@+id/my_search"-->
+        <!--android:icon="@this/icon_search"-->
+        <!--android:title="@string/search_title"-->
+        <!--app:actionViewClass="androidx.appcompat.widget.SearchView"-->
+        <!--app:showAsAction="always"/>-->
+
+<!--    <item-->
+<!--        android:id="@+id/shoppingCarCounter"-->
+<!--        android:title=""-->
+<!--        app:actionLayout="@layout/icon_shopping_car"-->
+<!--        app:showAsAction="always"/>-->
+<!--    <item-->
+<!--        android:id="@+id/lineActionBtn"-->
+<!--        android:title=""-->
+<!--        app:actionLayout="@layout/icon_line_action"-->
+<!--        app:showAsAction="always"-->
+<!--        />-->
+    <!--android:icon="@android:this/ic_search_category_default"-->
+    <!--app:actionViewClass="androidx.appcompat.widget.SearchView"-->
+</menu>

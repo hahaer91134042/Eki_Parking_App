@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parentView"
+    >
+
+    <TextView
+        android:id="@+id/hourTex"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:gravity="right|top"
+        android:text=""
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/text_color_2"
+        android:layout_marginRight="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/minOffsetFrame"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider_light_gray3"
+        android:showDividers="middle"
+        >
+<!--        <LinearLayout-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="00"-->
+<!--                android:textColor="@color/text_color_2"-->
+<!--                android:layout_marginRight="2dp"-->
+<!--                android:gravity="top|left"-->
+<!--                android:textSize="@dimen/text_size_12"-->
+<!--                />-->
+<!--            <View-->
+<!--                android:id="@+id/area15"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="20dp"/>-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="15"-->
+<!--                android:textColor="@color/text_color_2"-->
+<!--                android:layout_marginRight="2dp"-->
+<!--                android:gravity="top|left"-->
+<!--                android:textSize="@dimen/text_size_12"-->
+<!--                />-->
+<!--            <View-->
+<!--                android:id="@+id/area30"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="20dp"-->
+<!--                />-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="30"-->
+<!--                android:textColor="@color/text_color_2"-->
+<!--                android:layout_marginRight="2dp"-->
+<!--                android:gravity="top|left"-->
+<!--                android:textSize="@dimen/text_size_12"-->
+<!--                />-->
+<!--            <View-->
+<!--                android:id="@+id/area45"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="20dp"/>-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="45"-->
+<!--                android:textColor="@color/text_color_2"-->
+<!--                android:layout_marginRight="2dp"-->
+<!--                android:gravity="top|left"-->
+<!--                android:textSize="@dimen/text_size_12"-->
+<!--                />-->
+<!--            <View-->
+<!--                android:id="@+id/area60"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="20dp"/>-->
+<!--        </LinearLayout>-->
+
+    </LinearLayout>
+
+</LinearLayout>

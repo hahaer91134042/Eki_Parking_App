@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+<!--    <string name="serverUrl">http://iparkingnet.ekiweb.com/api</string>-->
+<!--    <string name="serverUrl">http://iparkingnet.eki.com.tw/api</string>-->
+<!--    <string name="serverUrl">https://api.ppyp.app/api</string>-->
+
+    <!--<string name="car1ServerSslUrl">https://192.168.2.29:8443</string>-->
+
+    <!--<string name="testServerUrl">http://192.168.0.196:8888/TestWeb/Img/</string>-->
+
+
+    <string name="landArticleUrl">https://www.ppyp.app/tc/regulation_l_content.html</string>
+
+    
+</resources>

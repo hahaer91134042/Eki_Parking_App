@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<style name="AppBaseTheme" parent="android:Theme.Material.Light">
+		<!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+		<!--<item name="android:datePickerDialogTheme">@style/DatePickerDialogTheme</item>-->
+	</style>
+
+	<!-- Application theme. -->
+	<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+		<!-- All customizations that are NOT specific to a particular API-level can go here. -->
+		<!--<item name="android:textAppearance">@style/CustomTextAppearance</item>-->
+		<!--<item name="android:windowNoTitle">true</item>-->
+		<!-- 不需要 ActionBar 了,因為改用Toolbar -->
+		<!--<item name="windowActionBar">false</item>-->
+		<!-- 主要顏色 -->
+
+	</style>
+
+	<style name="AppThemeWhite" parent="Theme.AppCompat.Light.NoActionBar">
+		<!--返回键样式-->
+		<item name="drawerArrowStyle">@style/AppTheme.DrawerArrowToggle_White</item>
+		<item name="android:statusBarColor">@color/color_white</item>
+		<item name="colorAccent">@color/color_black</item>
+		<item name="colorSecondary">@color/color_black</item>
+		<item name="colorPrimary">@color/color_black</item>
+		<!-- Accent失去效用 必須下在ControlActivated-->
+		<item name="colorControlActivated">@color/color_black</item>
+
+		<!-- Menu鍵
+    <item name="android:homeAsUpIndicator">@color/color_white</item>-->
+	</style>
+
+	<style name="AppThemeGreen" parent="Theme.AppCompat.Light.NoActionBar">
+		<!--返回键样式-->
+		<item name="drawerArrowStyle">@style/AppTheme.DrawerArrowToggle_White</item>
+		<item name="android:statusBarColor">@color/Eki_green_2</item>
+		<item name="colorAccent">@color/Eki_green_2</item>
+		<item name="colorSecondary">@color/Eki_green_2</item>
+		<item name="colorPrimary">@color/Eki_green_2</item>
+		<!-- Accent失去效用 必須下在ControlActivated-->
+		<item name="colorControlActivated">@color/Eki_green_2</item>
+		<item name="dialogTheme">@style/dialogGreen</item>
+		<item name="alertDialogTheme">@style/dialogGreen</item>
+	</style>
+
+	<style name="AppThemeOrange" parent="Theme.AppCompat.Light.NoActionBar">
+		<!--返回键样式-->
+		<item name="drawerArrowStyle">@style/AppTheme.DrawerArrowToggle_White</item>
+		<item name="android:statusBarColor">@color/Eki_orange_4</item>
+		<item name="android:colorAccent">@color/Eki_orange_4</item>
+		<item name="colorSecondary">@color/Eki_orange_4</item>
+		<item name="colorPrimary">@color/Eki_orange_4</item>
+		<!-- Accent失去效用 必須下在ControlActivated-->
+		<item name="colorControlActivated">@color/Eki_orange_4</item>
+
+	</style>
+
+	<style name="AppThemeGray" parent="Theme.AppCompat.Light.NoActionBar">
+		<!--返回键样式-->
+		<item name="drawerArrowStyle">@style/AppTheme.DrawerArrowToggle_White</item>
+		<item name="android:statusBarColor">@color/Main_Gray</item>
+		<item name="android:colorAccent">@color/Main_Gray</item>
+		<item name="colorSecondary">@color/Main_Gray</item>
+		<item name="colorPrimary">@color/Main_Gray</item>
+		<!-- Accent失去效用 必須下在ControlActivated-->
+		<item name="colorControlActivated">@color/Main_Gray</item>
+
+	</style>
+
+	<style name="dialogGreen" parent="android:Theme.Material.Light.Dialog">
+		<item name="android:statusBarColor">@color/Eki_green_2</item>
+		<item name="dialogTheme">@style/dialog2</item>
+	</style>
+
+	<style name="AppTheme.DrawerArrowToggle_White" parent="Base.Widget.AppCompat.DrawerArrowToggle">
+		<item name="color">@color/color_white</item>
+	</style>
+
+	<style name="AppTheme.DrawerArrowToggle_Orange" parent="Base.Widget.AppCompat.DrawerArrowToggle">
+		<item name="color">@color/Eki_orange_4</item>
+	</style>
+
+	<style name="RippleOrange2" parent="Theme.AppCompat">
+		<item name="colorControlHighlight">@color/Eki_orange_2</item>
+	</style>
+
+	<style name="BlackThemeOrange2" parent="android:Theme.Translucent.NoTitleBar.Fullscreen">
+		<!--返回键样式-->
+		<item name="drawerArrowStyle">@style/AppTheme.DrawerArrowToggle_White</item>
+		<item name="android:statusBarColor">@color/Eki_orange_2</item>
+		<item name="android:colorAccent">@color/Eki_orange_2</item>
+		<item name="colorSecondary">@color/Eki_orange_2</item>
+		<item name="colorPrimary">@color/Eki_orange_2</item>
+		<!-- Accent失去效用 必須下在ControlActivated-->
+		<item name="colorControlActivated">@color/Eki_orange_2</item>
+		<item name="android:background">#90000000</item>
+		<!-- Menu鍵
+    <item name="android:homeAsUpIndicator">@color/color_white</item>-->
+		<!--背景顏色和透明程度-->
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<!--是否去除標題-->
+		<item name="android:windowNoTitle">true</item>
+		<!--是否去除邊框-->
+		<item name="android:windowFrame">@null</item>
+		<!--是否浮現在View之上-->
+		<item name="android:windowIsFloating">true</item>
+		<!--是否模糊-->
+		<item name="android:backgroundDimEnabled">true</item>
+	</style>
+
+	<style name="RippleGreen2" >
+		<item name="colorControlHighlight">@color/Eki_green_2</item>
+	</style>
+
+	<style name="BlackThemeGreen2" parent="android:Theme.Translucent.NoTitleBar.Fullscreen">
+		<!--返回键样式-->
+		<item name="drawerArrowStyle">@style/AppTheme.DrawerArrowToggle_White</item>
+		<item name="android:statusBarColor">@color/Eki_green_2</item>
+		<item name="colorAccent">@color/Eki_green_2</item>
+		<item name="colorSecondary">@color/Eki_green_2</item>
+		<item name="colorPrimary">@color/Eki_green_2</item>
+		<!-- Accent失去效用 必須下在ControlActivated-->
+		<item name="colorControlActivated">@color/Eki_green_2</item>
+		<item name="android:background">#90000000</item>
+		<item name="dialogTheme">@style/dialogGreen</item>
+		<item name="alertDialogTheme">@style/dialogGreen</item>
+		<!-- Menu鍵
+    <item name="android:homeAsUpIndicator">@color/color_white</item>-->
+		<!--背景顏色和透明程度-->
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<!--是否去除標題-->
+		<item name="android:windowNoTitle">true</item>
+		<!--是否去除邊框-->
+		<item name="android:windowFrame">@null</item>
+		<!--是否浮現在View之上-->
+		<item name="android:windowIsFloating">true</item>
+		<!--是否模糊-->
+		<item name="android:backgroundDimEnabled">true</item>
+	</style>
+
+	<style name="RippleOrange4" parent="Theme.AppCompat">
+		<item name="colorControlHighlight">@color/Eki_orange_4</item>
+	</style>
+
+	<style name="BlackThemeOrange4" parent="android:Theme.Translucent.NoTitleBar.Fullscreen">
+		<!--返回键样式-->
+		<item name="drawerArrowStyle">@style/AppTheme.DrawerArrowToggle_White</item>
+		<item name="android:statusBarColor">@color/Eki_orange_4</item>
+		<item name="android:colorAccent">@color/Eki_orange_4</item>
+		<item name="colorSecondary">@color/Eki_orange_4</item>
+		<item name="colorPrimary">@color/Eki_orange_4</item>
+		<!-- Accent失去效用 必須下在ControlActivated-->
+		<item name="colorControlActivated">@color/Eki_orange_4</item>
+		<item name="android:background">#90000000</item>
+		<!-- Menu鍵
+    <item name="android:homeAsUpIndicator">@color/color_white</item>-->
+		<!--後方黑框全透明 -->
+		<item name="android:windowBackground">@color/color_transparent</item>
+		<!--是否有标题 -->
+		<item name="android:windowNoTitle">true</item>
+		<!--前方白框半透明-->
+		<item name="android:windowIsTranslucent">true</item>
+		<!--是否浮现在activity之上-->
+		<item name="android:windowIsFloating">true</item>
+		<!--是否模糊-->
+		<item name="android:backgroundDimEnabled">true</item>
+		<!--去除边框-->
+		<item name="android:windowFrame">@null</item>
+
+		<item name="android:windowContentOverlay">@null</item>
+		<!--起始視窗比例-->
+		<item name="android:windowMinWidthMajor">100%</item>
+		<!--結束視窗比例-->
+		<item name="android:windowMinWidthMinor">100%</item>
+	</style>
+
+	<style name="SeekBarOrange" parent="Widget.AppCompat.SeekBar">
+		<item name="colorPrimary">@color/Eki_orange_4</item>
+		<item name="colorPrimaryDark">@color/Eki_orange_4</item>
+		<item name="android:colorAccent">@color/Eki_orange_4</item>
+	</style>
+
+	<style name="DatePickerDialogTheme" parent="android:Theme.Material.Light.Dialog">
+		<item name="android:colorAccent">@color/Eki_green_2</item>
+		<item name="dialogTheme">@style/dialog2</item>
+		<item name="alertDialogTheme">@style/dialog2</item>
+	</style>
+
+	<style name="BottomNavigationTheme" parent="Widget.Design.BottomNavigationView">
+		<item name="colorPrimary">@color/Eki_orange_4</item>
+		<item name="colorControlHighlight">@color/Eki_orange_4</item>
+	</style>
+
+	<style name="headerTexStyle">
+		<item name="android:textColor">@color/text_color_1</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+
+	<style name="editTextLineColor" parent="Theme.AppCompat.Light">
+		<item name="colorControlNormal">@color/light_gray6</item>
+		<item name="colorControlActivated">@color/light_gray6</item>
+	</style>
+
+	<style name="search_option_btn">
+		<item name="android:background">@drawable/shape_round_stroke_solid_white_100dp</item>
+		<item name="android:paddingLeft">10dp</item>
+		<item name="android:paddingRight">10dp</item>
+		<item name="android:paddingTop">1dp</item>
+		<item name="android:paddingBottom">1dp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textColor">@color/text_color_1</item>
+		<item name="android:textSize">@dimen/text_size_12</item>
+	</style>
+
+	<style name="PageIndicatorStyle">
+		<item name="piv_animationType">worm</item>
+		<item name="piv_autoVisibility">true</item>
+		<item name="piv_orientation">horizontal</item>
+		<item name="piv_interactiveAnimation">true</item>
+		<item name="piv_selectedColor">@color/Eki_orange_2</item>
+		<item name="piv_unselectedColor">@color/light_gray3</item>
+		<item name="piv_padding">7dp</item>
+		<item name="piv_radius">8dp</item>
+	</style>
+	<style name="PageIndicatorAutoZoomStyle">
+		<item name="piDotSpacing">5dp</item>
+		<item name="piInitialPadding">40dp</item>
+		<item name="piDotBound">40dp</item>
+		<item name="piSize1">8dp</item>
+		<item name="piSize2">8dp</item>
+		<item name="piSize3">8dp</item>
+		<item name="piSize4">8dp</item>
+		<item name="piSize5">4dp</item>
+		<item name="piSize6">4dp</item>
+		<item name="piCentered">true</item>
+		<item name="piSelectedColor">@color/Eki_orange_2</item>
+	</style>
+
+	<style name="orderDetailTitleItem">
+		<item name="android:gravity">left|center_vertical</item>
+		<item name="android:textSize">@dimen/text_size_14</item>
+		<item name="android:textColor">@color/text_color_1</item>
+
+	</style>
+	<style name="orderDetailTitleItem_Red">
+		<item name="android:gravity">left|center_vertical</item>
+		<item name="android:textSize">@dimen/text_size_14</item>
+		<item name="android:textColor">@color/Eki_red_1</item>
+
+	</style>
+	<style name="orderDetailTextItem">
+		<item name="android:gravity">right|center_vertical</item>
+		<item name="android:textSize">@dimen/text_size_14</item>
+		<item name="android:textColor">@color/text_color_1</item>
+
+	</style>
+
+	<style name="textPopupItem_1">
+		<item name="android:drawableBottom">@drawable/line_light_gray3</item>
+		<item name="android:drawableRight">@drawable/icon_arrow_down_green</item>
+	</style>
+
+	<style name="radioBtnStyle">
+		<item name="android:buttonTint">@color/Eki_green_2</item>
+		<item name="android:textColor">@color/dark_gray1</item>
+		<item name="android:textSize">@dimen/text_size_16</item>
+	</style>
+
+	<style name="radioBtnStyle_green">
+		<item name="android:buttonTint">@color/Eki_green_2</item>
+		<item name="android:textColor">@color/text_color_1</item>
+		<item name="android:textSize">@dimen/text_size_16</item>
+	</style>
+	<style name="radioBtnStyle_orange">
+		<item name="android:buttonTint">@color/Eki_orange_4</item>
+		<item name="android:textColor">@color/text_color_1</item>
+		<item name="android:textSize">@dimen/text_size_16</item>
+	</style>
+
+	<style name="dialog1" parent="android:style/Theme.Dialog">
+		<!--背景顏色和透明程度-->
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<!--是否去除標題-->
+		<item name="android:windowNoTitle">true</item>
+		<!--是否去除邊框-->
+		<item name="android:windowFrame">@null</item>
+		<!--是否浮現在View之上-->
+		<item name="android:windowIsFloating">true</item>
+		<!--是否模糊-->
+		<item name="android:backgroundDimEnabled">true</item>
+	</style>
+
+	<style name="dialog2" parent="android:style/Theme.Dialog">
+		<!--背景颜色及和透明程度-->
+		<item name="android:windowBackground">@android:color/transparent</item>
+		<!--是否去除标题 -->
+		<item name="android:windowNoTitle">true</item>
+		<!--是否去除边框-->
+		<item name="android:windowFrame">@null</item>
+		<!--是否浮现在activity之上-->
+		<item name="android:windowIsFloating">true</item>
+		<!--是否模糊-->
+		<item name="android:backgroundDimEnabled">true</item>
+
+		<item name="android:windowMinWidthMajor">100%</item>
+		<item name="android:windowMinWidthMinor">100%</item>
+	</style>
+
+	<style name="Animation_Toast" parent="Theme.AppCompat">
+	</style>
+
+<!-- Linda Added **/-->
+	<style name="constraint_base">
+		<item name="layout_constraintTop_toTopOf">parent</item>
+		<item name="layout_constraintBottom_toBottomOf">parent</item>
+		<item name="layout_constraintStart_toStartOf">parent</item>
+		<item name="layout_constraintEnd_toEndOf">parent</item>
+	</style>
+
+	<style name="constraint_horizontal">
+		<item name="layout_constraintStart_toStartOf">parent</item>
+		<item name="layout_constraintEnd_toEndOf">parent</item>
+	</style>
+
+	<style name="dark_gray_16dp_text">
+		<item name="textColor">@color/dark_gray1</item>
+		<item name="background">@color/color_transparent</item>
+		<item name="android:textSize">16sp</item>
+	</style>
+	<style name="income_text_header_style">
+		<item name="android:textColor">@color/text_color_1</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">16sp</item>
+	</style>
+	<style name="default_detail_no_data_text">
+		<item name="android:textColor">@color/light_gray5</item>
+		<item name="android:textSize">16sp</item>
+		<item name="background">@color/color_transparent</item>
+	</style>
+	<style name="light_gray5_14sp_text">
+		<item name="android:textColor">@color/light_gray5</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+	<style name="default_detail_text_style">
+		<item name="android:textColor">@color/text_color_1</item>
+		<item name="android:textSize">16sp</item>
+		<item name="fontFamily">@font/noto_sans</item>
+	</style>
+	<style name="dark_gray_20dp_text">
+		<item name="textColor">@color/dark_gray1</item>
+		<item name="background">@color/color_transparent</item>
+		<item name="android:textSize">20sp</item>
+	</style>
+	<style name="text_bold_14sp_707070">
+		<item name="android:textColor">@color/text_color_1</item>
+		<item name="android:textSize">14sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="fontFamily">@font/noto_sans</item>
+	</style>
+	<style name="text_18sp_707070">
+		<item name="android:textColor">@color/text_color_1</item>
+		<item name="android:textSize">18sp</item>
+		<item name="fontFamily">@font/noto_sans</item>
+	</style>
+	<style name="text_20sp_707070">
+		<item name="android:textColor">@color/text_color_1</item>
+		<item name="android:textSize">20sp</item>
+		<item name="fontFamily">@font/noto_sans</item>
+	</style>
+	<style name="text_20sp_d35757">
+		<item name="android:textColor">@color/Eki_red_1</item>
+		<item name="android:textSize">20sp</item>
+		<item name="fontFamily">@font/noto_sans</item>
+	</style>
+	<style name="text_18sp_8a8a8a">
+		<item name="android:textColor">@color/gray_8a8a8a</item>
+		<item name="android:textSize">18sp</item>
+		<item name="fontFamily">@font/noto_sans</item>
+	</style>
+	<style name="text_16sp_ef8200">
+		<item name="android:textColor">@color/Eki_orange_4</item>
+		<item name="android:textSize">16sp</item>
+	</style>
+	<style name="text_16sp_d35757">
+		<item name="android:textColor">@color/Eki_red_1</item>
+		<item name="android:textSize">16sp</item>
+	</style>
+</resources>

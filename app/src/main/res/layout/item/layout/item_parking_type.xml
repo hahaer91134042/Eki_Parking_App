@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_parking_type"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_parking_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Parking_type"
+        android:textColor="@color/dark_gray1"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/typeSelector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:checkedButton="@id/flatSite"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/flatSite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-6dp"
+            android:text="@string/Flat_parking"
+            style="@style/radioBtnStyle"/>
+
+        <RadioButton
+            android:id="@+id/mechSite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="@string/Mechanical_parking"
+            style="@style/radioBtnStyle"/>
+
+    </RadioGroup>
+
+</LinearLayout>

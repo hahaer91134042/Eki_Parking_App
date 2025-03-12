@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="E000">正常</string>
+    <string name="E001">輸入錯誤</string>
+    <string name="E002">超出時間</string>
+    <string name="E003">無資料</string>
+    <string name="E004">未知錯誤</string>
+    <string name="E005">沒有這個帳號</string>
+    <string name="E006">資料格式錯誤</string>
+    <string name="E007">沒有輸入地址</string>
+    <string name="E008">信箱已存在</string>
+    <string name="E009">手機號碼已存在</string>
+    <string name="E010">Token已過期</string>
+    <string name="E011">Token驗證錯誤</string>
+    <string name="E012">帳號或密碼錯誤</string>
+    <string name="E013">檔案格式錯誤</string>
+    <string name="E014">無檔案</string>
+    <string name="E015">手機號碼錯誤</string>
+    <string name="E016">超出數量</string>
+    <string name="E017">權限不足</string>
+    <string name="E018">預約失敗</string>
+    <string name="E019">次數不足</string>
+    <string name="E020">帳單未付款</string>
+    <string name="E021">時間重疊</string>
+    <string name="E022">權限錯誤</string>
+    <string name="E023">加入錯誤</string>
+    <string name="E024">帳號停權</string>
+
+    <string name="Please_turn_on_location_permissions">請開啟定位功能權限</string>
+</resources>

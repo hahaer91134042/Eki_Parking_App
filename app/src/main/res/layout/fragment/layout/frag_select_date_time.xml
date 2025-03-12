@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:id="@+id/parentView"
+    >
+
+    <com.eki.parking.View.widget.CalendarMonthBar
+        android:id="@+id/calendarMonthBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        />
+
+
+    <com.haibin.calendarview.CalendarLayout
+        android:id="@+id/calendarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:calendar_content_view_id="@+id/recycleView"
+        >
+        <com.haibin.calendarview.CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/color_white"
+            app:min_year="2019"
+            app:calendar_padding="0dp"
+            app:calendar_height="45dp"
+            app:month_view="com.hill.calendarview.simple.SimpleMonthView"
+            app:week_view="com.hill.calendarview.simple.SimpleWeekView"
+            app:month_view_show_mode="mode_only_current"
+
+            app:current_day_text_color="@color/color_red"
+
+            app:current_month_lunar_text_color="#CFCFCF"
+            app:current_month_text_color="#333333"
+
+            app:other_month_text_color="#c1c1c1"
+
+
+            app:selected_text_color="@color/color_white"
+            app:selected_theme_color="@color/Eki_orange_2"
+
+            app:week_background="@color/color_white"
+            app:week_text_color="#333333"
+
+            />
+        <!--            app:month_view="com.hill.calendarview.simple.SimpleMonthView"-->
+        <!--            app:week_view="com.hill.calendarview.simple.SimpleWeekView"-->
+
+        <com.eki.parking.View.recycleview.BaseRecycleView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:background="@color/color_white"
+
+
+            />
+<!--        app:group_background="@color/color_white"-->
+<!--        app:group_center="false"-->
+<!--        app:group_height="42dp"-->
+<!--        app:group_has_header="false"-->
+<!--        app:group_padding_left="16dp"-->
+<!--        app:group_padding_right="16dp"-->
+<!--        app:group_text_size="14sp"-->
+<!--        app:group_text_color="#555555"-->
+<!--        app:group_child_offset="2dp"-->
+    </com.haibin.calendarview.CalendarLayout>
+
+</LinearLayout>

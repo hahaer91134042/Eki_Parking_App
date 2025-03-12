@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_white"
+    >
+    <com.eki.parking.View.recycleview.BaseRecycleView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/divider"
+        />
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray3"
+        android:layout_above="@+id/btnFrame"
+        />
+    <LinearLayout
+        android:id="@+id/btnFrame"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:divider="@drawable/divider_light_gray3"
+        android:showDividers="middle"
+        >
+        <com.eki.parking.View.libs.StateButton
+            android:id="@+id/cancelBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textSize="@dimen/text_size_16"
+
+            app:normalBackgroundColor="@color/color_white"
+            app:pressedBackgroundColor="@color/color_white"
+            app:normalTextColor="@color/text_color_1"
+            app:pressedTextColor="@color/text_color_1"
+            />
+        <com.eki.parking.View.libs.StateButton
+            android:id="@+id/determinBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/Delete"
+            android:textSize="@dimen/text_size_16"
+            android:enabled="false"
+
+            app:normalBackgroundColor="@color/color_white"
+            app:pressedBackgroundColor="@color/color_white"
+            app:unableBackgroundColor="@color/light_gray2"
+            app:normalTextColor="@color/Eki_orange_4"
+            app:pressedTextColor="@color/Eki_orange_4"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

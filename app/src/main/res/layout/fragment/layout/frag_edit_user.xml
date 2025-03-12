@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="35dp"
+    android:paddingEnd="35dp"
+    android:paddingTop="30dp"
+    android:gravity="center_horizontal">
+
+    <com.eki.parking.View.widget.UserIconCameraView
+        android:id="@+id/userIconCameraView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="30dp" />
+
+    <com.eki.parking.View.widget.UnderLineEditTextView
+        android:id="@+id/nickNameInputView"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="20dp"
+        app:ule_headerIcon="@drawable/icon_nickname"
+        app:ule_inputType="TEXT"
+        app:ule_input_textSize="@dimen/text_size_6"
+        app:ule_line_color="@color/light_gray5"
+        />
+
+    <com.eki.parking.View.widget.UnderLineSmsView
+        android:id="@+id/smsTexView"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="20dp"
+        />
+    <com.eki.parking.View.widget.UnderLineEditTextView
+        android:id="@+id/pwdInputView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:ule_headerIcon="@drawable/icon_pwd"
+        app:ule_inputType="PWD"
+        app:ule_input_textSize="@dimen/text_size_6"
+        app:ule_line_color="@color/light_gray5"
+        app:ule_max_input_num="32"
+        app:ule_input_enable="false"
+        />
+
+    <com.eki.parking.View.widget.UnderLineEditTextView
+        android:id="@+id/mailInputView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ule_headerIcon="@drawable/icon_mail"
+        app:ule_inputType="TEXT"
+        app:ule_input_textSize="@dimen/text_size_6"
+        app:ule_line_color="@color/light_gray5"
+        />
+
+</LinearLayout>

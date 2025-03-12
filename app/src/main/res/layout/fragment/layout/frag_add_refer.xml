@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="40dp"
+
+    android:background="@color/color_white"
+    android:gravity="center_horizontal"
+    >
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:background="@drawable/stroke_round_corner_light_gray6"
+        android:padding="5dp"
+        android:gravity="center"
+        >
+        <EditText
+            android:id="@+id/referrerText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textSize="@dimen/text_size_16"
+            android:hint="@string/Please_enter_customer_service_code"
+            android:textColorHint="@color/light_gray5"
+            android:textColor="@color/text_color_1"
+            android:gravity="center"
+            android:inputType="phone"
+            />
+
+    </RelativeLayout>
+
+    <com.eki.parking.View.libs.StateButton
+        android:id="@+id/determinBtn"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/Determine"
+        android:textSize="@dimen/text_size_16"
+        android:enabled="false"
+        app:round="true"
+        app:normalStrokeColor="@color/Eki_orange_4"
+        app:normalStrokeWidth="1dp"
+        app:normalTextColor="@color/Eki_orange_4"
+        app:normalBackgroundColor="@color/color_white"
+
+        app:pressedStrokeColor="@color/Eki_orange_4"
+        app:pressedStrokeWidth="1dp"
+        app:pressedTextColor="@color/Eki_orange_4"
+        app:pressedBackgroundColor="@color/color_white"
+
+        app:unableBackgroundColor="@color/light_gray4"
+        app:unableTextColor="@color/light_gray5"
+        />
+
+</LinearLayout>

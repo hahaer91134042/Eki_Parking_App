@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="error">錯誤!!</string>
+    <string name="Sign_in">登入中...</string>
+    <string name="Connecting">連線中...</string>
+    <string name="Now_loading">下載中...</string>
+    <string name="Processing">處理中...</string>
+    <string name="Error_Message">錯誤訊息</string>
+
+    <string name="Password_must_be_between_6_and_12_characters">密碼需在6~12字元之間</string>
+    <string name="Password_requires_at_least_one_English_word">密碼至少需要一個英文字</string>
+    <string name="Password_requires_at_least_one_number">密碼至少需要一個數字</string>
+    <string name="At_least_one_capitalized_English">至少一個大寫英文</string>
+    <string name="At_least_one_lowercase_English">至少一個小寫英文</string>
+    <string name="At_least_8_characters">至少8個字元</string>
+    <string name="Please_enter_password">請輸入密碼</string>
+    <string name="Please_enter_phone_number">請輸入手機號碼</string>
+
+    <string name="Share_to">分享到:</string>
+    <string name="login">登入</string>
+    <string name="logout">登出</string>
+    <string name="register">註冊新帳號</string>
+    <string name="submit">送出</string>
+    <string name="Determine">確定</string>
+    <string name="Cancel">取消</string>
+    <string name="Loading_fail">下載失敗</string>
+    <string name="Loading_finish">下載完結</string>
+    <string name="No_input">無輸入</string>
+    <string name="Wrong_input_format">輸入格式錯誤</string>
+    <string name="Account_input_format_error">帳號輸入格式錯誤</string>
+    <string name="Please_enter_your_account">請輸入帳號</string>
+    <string name="Bad_password_format">密碼格式錯誤</string>
+    <string name="Please_enter_email">請輸入電子信箱</string>
+    <string name="Mail_format_error">電子信箱格式錯誤</string>
+    <string name="Phone_format_error">手機格式錯誤</string>
+
+</resources>

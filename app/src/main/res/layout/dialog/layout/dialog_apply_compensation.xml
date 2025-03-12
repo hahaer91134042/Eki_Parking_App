@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="請拍下非個人因素取消的原因，例如:停車位已被佔據而無法入場停車者，請拍車位被佔據的照片。"
+            android:textColor="@color/text_color_1"
+            android:textSize="@dimen/text_size_16"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+        <com.eki.parking.View.widget.CarNumberCamera
+            android:id="@+id/openCamera"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+
+            />
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text=""
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/text_color_2"
+            />
+
+        <com.eki.parking.View.libs.StateButton
+            android:id="@+id/determinBtn"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_16"
+            android:text="確定上傳"
+            app:round="true"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            app:normalTextColor="@color/Eki_orange_2"
+            app:normalBackgroundColor="@color/color_white"
+            app:normalStrokeColor="@color/Eki_orange_3"
+            app:normalStrokeWidth="1dp"
+
+            app:pressedTextColor="@color/Eki_orange_2"
+            app:pressedBackgroundColor="@color/color_white"
+            app:pressedStrokeColor="@color/Eki_orange_3"
+            app:pressedStrokeWidth="1dp"
+
+            android:layout_marginBottom="30dp"
+            />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

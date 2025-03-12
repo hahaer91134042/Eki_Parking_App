@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="date_time_format">{0}年 {1}月 {2}日 {3}</string>
+    <string name="month_day_format">{0}月 {1}日</string>
+    <string name="billing_method_30min">${0}/30分</string>
+    <string name="serial_number_str">編號:{0}</string>
+    <string name="Amount_price_format">(30分鐘${0})${1}</string>
+    <string name="Reservation_space_must_be_greater_than_min">預約間格必須大於{0}分</string>
+    <string name="CheckOut_list_title">{0} {1}筆訂單</string>
+    <string name="CheckOut_order_info">{0} - {1} ({2}小時)</string>
+    <string name="Intervals">間隔時間({0})</string>
+    <string name="There_are_parking_spaces_at_this_address">該地址共有{0}個停車位</string>
+    <string name="Can_still_add_car">仍可新增{0}台車</string>
+    <string name="Are_you_sure_you_want_to_delete_cart_information">確定要刪除{0}台車資訊</string>
+    <string name="Hour_formate">{0}小時</string>
+    <string name="Month_formate">{0}月</string>
+    <string name="Total_spending_records">共{0}筆</string>
+    <string name="Confirm_to_delete_appointment_information">確認要刪除預約資訊 {0}</string>
+    <string name="Are_you_sure_want_to_close_this_position">確定要關閉此位置? {0}</string>
+    <string name="Are_you_sure_want_to_open_this_position">確定要開啟此位置? {0}</string>
+    <string name="Open_time_remain_hour">(剩餘時間{0}/{1}小時)</string>
+    <string name="Total_amount_formate">總金額 ${0}</string>
+    <string name="Total_mins_formate">{0}分</string>
+    <string name="Deleted_successfully_Today_delete_the_remaining_times">刪除成功\n24小時內刪除剩餘{0}次</string>
+    <string name="The_penalty_for_breach_of_contract_is">違約罰金為 ${0} NTD</string>
+
+    <string name="Minutes_remaining">結束時間剩餘{0}分鐘</string>
+
+    <!-- 廣播 -->
+    <string name="The_landlord_cancels_the_scheduled_itinerary">"地主取消預約行程"</string>
+    <string name="Cancel_the_scheduled_itinerary">"很抱歉!您預約 {0} 位於 {1} 將被該地主取消,我們將會依照你被取消的影響程度發放補償券, 補償券請前往優待券裡查看, 您可能需要再重新預約新地點避免耽誤您的行程"</string>
+    <string name="Car_owner_payment_completed">"車主付款完成"</string>
+    <string name="Payment_completed">"訂單編號 {0}, 停車時間為 {1}"</string>
+    <string name="The_owner_successfully_withdraws_the_lease">"車主退租成功"</string>
+    <string name="Successfully_surrendered">"訂單編號 {0}, 停車時間為 {1}"</string>
+    <string name="Appointment_is_about_to_start">"預約即將開始"</string>
+    <string name="Appointment_detail">"預約於 {0} {1} 將在15分鐘後開始計費，若要取消請至訂單取消，如已取消訂單請不予理會此訂單"</string>
+    <!--
+    <string name="The_owner_cancels_the_appointment">"停車時間即將結束"</string>
+    <string name="Cancels_appointment">"15分鐘後，停車於 {0} 期滿，請務必於期滿10分鐘內退租離場以避免車額費用，如已取消訂單請不予理會此訂單"</string>
+    <string name="The_owner_cancels_the_appointment">"預約期滿"</string>
+    <string name="Cancels_appointment">"預約於{0} {1} 停車時間終止，請於10分鐘內退租離場，逾期將會被收取額外罰金，詳情請參考車主規章，如已取消訂單請不予理會此訂單"</string>
+    -->
+    <string name="The_owner_cancels_the_appointment">"車主取消預約"</string>
+    <string name="Cancels_appointment">"地點: {0}&#x000A;時間: {1}&#x000A;車牌: {2}"</string>
+    <string name="Receive_new_appointment">"收到新的預約"</string>
+    <string name="Get_order_message">"地點: {0}&#x000A;時間: {1}&#x000A;車牌: {2}&#x000A;註 : 因故無法如期停車請務必於預約時間開始前取消預約，若要取消請至訂單取消，否則預約開始後將視為一般停車開始計費。&#x000A;註 : 若對該車位有任何疑慮，請自行拍照以保障雙方權利。"</string>
+    <string name="There_are_still_unreturned_orders">"尚有未退租訂單"</string>
+    <string name="Order_no_checkout">"地點: {0}&#x000A;時間: {1}&#x000A;車牌: {2}&#x000A;您有未退租訂單，已被收取高額罰款，罰款持續累積計算中，請盡快退租"</string>
+    <string name="Landlord_receipt_notice">"地主進帳通知"</string>
+    <string name="Manager_bank_transfer">"我們已經於{0},&#x000A;可轉帳總金額共${1},&#x000A;其金額以扣除匯款手續費,&#x000A;並且可能包含過往未滿$1000之累積金額,&#x000A;如有任何疑問請至帳單總覽查詢或與我們聯繫"</string>
+    <string name="Monthly_report_delivery">"每月報表寄送"</string>
+    <string name="PaySumReport">"最後結算日期: ${0},&#x000A;總收益: ${1},&#x000A;累計罰金: ${2}"</string>
+    <string name="The_owner_extends_order_msg">"車主訂單: {0}&#x000A;延長訂單到 {1}"</string>
+
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--左側邊欄選項-->
+    <string name="Basic_setting">基本設定</string>
+    <string name="Your_appointment_calendar">您的預約行事曆</string>
+    <string name="Billing_overview">帳單總覽</string>
+    <string name="Consumption_history">消費歷程</string>
+    <string name="Parking_situation">車位狀況</string>
+    <string name="Payment_setting">付款設定</string>
+    <string name="Offer">優惠</string>
+    <string name="Problem_response">問題反應</string>
+    <string name="Common_problem">常見問題</string>
+    <string name="Parking_rules">車主規章</string>
+    <string name="Collection_bank_setting">收帳銀行設定</string>
+    <string name="Latest_event_message">最新活動訊息</string>
+    <string name="Login_or_register">登入</string>
+    <string name="Logout">登出</string>
+    <string name="Login_or_logout">登出/登入</string>
+    <string name="Parking_Site_Setting">車位設定</string>
+    <string name="Site_Status">車位狀況</string>
+    <string name="Order_OverView">訂單總覽</string>
+    <string name="Order_Details">訂單細節</string>
+    <string name="Land_Owner_Rule">地主規章</string>
+    <string name="Car_Setting">愛車設定</string>
+    <string name="Clean">清除</string>
+
+    <!--<string name="login">登入</string>-->
+    <!--<string name="logout">登出</string>-->
+
+    <string name="Landlord_management">地主管理</string>
+    <string name="Owner_management">車主管理</string>
+    <string name="Switch_Identity">切換身分</string>
+
+    <string name="United_States">美國地區</string>
+    <string name="Taiwan_area">台灣地區</string>
+    <string name="China_area">中國地區</string>
+    <string name="Japan_area">日本地區</string>
+
+    <string name="Map_option">地圖</string>
+    <string name="Calendar_option">行事曆</string>
+    <string name="CheckOut_option">結帳</string>
+    <string name="Notify_option">通知</string>
+    <string name="Setting_option">設定</string>
+    <string name="Date_time">日期/時間</string>
+    <string name="Car_Model">車種</string>
+    <string name="Distance">距離</string>
+    <string name="SteamLocomotive_Type">汽、機車類型</string>
+
+    <string name="am_str">上午</string>
+    <string name="pm_str">下午</string>
+
+    <string name="All_Car_Model">全部車種</string>
+    <string name="General">一般車</string>
+    <string name="Electric_Car_AC">電動車-AC 交流電</string>
+    <string name="Electric_Car_DC">電動車-DC 直流電</string>
+    <string name="Electric_Locomotive_AC">電動機車-AC 交流電</string>
+    <string name="Electric_Locomotive_DC">電動機車-DC 直流電</string>
+
+    <string name="Start_Time">起始時間</string>
+    <string name="End_Time">結束時間</string>
+
+    <string name="Meter">公尺</string>
+    <string name="Kilometer">公里</string>
+
+    <string name="General_parking_space">一般車位</string>
+    <string name="AC_parking_space">交流電車位</string>
+    <string name="DC_parking_space">直流電車位</string>
+    <string name="Charging_type">充電類型 |</string>
+    <string name="Socket_type">插頭類型 |</string>
+    <string name="Precautions">注意事項 |</string>
+    <string name="Remark">備註 |</string>
+    <string name="Location_name">車位名稱 |</string>
+    <string name="Position_l">位置 |</string>
+    <string name="Type_l">型態 |</string>
+    <string name="Size_l">大小 |</string>
+    <string name="Limit_high_l">限高 |</string>
+    <string name="Weight_limit_l">限重 |</string>
+    <string name="Reservation">預約</string>
+    <string name="Whether_to_provide_charging">是否提供充電 |</string>
+    
+    <string name="All">全部</string>
+    <string name="Reservaed">已預約</string>
+    <string name="Pending_payment">待付款</string>
+    <string name="Paid">已付款</string>
+    <string name="Cancelled">已取消</string>
+
+    <string name="Year">年</string>
+    <string name="Month">月</string>
+    <string name="Day">日</string>
+    <string name="Hour">小時</string>
+    <string name="Minute">分鐘</string>
+    <string name="Second">秒鐘</string>
+
+    <string name="yes">有</string>
+    <string name="none">無</string>
+    <string name="week">週</string>
+    <string name="Sunday">週日</string>
+    <string name="Monday">週一</string>
+    <string name="Tuesday">週二</string>
+    <string name="Wednesday">週三</string>
+    <string name="Thursday">週四</string>
+    <string name="Friday">週五</string>
+    <string name="Saturday">週六</string>
+
+    <string name="Personal_account">個人帳號</string>
+    <string name="Company_account">公司帳號</string>
+
+    <string name="Other">其他</string>
+    <string name="Report">檢舉</string>
+    <string name="Illegal_parking">違法停車</string>
+    <string name="Bad_attitude">態度不佳</string>
+    <string name="Leftover_trash_damaged_items">遺留垃圾/損壞物品</string>
+    <string name="Dirty_environment">環境髒亂</string>
+    <string name="Fake_Photo">虛假照片</string>
+
+    <!-- Filter -->
+    <string name="Zero_hour_minute">00:00</string>
+    <string name="Max_range_option">2.0</string>
+
+    <!-- 車位詳細 -->
+    <string name="Upload_failed">上傳失敗</string>
+    <string name="Uploaded_successfully">上傳成功</string>
+    <string name="Half_an_hour">/半小時</string>
+    <string name="Money">$</string>
+
+    <!-- Fcm -->
+    <string name="Message_error">訊息錯誤</string>
+
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.eki.parking.View.libs.StateButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/state_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/Determine"
+    android:textStyle="bold"
+    android:textColor="@color/light_gray5"
+    android:enabled="false"
+    app:unableTextColor="@color/light_gray5"
+    app:unableBackgroundColor="@color/light_gray6"
+    app:normalTextColor="@color/Eki_orange_4"
+    app:normalBackgroundColor="@color/color_white"
+    app:normalStrokeColor="@color/Eki_orange_4"
+    app:normalStrokeWidth="@dimen/strok_width_1"
+    app:pressedTextColor="@color/color_white"
+    app:pressedBackgroundColor="@color/Eki_orange_4"
+    app:round="true" />

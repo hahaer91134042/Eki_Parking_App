@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            />
+        <!--        android:elevation="@dimen/toolbar_elevation"-->
+
+        <FrameLayout
+            android:id="@+id/fragViewLoader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_above="@+id/bottomBar"
+            />
+        <com.eki.parking.View.widget.PpypBottomBar
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+    <!--    因為現在改成 不要使用ToolBar的方式去開啟Drawer所以要包FrameLayout-->
+    <!--側邊攔 fragment-->
+    <!--    <FrameLayout-->
+    <!--        android:id="@+id/drawerView"-->
+    <!--        android:layout_width="260dp"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_gravity="left|start"-->
+    <!--        android:fitsSystemWindows="true"-->
+    <!--        android:orientation="vertical"-->
+    <!--        >-->
+    <!--        <fragment-->
+    <!--            android:id="@+id/navigation_drawer"-->
+    <!--            android:name="com.eki.parking.Controller.activity.frag.Main.leftMenu.NavigationDrawerFrag"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            />-->
+    <!--    </FrameLayout>-->
+
+    <fragment
+        android:id="@+id/navigation_drawer"
+        android:name="com.eki.parking.Controller.activity.frag.Main.leftMenu.NavigationDrawerFrag"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

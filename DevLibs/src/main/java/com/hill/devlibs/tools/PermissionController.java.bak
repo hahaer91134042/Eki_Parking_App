@@ -1,0 +1,134 @@
+package com.hill.devlibs.tools;
+
+import android.annotation.TargetApi;
+import android.content.pm.PackageManager;
+
+
+import com.hill.devlibs.activity.LibBaseActivity;
+
+import java.util.ArrayList;
+
+import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+
+import static android.Manifest.permission.ACCESS_COARSE_LOCATION;
+import static android.Manifest.permission.ACCESS_FINE_LOCATION;
+import static android.Manifest.permission.CALL_PHONE;
+
+/**
+ * Created by Hill on 2017/6/30.
+ */
+@TargetApi(23)
+public class PermissionController {
+    private LibBaseActivity activity;
+    public final static int FREE=0;
+    public final static int ALL_PERMISSION_CODE=1;
+    public final static int RECORD_AUDIO_CODE=2;
+    public final static int CAMERA_CODE=3;
+    public final static int WRITE_EXTERNAL_STORAGE_CODE=4;
+
+    public enum CheckType{//需要在自己加
+        ALL_OK(new String[]{CALL_PHONE,ACCESS_FINE_LOCATION,ACCESS_COARSE_LOCATION},
+                ALL_PERMISSION_CODE);
+//        ALL_OK(new String[]{RECORD_AUDIO,CAMERA,WRITE_EXTERNAL_STORAGE},
+//        ALL_PERMISSION_CODE),
+//        RECORD_AUDIO_OK(new String[]{RECORD_AUDIO},RECORD_AUDIO_CODE),
+//        CAMERA_OK(new String[]{CAMERA}, CAMERA_CODE),
+//        WRITE_EXTERNAL_STORAGE_OK(new String[]{WRITE_EXTERNAL_STORAGE}, WRITE_EXTERNAL_STORAGE_CODE);
+
+        public int Code;
+        public String[] Permission;
+        CheckType(String[] permiStr, int i) {
+            Permission=permiStr;
+            Code=i;
+        }
+    }
+    public PermissionController(LibBaseActivity activity) {
+        this.activity=activity;
+    }
+
+    public void checkPermissionIsGranted(CheckType check){
+
+        Log.d("check permi", check.toString());
+        int checkResult = -1;
+        switch (check) {
+            case ALL_OK:
+                for (String permi : check.Permission) {
+                    checkResult = ActivityCompat.checkSelfPermission(activity, permi);
+                    if (checkResult != PackageManager.PERMISSION_GRANTED) {
+                        break;
+                    }
+                }
+                break;
+            default:
+                checkResult = ActivityCompat.checkSelfPermission(activity, check.Permission[0]);
+        }
+        Log.e("--check permission result->" + checkResult);
+
+        if (checkResult != PackageManager.PERMISSION_GRANTED) {
+//            ActivityCompat.shouldShowRequestPermissionRationale(activity, permissionType.Permission);
+            ActivityCompat.requestPermissions(activity, check.Permission, check.Code);
+        }
+    }
+    public void checkPermissionIsGranted(CheckType... checks){
+        ArrayList<String> pList=new ArrayList<>();
+
+        for (CheckType check:
+             checks) {
+            Log.d("check permi", check.toString());
+            int checkResult = -1;
+            switch (check) {
+                case ALL_OK:
+                    for (String permi : check.Permission) {
+                        checkResult = ActivityCompat.checkSelfPermission(activity, permi);
+                        if (checkResult != PackageManager.PERMISSION_GRANTED) {
+                            pList.add(check.Permission[0]);
+                        }
+                    }
+                    break;
+                default:
+                    checkResult = ActivityCompat.checkSelfPermission(activity, check.Permission[0]);
+                    if (checkResult != PackageManager.PERMISSION_GRANTED) {
+                        pList.add(check.Permission[0]);
+                    }
+            }
+        }
+        Log.e("--check permission result->" + pList.size());
+
+        if (pList.size()>0) {
+//            ActivityCompat.shouldShowRequestPermissionRationale(activity, permissionType.Permission);
+            ActivityCompat.requestPermissions(activity, (String[]) pList.toArray(), FREE);
+        }
+    }
+
+//    private String[] checkPermissionArr(ArrayList<String> list) {
+//        String[] pArr=new String[list.size()];
+//        for (int i = 0; i <list.size() ; i++) {
+//            pArr[i]=list.get(i);
+//        }
+//        return pArr;
+//    }
+
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        Log.e("-----onRequestPermissionsResult-----");
+        Log.i("requsetCode->"+requestCode);
+        for (int i = 0; i <permissions.length ; i++) {
+            Log.i("-permission->"+permissions[i]+" grantResult->"+grantResults[i]);
+        }
+
+
+        switch (requestCode){//目前沒用
+            case FREE:
+                break;
+            case ALL_PERMISSION_CODE:
+                break;
+            case RECORD_AUDIO_CODE:
+                break;
+            case CAMERA_CODE:
+                break;
+            case WRITE_EXTERNAL_STORAGE_CODE:
+                break;
+        }
+    }
+
+}

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray4"
+    android:id="@+id/parentView">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="8dp"
+            android:paddingTop="10dp"
+            android:background="@color/light_gray4">
+
+            <androidx.cardview.widget.CardView
+                app:cardElevation="6dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/listContainer"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/divider_light_gray4"
+                    android:showDividers="middle"
+                    >
+
+                    <RelativeLayout
+                        android:padding="10dp"
+                        android:background="@color/color_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp">
+
+                        <com.hill.devlibs.widget.AutoSizeTextView
+                            android:id="@+id/title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:text="@string/Parking_location"
+                            android:textColor="@color/text_color_2"
+                            android:textSize="@dimen/text_size_14" />
+                        <com.hill.devlibs.widget.AutoSizeTextView
+                            android:id="@+id/addressText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="@dimen/text_size_18"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:padding="10dp"
+                        android:background="@color/color_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp">
+
+                        <com.hill.devlibs.widget.AutoSizeTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:text="@string/Parking_number"
+                            android:textColor="@color/text_color_2"
+                            android:textSize="@dimen/text_size_14" />
+                        <com.hill.devlibs.widget.AutoSizeTextView
+                            android:id="@+id/parkingNumText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="@dimen/text_size_18"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:divider="@drawable/divider_light_gray4"
+                        android:showDividers="middle"
+                        >
+                        <RelativeLayout
+                            android:padding="10dp"
+                            android:background="@color/color_white"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            >
+                            <com.hill.devlibs.widget.AutoSizeTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:text="@string/Appointment_start"
+                                android:textColor="@color/text_color_2"
+                                android:textSize="@dimen/text_size_14"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                />
+                            <com.hill.devlibs.widget.AutoSizeTextView
+                                android:id="@+id/reservaStartText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:textColor="@color/text_color_1"
+                                android:textSize="@dimen/text_size_18"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:padding="10dp"
+                            android:background="@color/color_white"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            >
+                            <com.hill.devlibs.widget.AutoSizeTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:text="@string/Appointment_end"
+                                android:textColor="@color/text_color_2"
+                                android:textSize="@dimen/text_size_14"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                />
+                            <com.hill.devlibs.widget.AutoSizeTextView
+                                android:id="@+id/reservaEndText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:textColor="@color/text_color_1"
+                                android:textSize="@dimen/text_size_18"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="75dp"
+                        android:divider="@drawable/divider_light_gray4"
+                        android:showDividers="middle"
+                        >
+                        <RelativeLayout
+                            android:padding="10dp"
+                            android:background="@color/color_white"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            >
+                            <com.hill.devlibs.widget.AutoSizeTextView
+                                android:id="@+id/totalAppointmentTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:text="@string/Total_appointment_time"
+                                android:textColor="@color/text_color_2"
+                                android:textSize="@dimen/text_size_14"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                />
+                            <com.hill.devlibs.widget.AutoSizeTextView
+                                android:id="@+id/totalAppointmentText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:textColor="@color/text_color_1"
+                                android:textSize="@dimen/text_size_18"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                />
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:padding="10dp"
+                            android:background="@color/color_white"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            >
+                            <com.hill.devlibs.widget.AutoSizeTextView
+                                android:id="@+id/amountTextTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:text="@string/Amount_of_consumption"
+                                android:textColor="@color/text_color_2"
+                                android:textSize="@dimen/text_size_14"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+
+                                />
+                            <com.hill.devlibs.widget.AutoSizeTextView
+                                android:id="@+id/amountText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="35dp"
+                                android:textColor="@color/text_color_1"
+                                android:textSize="@dimen/text_size_18"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:background="@color/color_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <com.github.florent37.expansionpanel.ExpansionHeader
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/expanHeader"
+                            app:expansion_toggleOnClick="true"
+                            app:expansion_layout="@id/expansionLayout"
+                            >
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <com.hill.devlibs.widget.AutoSizeTextView
+                                    android:id="@+id/plateNumberTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:text="@string/License_plate_number"
+                                    android:textColor="@color/text_color_2"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    />
+
+                                <com.hill.devlibs.widget.AutoSizeTextView
+                                    android:id="@+id/carNumText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="7dp"
+                                    android:gravity="end"
+                                    android:hint="@string/Please_enter_the_license_plate_number"
+                                    android:singleLine="true"
+                                    android:text=""
+                                    android:textColor="@color/text_color_1" />
+                            </RelativeLayout>
+
+                        </com.github.florent37.expansionpanel.ExpansionHeader>
+
+                        <com.github.florent37.expansionpanel.ExpansionLayout
+                            android:id="@+id/expansionLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:expansion_expanded="false"
+                            >
+                            <com.eki.parking.View.recycleview.BaseRecycleView
+                                android:id="@+id/recycleView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                />
+
+                        </com.github.florent37.expansionpanel.ExpansionLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_gray4">
+
+            <com.eki.parking.View.libs.StateButton
+                android:id="@+id/checkoutBtn"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:enabled="false"
+                android:text="@string/Determine"
+                android:textColor="@color/light_gray5"
+                app:normalBackgroundColor="@color/color_white"
+                app:normalStrokeColor="@color/Eki_orange_4"
+                app:normalStrokeWidth="@dimen/strok_width_1"
+                app:normalTextColor="@color/Eki_orange_4"
+                app:pressedBackgroundColor="@color/Eki_orange_4"
+                app:pressedTextColor="@color/color_white"
+                app:round="true"
+                app:unableBackgroundColor="@color/light_gray6"
+                app:unableTextColor="@color/light_gray5" />
+
+            <com.hill.devlibs.widget.AutoSizeTextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/checkoutBtn"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

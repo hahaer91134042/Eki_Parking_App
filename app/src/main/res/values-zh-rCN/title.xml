@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_member">登入會員</string>
+    <string name="register_member">註冊會員</string>
+    <string name="member_setting">基本設定</string>
+    <string name="Notice">通知</string>
+</resources>

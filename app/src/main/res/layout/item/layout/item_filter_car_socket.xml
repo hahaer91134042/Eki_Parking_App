@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_white"
+    android:paddingBottom="10dp">
+
+    <com.hill.devlibs.widget.AutoSizeTextView
+        android:id="@+id/title"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="@string/Car"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.hill.devlibs.widget.AutoSizeTextView
+                android:id="@+id/tesla_ac"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/selector_filter_option"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="@string/AC_Tesla"
+                android:textColor="@color/text_color_1" />
+
+            <com.hill.devlibs.widget.AutoSizeTextView
+                android:id="@+id/j1772_ac"
+                android:layout_width="115dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/selector_filter_option"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="@string/AC_J1772"
+                android:textColor="@color/text_color_1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <com.hill.devlibs.widget.AutoSizeTextView
+                android:id="@+id/tesla_dc"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/selector_filter_option"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="@string/DC_Tesla"
+                android:textColor="@color/text_color_1" />
+
+            <com.hill.devlibs.widget.AutoSizeTextView
+                android:id="@+id/ccs1_j1772_dc"
+                android:layout_width="175dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/selector_filter_option"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="@string/DC_CCS1_J1772"
+                android:textColor="@color/text_color_1" />
+        </LinearLayout>
+
+        <com.hill.devlibs.widget.AutoSizeTextView
+            android:id="@+id/ccs2_iec62196_dc"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/selector_filter_option"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingEnd="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="@string/DC_CCS2_IEC62196"
+            android:textColor="@color/text_color_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <com.hill.devlibs.widget.AutoSizeTextView
+                android:id="@+id/chademo_dc"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/selector_filter_option"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="@string/DC_CHAdeMO"
+                android:textColor="@color/text_color_1" />
+
+            <com.hill.devlibs.widget.AutoSizeTextView
+                android:id="@+id/generalCar"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/selector_filter_option"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="@string/General_parking_space"
+                android:textColor="@color/text_color_1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

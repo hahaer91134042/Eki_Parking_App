@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/headerIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="3dp"
+        android:layout_centerVertical="true"
+    />
+    <EditText
+        android:id="@+id/inputTex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:layout_toEndOf="@+id/headerIcon"
+        android:layout_toStartOf="@+id/tailIcon"
+
+        android:descendantFocusability="blocksDescendants"
+        android:layout_margin="3dp"
+
+        android:gravity="bottom"
+
+
+        />
+<!--    android:focusableInTouchMode="true"-->
+    <!--android:textCursorDrawable="@null"-->
+    <ImageView
+        android:id="@+id/tailIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="3dp"
+        android:layout_alignParentRight="true"
+    />
+    <TextView
+        android:id="@+id/tailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="3dp"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:gravity="bottom"
+
+
+        />
+<!--    app:autoSizeTextType="uniform"-->
+<!--    app:autoSizeMinTextSize="12sp"-->
+<!--    app:autoSizeMaxTextSize="14sp"-->
+<!--    app:autoSizeStepGranularity="1sp"-->
+    <!--android:background="@this/security_ok"-->
+    <!--android:background="@this/security_pending"-->
+
+</androidx.percentlayout.widget.PercentRelativeLayout>
+    <!--android:descendantFocusability="beforeDescendants"-->
+    <!--descendantFocusability(優先取得focus)  -->

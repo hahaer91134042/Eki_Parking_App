@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bottom_popup_bg"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider_light_gray3"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <TextView
+                android:id="@+id/dateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text=""
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/cancelBtn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/icon_close_orange" />
+        </RelativeLayout>
+
+        <com.eki.parking.View.recycleview.BaseRecycleView
+            android:id="@+id/openTimeList"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/pickerPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <!--        <LinearLayout-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:gravity="center_horizontal"-->
+            <!--            android:orientation="vertical"-->
+
+            <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--            app:layout_constraintEnd_toStartOf="@+id/dashView"-->
+            <!--            app:layout_constraintStart_toStartOf="parent"-->
+            <!--            app:layout_constraintTop_toTopOf="parent">-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Start_Time"
+                android:textSize="@dimen/text_size_16"
+                app:layout_constraintBottom_toTopOf="@+id/startTimePicker"
+                app:layout_constraintEnd_toStartOf="@+id/dashView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.shawnlin.numberpicker.NumberPicker
+                android:id="@+id/startTimePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/dashView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:np_wrapSelectorWheel="true" />
+
+            <!--        </LinearLayout>-->
+
+
+            <ImageView
+                android:id="@+id/dashView"
+                android:layout_width="25dp"
+                android:layout_height="48dp"
+                android:src="@drawable/icon_arrow_right_light_gray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--        <LinearLayout-->
+            <!--            android:id="@+id/linearLayout2"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:gravity="center_horizontal"-->
+            <!--            android:layout_marginTop="0dp"-->
+
+            <!--            android:orientation="vertical"-->
+            <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--            app:layout_constraintEnd_toEndOf="parent"-->
+            <!--            app:layout_constraintStart_toEndOf="@+id/dashView"-->
+            <!--            app:layout_constraintTop_toTopOf="parent">-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/End_Time"
+                android:textSize="@dimen/text_size_16"
+                app:layout_constraintBottom_toTopOf="@+id/endTimePicker"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/dashView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.shawnlin.numberpicker.NumberPicker
+                android:id="@+id/endTimePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/dashView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:np_wrapSelectorWheel="true" />
+
+            <!--        </LinearLayout>-->
+
+            <CheckBox
+                android:id="@+id/repeatTimeCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:buttonTint="@color/Eki_orange_4"
+                android:text="@string/Repeat_this_week"
+                android:textColor="@color/text_color_1"
+                android:textSize="@dimen/text_size_14"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/startTimePicker"
+                app:layout_constraintTop_toBottomOf="@+id/startTimePicker" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pickerPanel"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/errorMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:layout_toStartOf="@+id/selectBtn"
+            android:text=""
+            android:textColor="@color/Eki_red_1"
+            android:textSize="@dimen/text_size_16" />
+
+        <com.eki.parking.View.libs.StateButton
+            android:id="@+id/selectBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="5dp"
+
+            android:stateListAnimator="@null"
+            android:text="@string/Join"
+            android:textColor="@color/color_white"
+
+            android:textSize="@dimen/text_size_16"
+            app:btn_radius="@dimen/btn_radius_5"
+
+            app:normalBackgroundColor="@color/Eki_orange_2"
+            app:pressedBackgroundColor="@color/orange_btn_click_color" />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/headerIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="3dp"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/countryTex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/headerIcon"
+        android:layout_marginLeft="3dp"
+        android:text=""
+        android:padding="2dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/shape_round_corner_green"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_size_16"
+        />
+
+    <EditText
+        android:id="@+id/inputTex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:layout_toEndOf="@+id/countryTex"
+        android:layout_toStartOf="@+id/sendTex"
+        android:focusableInTouchMode="true"
+        android:descendantFocusability="beforeDescendants"
+        android:layout_margin="3dp"
+        android:textSize="@dimen/text_size_18"
+        android:textColor="@color/text_color_1"
+        android:text=""
+        android:singleLine="true"
+        android:paddingLeft="5dp"
+        android:inputType="number"
+        />
+    <!--android:textCursorDrawable="@null"-->
+    <com.eki.parking.View.libs.StateButton
+        android:id="@+id/sendTex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:text="@string/Send"
+        android:textSize="@dimen/text_size_14"
+        android:stateListAnimator="@null"
+        android:padding="0dp"
+        android:gravity="right|center_vertical"
+
+        app:normalTextColor="@color/light_gray5"
+        app:pressedTextColor="@color/light_gray5"
+        app:unableTextColor="@color/Eki_red_1"
+        />
+</RelativeLayout>

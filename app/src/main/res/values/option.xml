@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--左側邊欄選項-->
+    <string name="Basic_setting">Basic setting</string>
+    <string name="Your_appointment_calendar">Your appointment calendar</string>
+    <string name="Billing_overview">Billing overview</string>
+    <string name="Consumption_history">Consumption history</string>
+    <string name="Parking_situation">Parking situation</string>
+    <string name="Payment_setting">Payment setting</string>
+    <string name="Offer">Offer</string>
+    <string name="Problem_response">Problem Response</string>
+    <string name="Common_problem">Common problem</string>
+    <string name="Parking_rules">Parking rules</string>
+    <string name="Collection_bank_setting">Collection bank setting</string>
+    <string name="Latest_event_message">Latest event message</string>
+    <string name="Login_or_register">Login</string>
+    <string name="Logout">Logout</string>
+    <string name="Login_or_logout">Logout/Login</string>
+    <string name="Parking_Site_Setting">Site Setting</string>
+    <string name="Site_Status">Site Status</string>
+    <string name="Order_OverView">Order Overview</string>
+    <string name="Order_Details">Order Details</string>
+    <string name="Land_Owner_Rule">Land Owner Rule</string>
+    <string name="Car_Setting">Car Setting</string>
+    <string name="Clean">Clean</string>
+
+    <!--<string name="login">Login</string>-->
+    <!--<string name="logout">Logout</string>-->
+
+    <string name="Landlord_management">Landlord management</string>
+    <string name="Owner_management">Owner management</string>
+    <string name="Switch_Identity">Switch identity</string>
+
+    <string name="United_States">United States</string>
+    <string name="Taiwan_area">Taiwan area</string>
+    <string name="China_area">China area</string>
+    <string name="Japan_area">Japan area</string>
+
+    <string name="Map_option">Map</string>
+    <string name="Calendar_option">Calendar</string>
+    <string name="CheckOut_option">Checkout</string>
+    <string name="Notify_option">Notify</string>
+    <string name="Setting_option">Setting</string>
+    <string name="Date_time">Date/time</string>
+    <string name="Car_Model">Car Model</string>
+    <string name="Distance">Distance</string>
+    <string name="SteamLocomotive_Type">SteamLocomotive Type</string>
+
+    <string name="am_str">AM</string>
+    <string name="pm_str">PM</string>
+
+    <string name="All_Car_Model">All Car Model</string>
+    <string name="General">General Car</string>
+    <string name="Electric_Car_AC">Electric Car-AC</string>
+    <string name="Electric_Car_DC">Electric Car-DC</string>
+    <string name="Electric_Locomotive_AC">Electric Motor-AC</string>
+    <string name="Electric_Locomotive_DC">Electric Motor-DC</string>
+
+    <string name="Start_Time">Start Time</string>
+    <string name="End_Time">End Time</string>
+
+    <string name="Meter">M</string>
+    <string name="Kilometer">KM</string>
+
+    <string name="General_parking_space">General parking space</string>
+    <string name="AC_parking_space">AC parking space</string>
+    <string name="DC_parking_space">DC parking space</string>
+
+    <string name="Charging_type">Charging type|</string>
+    <string name="Socket_type">Socket type|</string>
+    <string name="Remark">Remark |</string>
+    <string name="Precautions">Precautions |</string>
+    <string name="Location_name">Name |</string>
+    <string name="Whether_to_provide_charging">Whether to provide charging</string>
+    
+    <string name="Position_l">Position |</string>
+    <string name="Type_l">Type |</string>
+    <string name="Size_l">Size |</string>
+    <string name="Limit_high_l">Limit high |</string>
+    <string name="Weight_limit_l">Weight limit |</string>
+    
+    <string name="Reservation">Reservation</string>
+
+    <string name="All">ALL</string>
+    <string name="Reservaed">Reserved</string>
+    <string name="Pending_payment">Pending Payment</string>
+    <string name="Paid">Paid</string>
+    <string name="Cancelled">Cancelled</string>
+
+    <string name="Year">Year</string>
+    <string name="Month">Month</string>
+    <string name="Day">Day</string>
+    <string name="Hour">Hour</string>
+    <string name="Minute">Minute</string>
+    <string name="Second">Second</string>
+
+    <string name="yes">Yes</string>
+    <string name="none">None</string>
+    <string name="week">Week</string>
+    <string name="Sunday">Sunday</string>
+    <string name="Monday">Monday</string>
+    <string name="Tuesday">Tuesday</string>
+    <string name="Wednesday">Wednesday</string>
+    <string name="Thursday">Thursday</string>
+    <string name="Friday">Friday</string>
+    <string name="Saturday">Saturday</string>
+
+    <string name="Personal_account">Personal account</string>
+    <string name="Company_account">Company account</string>
+
+    <string name="Other">Other</string>
+    <string name="Report">Report</string>
+    <string name="Illegal_parking">Illegal parking</string>
+    <string name="Bad_attitude">Bad attitude</string>
+    <string name="Leftover_trash_damaged_items">Leftover trash / damaged items</string>
+    <string name="Dirty_environment">Dirty environment</string>
+    <string name="Fake_Photo">Fake Photo</string>
+
+    <!-- Filter -->
+    <string name="Zero_hour_minute">00:00</string>
+    <string name="Max_range_option">2.0</string>
+
+    <!-- SiteDetail -->
+    <string name="Upload_failed">upload failed</string>
+    <string name="Uploaded_successfully">Uploaded successfully</string>
+    <string name="Half_an_hour">/Half an hour</string>
+    <string name="Money">$</string>
+
+    <!-- Fcm -->
+    <string name="Message_error">Message error</string>
+
+</resources>

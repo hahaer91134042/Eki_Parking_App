@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:paddingBottom="20dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/calendarFrame"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+            <com.eki.parking.View.widget.CalendarMonthBar
+                android:id="@+id/calendarMonthBar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                />
+
+
+            <com.haibin.calendarview.CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/color_white"
+
+
+                app:calendar_padding="0dp"
+                app:calendar_height="45dp"
+                app:current_month_lunar_text_color="#CFCFCF"
+                app:current_month_text_color="#333333"
+                app:month_view_show_mode="mode_only_current"
+
+                app:other_month_text_color="#e1e1e1"
+                app:scheme_text="假"
+                app:scheme_text_color="#333"
+                app:scheme_theme_color="#333"
+                app:selected_text_color="@color/color_white"
+                app:selected_theme_color="@color/Eki_orange_2"
+                app:week_background="#fff"
+                app:week_text_color="#111"
+
+
+                />
+            <!--    app:scheme_text="假"-->
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendarFrame"
+            android:layout_marginTop="20dp"
+            >
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/startTimeLayout"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Start_Time"
+                        android:textSize="@dimen/text_size_16"
+                        android:gravity="center"
+                        />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:id="@+id/startDateText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_24"
+                            android:textColor="@color/text_color_1"
+                            android:text="111"
+                            android:visibility="gone"
+                            />
+                        <TextView
+                            android:id="@+id/startTimeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_24"
+                            android:textColor="@color/text_color_1"
+                            android:text="00:00"
+                            />
+
+                    </LinearLayout>
+                    <View
+                        android:background="@color/light_gray2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                </LinearLayout>
+
+                <View
+
+                    android:layout_centerInParent="true"
+                    android:background="@color/light_gray2"
+                    android:layout_width="20dp"
+                    android:layout_height="2dp"/>
+
+                <LinearLayout
+                    android:id="@+id/endTimeLayout"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/End_Time"
+                        android:textSize="@dimen/text_size_16"
+                        android:gravity="center"
+                        />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        >
+
+                        <TextView
+                            android:id="@+id/endDateText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_24"
+                            android:textColor="@color/text_color_1"
+                            android:text="111"
+                            android:visibility="gone"
+                            />
+                        <TextView
+                            android:id="@+id/endTimeText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_24"
+                            android:textColor="@color/text_color_1"
+                            android:text="00:00"
+                            />
+
+                    </LinearLayout>
+                    <View
+                        android:background="@color/light_gray2"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+            <com.eki.parking.View.libs.StateButton
+                android:id="@+id/startSearchBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="@string/Determine"
+                android:textSize="@dimen/text_size_24"
+                android:padding="0dp"
+                android:gravity="center"
+
+                app:round="true"
+                app:normalBackgroundColor="@color/Eki_orange_2"
+                app:normalTextColor="@color/text_color_1"
+
+                app:pressedBackgroundColor="@color/light_gray3"
+                app:pressedTextColor="@color/text_color_1"
+                android:layout_marginBottom="20dp"
+                />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

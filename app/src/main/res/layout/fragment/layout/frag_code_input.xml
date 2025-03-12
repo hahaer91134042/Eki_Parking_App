@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingStart="50dp"
+    android:paddingEnd="50dp"
+    android:background="@color/color_white"
+    android:gravity="center_horizontal">
+
+    <EditText
+        android:id="@+id/codeInput"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/stroke_round_corner_light_gray6"
+        />
+    
+    <com.eki.parking.View.libs.StateButton
+        android:id="@+id/determinBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/Determine"
+        app:round="true"
+        app:normalTextColor="@color/Eki_orange_3"
+        app:normalStrokeColor="@color/Eki_orange_3"
+        app:normalBackgroundColor="@color/color_white"
+        app:normalStrokeWidth="1dp"
+
+        app:pressedTextColor="@color/Eki_orange_3"
+        app:pressedStrokeColor="@color/Eki_orange_3"
+        app:pressedStrokeWidth="1dp"
+        app:pressedBackgroundColor="@color/color_white"
+
+        app:unableTextColor="@color/light_gray5"
+        app:unableBackgroundColor="@color/light_gray4"
+        app:unableStrokeColor="@color/light_gray4"
+        app:unableStrokeWidth="1dp"
+        />
+
+</LinearLayout>

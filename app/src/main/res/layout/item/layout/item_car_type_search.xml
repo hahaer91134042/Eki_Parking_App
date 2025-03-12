@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.florent37.expansionpanel.viewgroup.ExpansionsViewGroupLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@drawable/divider_light_gray"
+    android:showDividers="middle"
+    android:id="@+id/parentView"
+    app:expansion_openOnlyOne="true"
+    >
+    <LinearLayout
+        android:id="@+id/optionView_All"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/option_item_height"
+        android:gravity="left|center_vertical"
+        >
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            >
+            <ImageView
+                android:id="@+id/checkImg_All"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_1"
+            android:textSize="@dimen/text_size_16"
+            android:text="@string/All_Car_Model"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/optionView_Normal"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/option_item_height"
+        android:gravity="left|center_vertical"
+        >
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            >
+            <ImageView
+                android:id="@+id/checkImg_Normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_1"
+            android:textSize="@dimen/text_size_16"
+            android:text="@string/General"
+            />
+    </LinearLayout>
+
+
+</com.github.florent37.expansionpanel.viewgroup.ExpansionsViewGroupLinearLayout>

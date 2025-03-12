@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="30dp"
+    android:paddingHorizontal="30dp"
+    >
+
+    <include
+        android:id="@+id/item_parking_space_name"
+        layout="@layout/item_parking_space_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp" />
+
+    <include
+        android:id="@+id/item_charge_price"
+        layout="@layout/item_charge_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <include
+        android:id="@+id/item_parking_space_type"
+        layout="@layout/item_parking_space_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="start"
+        android:orientation="vertical">
+
+        <com.hill.devlibs.widget.AutoSizeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="@string/Charging_interface"
+            android:textColor="@color/dark_gray1"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/noneBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/radioBtnStyle_green"
+                android:text="@string/none"
+                android:layout_marginEnd="10dp"
+                />
+
+            <RadioButton
+                android:id="@+id/yesBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/radioBtnStyle_green"
+                android:text="@string/yes"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        >
+        <com.hill.devlibs.widget.AutoSizeTextView
+            android:id="@+id/chargeSocketTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textColor="@color/dark_gray1"
+            android:textSize="@dimen/text_size_16"
+            android:text="@string/Locomotive_Charging"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            />
+
+        <com.eki.parking.View.widget.SiteSocketSelectView
+            android:id="@+id/socketSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

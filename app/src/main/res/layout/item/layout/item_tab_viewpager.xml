@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/pagerTab"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="@color/Eki_orange_3"
+        app:tabGravity="fill"
+        app:tabBackground="@color/colorless"
+        app:tabRippleColor="@color/colorless"
+        >
+<!--        app:tabTextColor="@color/text_color_1"-->
+<!--        app:tabSelectedTextColor="@color/Eki_red_1"-->
+<!--        app:tabIndicatorHeight="3dp"-->
+
+<!--        去除點選產生的水波紋-->
+<!--        app:tabBackground="@color/colorless"-->
+<!--        app:tabRippleColor="@color/colorless"-->
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white" />
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_gray4">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/item_unpaid_start_date_text"
+                    style="@style/text_18sp_707070"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView3"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="spread"
+                    tools:text="01/01 週二" />
+
+                <TextView
+                    android:id="@+id/item_unpaid_start_time_text"
+                    style="@style/text_18sp_8a8a8a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintStart_toStartOf="@+id/item_unpaid_start_date_text"
+                    app:layout_constraintTop_toBottomOf="@+id/item_unpaid_start_date_text"
+                    tools:text="12:00" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_arrow_time"
+                    app:layout_constraintEnd_toStartOf="@+id/item_unpaid_end_date_text"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/item_unpaid_start_date_text"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="spread" />
+
+                <TextView
+                    android:id="@+id/item_unpaid_end_date_text"
+                    style="@style/text_18sp_707070"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/imageView3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="spread"
+                    tools:text="01/01 週二" />
+
+                <TextView
+                    android:id="@+id/item_unpaid_end_time_text"
+                    style="@style/text_18sp_8a8a8a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintStart_toStartOf="@+id/item_unpaid_end_date_text"
+                    app:layout_constraintTop_toBottomOf="@+id/item_unpaid_end_date_text"
+                    tools:text="13:00" />
+
+                <TextView
+                    android:id="@+id/unpaid_message_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintEnd_toEndOf="@+id/item_unpaid_end_date_text"
+                    app:layout_constraintStart_toStartOf="@+id/item_unpaid_start_time_text"
+                    app:layout_constraintTop_toBottomOf="@+id/item_unpaid_start_time_text"
+                    tools:text="可當費用訊息或剩餘時間提醒"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/unpaid_left_button"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/shape_round_orange_10"
+                    android:textColor="@color/white_ffffff"
+                    app:layout_constraintEnd_toStartOf="@+id/unpaid_right_button"
+                    app:layout_constraintStart_toStartOf="@+id/unpaid_message_text"
+                    app:layout_constraintTop_toBottomOf="@+id/unpaid_message_text" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/unpaid_right_button"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/shape_round_orange_10"
+                    android:textColor="@color/white_ffffff"
+                    app:layout_constraintEnd_toEndOf="@+id/unpaid_message_text"
+                    app:layout_constraintStart_toEndOf="@+id/unpaid_left_button"
+                    app:layout_constraintTop_toBottomOf="@+id/unpaid_message_text" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

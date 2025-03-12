@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/accountFrame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.eki.parking.View.widget.UnderLineEditTextView
+            android:id="@+id/accountInputView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            app:ule_headerIcon="@drawable/icon_account"
+            app:ule_inputType="TEXT"
+            app:ule_input_textSize="@dimen/text_size_6"
+            app:ule_line_color="@color/light_gray5"
+            app:ule_line_error_color="@color/color_red"
+            app:ule_input_hint=""
+            />
+
+        <TextView
+            android:id="@+id/accountErrorView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/color_red"
+            android:textSize="@dimen/text_size_12" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <LinearLayout
+        android:id="@+id/pwdFrame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline15">
+
+        <com.eki.parking.View.widget.UnderLineEditTextView
+            android:id="@+id/pwdInputView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            app:ule_headerIcon="@drawable/icon_pwd"
+            app:ule_inputType="PWD"
+            app:ule_input_textSize="@dimen/text_size_6"
+            app:ule_line_color="@color/light_gray5"
+            app:ule_line_error_color="@color/color_red"
+            app:ule_input_hint=""
+            app:ule_max_input_num="32"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/pwdErrorView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_alignParentLeft="true"
+
+                android:textColor="@color/color_red"
+                android:textSize="@dimen/text_size_12" />
+
+            <TextView
+                android:id="@+id/pwdTextNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_12"
+                android:textColor="@color/light_gray5"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <TextView
+        android:id="@+id/forgetPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/Forget_pwd"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintBottom_toTopOf="@+id/guideline17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline16" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.73" />
+
+
+    <com.eki.parking.View.libs.StateButton
+        android:id="@+id/determinBtn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/Determine"
+        android:textColor="@color/Eki_orange_4"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/guideline17"
+        app:normalBackgroundColor="@color/color_white"
+        app:normalStrokeColor="@color/Eki_orange_4"
+        app:normalStrokeWidth="@dimen/strok_width_1"
+
+        app:pressedBackgroundColor="@color/color_white"
+        app:pressedStrokeColor="@color/Eki_orange_4"
+        app:pressedStrokeWidth="@dimen/strok_width_1"
+        app:round="true" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+

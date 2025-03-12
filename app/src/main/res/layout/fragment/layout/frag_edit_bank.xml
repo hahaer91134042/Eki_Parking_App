@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:gravity="center_horizontal">
+        <RadioGroup
+            android:id="@+id/bankTypeSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:checkedButton="@id/personBtn">
+            <RadioButton
+                android:id="@+id/personBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Personal_account"
+                android:buttonTint="@color/Eki_green_2"
+                android:clickable="true"
+                android:layout_marginEnd="15dp"
+                android:focusable="true" />
+            <RadioButton
+                android:id="@+id/companyBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Company_account"
+                android:buttonTint="@color/Eki_green_2" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_marginTop="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Account_name"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/text_color_2" />
+            <com.eki.parking.View.widget.UnderLineEditTextView
+                android:id="@+id/accountName"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                app:ule_inputType="TEXT"
+                app:ule_input_textSize="@dimen/text_size_6"
+                app:ule_line_color="@color/light_gray5" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/serialFieldName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ID_number"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/text_color_2" />
+            <com.eki.parking.View.widget.UnderLineEditTextView
+                android:id="@+id/serialText"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                app:ule_inputType="TEXT"
+                app:ule_input_textSize="@dimen/text_size_6"
+                app:ule_line_color="@color/light_gray5" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Bank_Code"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/text_color_2" />
+            <com.eki.parking.View.widget.UnderLineEditTextView
+                android:id="@+id/bankCode"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                app:ule_inputType="NUMBER"
+                app:ule_input_textSize="@dimen/text_size_6"
+                app:ule_line_color="@color/light_gray5" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Bank_branch_code"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/text_color_2" />
+            <com.eki.parking.View.widget.UnderLineEditTextView
+                android:id="@+id/subCode"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                app:ule_inputType="NUMBER"
+                app:ule_input_textSize="@dimen/text_size_6"
+                app:ule_line_color="@color/light_gray5" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Bank_account"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/text_color_2" />
+            <com.eki.parking.View.widget.UnderLineEditTextView
+                android:id="@+id/bankAccount"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                app:ule_inputType="NUMBER"
+                app:ule_input_textSize="@dimen/text_size_6"
+                app:ule_line_color="@color/light_gray5" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Account_address"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/text_color_2" />
+            <com.eki.parking.View.widget.UnderLineEditTextView
+                android:id="@+id/accountAddress"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                app:ule_inputType="TEXT"
+                app:ule_input_textSize="@dimen/text_size_6"
+                app:ule_line_color="@color/light_gray5" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Rental_income_above_20000"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/text_color_2"
+            />
+        <com.eki.parking.View.libs.StateButton
+            android:id="@+id/determinBtn"
+            android:layout_width="260dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/Determine"
+            android:textSize="@dimen/text_size_16"
+            android:enabled="false"
+            app:round="true"
+            app:normalStrokeColor="@color/Eki_green_2"
+            app:normalStrokeWidth="1dp"
+            app:normalTextColor="@color/Eki_green_2"
+            app:normalBackgroundColor="@color/color_white"
+
+            app:pressedStrokeColor="@color/Eki_green_2"
+            app:pressedStrokeWidth="1dp"
+            app:pressedTextColor="@color/Eki_green_2"
+            app:pressedBackgroundColor="@color/color_white"
+
+            app:unableBackgroundColor="@color/light_gray4"
+            app:unableTextColor="@color/light_gray5"
+            />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start"
+    android:orientation="vertical">
+
+    <com.hill.devlibs.widget.AutoSizeTextView
+        android:id="@+id/tv_parking_space_name"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="@string/Parking_space_name"
+        android:textColor="@color/dark_gray1"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/siteName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@null"
+        android:hint="@string/Enter_the_store_name_company_name_building_name_to_increase_the_recognition_of_the_car_owner"
+        android:inputType="text|textAutoCorrect|textImeMultiLine"
+        android:maxLines="1"
+        android:maxLength="25"
+        android:singleLine="true"
+        android:textColor="@color/dark_gray1"
+        android:textColorHint="@color/light_gray5"
+        android:textCursorDrawable="@drawable/cursor_green2_2dp"
+        android:textSize="@dimen/text_size_14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/light_gray6" />
+
+</LinearLayout>

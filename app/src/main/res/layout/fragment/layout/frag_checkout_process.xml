@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <LinearLayout
+        android:id="@+id/parentView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@color/light_gray4"
+
+            >
+            <com.hill.devlibs.widget.AutoSizeTextView
+                android:id="@+id/orderInfoTextView"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="@color/text_color_1"
+                android:text="Step 1:Take a picture"
+                android:gravity="center"
+
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/priceTextView"
+                />
+            <com.hill.devlibs.widget.AutoSizeTextView
+                android:id="@+id/priceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textColor="@color/text_color_1"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="1111"
+                android:gravity="center"
+                />
+
+        </RelativeLayout>
+        <com.eki.parking.View.widget.CarNumberCamera
+            android:id="@+id/carNumCamera"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="20dp"
+            android:divider="@drawable/divider_light_gray"
+            android:showDividers="middle"
+            >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:paddingBottom="5dp"
+                >
+                <com.eki.parking.View.widget.InfoListRow
+                    android:id="@+id/amountRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:lr_title_str="@string/Amount_of_consumption"
+                    app:lr_title_textColor="@color/text_color_2"
+                    android:layout_marginBottom="5dp"
+                    />
+                <com.eki.parking.View.widget.InfoListRow
+                    android:id="@+id/otherFeeRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:lr_title_str="@string/Other_fee"
+                    app:lr_title_textColor="@color/text_color_2"
+                    android:layout_marginBottom="5dp"
+                    />
+                <com.eki.parking.View.widget.InfoListRow
+                    android:id="@+id/defaultFeeRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:lr_title_str="@string/Default_fee"
+                    app:lr_title_textColor="@color/text_color_2"
+                    android:layout_marginBottom="5dp"
+                    />
+                <com.eki.parking.View.widget.DiscountSelectRow
+                    android:id="@+id/discountRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:dr_title_str="@string/Discount"
+                    app:dr_title_textColor="@color/text_color_2"
+                    android:layout_marginBottom="5dp"
+                    />
+            </LinearLayout>
+
+            <com.eki.parking.View.widget.InfoListRow
+                android:id="@+id/totalAmountRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:lr_title_str="@string/Checkout_amount"
+                app:lr_title_textColor="@color/text_color_1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                />
+
+        </LinearLayout>
+
+        <com.eki.parking.View.libs.StateButton
+            android:id="@+id/determinBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/Invoice_information"
+            android:textColor="@color/Eki_orange_4"
+            android:textSize="@dimen/text_size_16"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginBottom="15dp"
+
+            app:round="true"
+            app:normalStrokeWidth="@dimen/strok_width_1"
+            app:normalStrokeColor="@color/Eki_orange_4"
+            app:normalBackgroundColor="@color/color_white"
+            app:pressedStrokeWidth="@dimen/strok_width_1"
+            app:pressedStrokeColor="@color/Eki_orange_4"
+            app:pressedBackgroundColor="@color/color_white"
+            />
+        <!--    去掉button自帶的陰影動畫-->
+        <!--    android:stateListAnimator="@null"-->
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.hill.devlibs.widget.AutoSizeTextView
+        android:id="@+id/add_loc_1_progress_bar"
+        style="@style/constraint_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <include
+        android:id="@+id/item_parking_space_name"
+        layout="@layout/item_parking_space_name"
+        style="@style/constraint_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/add_loc_1_progress_bar"/>
+
+    <include
+        android:id="@+id/add_loc_1_charge_price"
+        layout="@layout/item_charge_price"
+        style="@style/constraint_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/item_parking_space_name"/>
+
+    <include
+        android:id="@+id/add_loc_1_charging_interface"
+        layout="@layout/item_charging_interface"
+        style="@style/constraint_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/add_loc_1_charge_price"/>
+
+    <TextView
+        android:id="@+id/charging_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:textColor="@color/dark_gray1"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold"
+        tools:text="@string/Locomotive_Charging"
+        app:layout_constraintTop_toBottomOf="@+id/add_loc_1_charging_interface"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <include
+        android:id="@+id/charging_chip_car"
+        layout="@layout/chip_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/charging_title_text"
+        app:layout_constraintStart_toStartOf="@+id/charging_title_text"/>
+    <include
+        android:id="@+id/charging_chip_scooter"
+        layout="@layout/chip_scooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/charging_title_text"
+        app:layout_constraintStart_toStartOf="@+id/charging_title_text"/>
+
+    <include
+        android:id="@+id/previous_next_layout"
+        style="@style/constraint_horizontal"
+        layout="@layout/item_addloc_stop_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="180dp"
+        app:layout_constraintTop_toBottomOf="@+id/charging_title_text" />
+
+    <TextView
+        android:id="@+id/noted_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/information_can_be_modified"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previous_next_layout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

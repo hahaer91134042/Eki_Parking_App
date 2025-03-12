@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.hill.devlibs.widget.AutoSizeTextView
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clickView"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:paddingHorizontal="8dp">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="50dp" />
+
+        <ImageView
+            android:id="@+id/locImg1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline7"
+            app:layout_constraintBottom_toTopOf="@id/guideline5"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/icon_set_none_img"
+            android:contentDescription="@string/todo" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/guideline5"
+            app:layout_constraintStart_toEndOf="@id/guideline7"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="4dp">
+
+            <ImageView
+                android:id="@+id/locImg2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/icon_set_none_img_r"
+                android:contentDescription="@string/todo" />
+
+            <ImageView
+                android:id="@+id/locImg3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/icon_set_none_img_r"
+                android:contentDescription="@string/todo" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_please_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Please_upload_a_photo_of_your_parking_space"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/text_color_2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideline5"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:id="@+id/item_addloc_stop_btn"
+        layout="@layout/item_addloc_stop_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</LinearLayout>

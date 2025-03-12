@@ -1,0 +1,416 @@
+package com.eki.parking.View.popup
+
+import android.app.Activity
+import android.content.Context
+import android.graphics.Typeface
+import android.os.CountDownTimer
+import android.os.Handler
+import android.os.Message
+import android.view.Gravity
+import android.view.View
+import android.view.animation.Animation
+import android.widget.Button
+import android.widget.ImageView
+import android.widget.LinearLayout
+import android.widget.TextView
+import com.eki.parking.Model.DTO.OpenSet
+import com.eki.parking.Model.data.CheckOutExtendTimeData
+import com.eki.parking.Model.sql.EkiOrder
+import com.eki.parking.R
+import com.eki.parking.View.abs.EkiPopupWindow
+import com.eki.parking.extension.*
+import com.hill.devlibs.extension.*
+import com.hill.devlibs.impl.ISetData
+import com.hill.devlibs.util.SimpleAnimationUtils
+import com.shawnlin.numberpicker.NumberPicker
+import java.lang.StringBuilder
+import java.text.SimpleDateFormat
+import java.util.*
+import kotlin.collections.ArrayList
+
+/**
+ * Created by Hill on 29,10,2019
+ */
+
+class CheckOutExtensionPopup(context: Context?) : EkiPopupWindow(context), ISetData<ArrayList<OpenSet>> {
+
+    var f14 = 0f
+    var f16 = 0f
+    var f20 = 0f
+    var f24 = 0f
+    var red1 = 0
+    var white = 0
+    var gray1 = 0
+    var gray5 = 0
+    var drawableGray6 = 0
+    var transParent = 0
+    var roundOrange10 = 0
+    var sdf = SimpleDateFormat()
+    var counter: Long = 0
+    var orderSerNum = ""
+    var activity = Activity()
+    var endTime = "" // 訂單結束時間
+    var llLeft: LinearLayout? = null
+    var btnExtension: Button? = null
+    private lateinit var listHour : ArrayList<String>
+    private lateinit var listMinute : ArrayList<String>
+    private lateinit var listOpenSet : ArrayList<OpenSet>
+    private var tvStartTime: TextView? = null
+    private var tvEndTime: TextView? = null
+    private var hourPosition = 0
+    private var minPosition = 0
+    private var progress: View? = null
+    private var tvNotice: TextView? = null
+    private var numberHour: NumberPicker? = null
+    private var numberMin: NumberPicker? = null
+    private var button: Button? = null
+    private var distanceTimeSec: Long = 0
+    private var distanceEndDateTimeSec: Long = 0
+    private var endDateTimeSec: Long = 0
+    private var endDateTime = ""
+    var handler = Handler()
+    private val date = Date()
+    private var today = ""
+    private var hour = 0
+    private var min = 0
+    private val str02 = "00"
+    private val str04 = "00:00"
+    private val str24 = "24:00"
+
+    init {
+        progress()
+    }
+
+    private fun progress() {
+
+        progress = contentView.findViewById(R.id.progress)
+        progress?.minimumWidth = dpToPx(40f)
+        progress?.minimumHeight = dpToPx(40f)
+        progress?.visibility = View.GONE
+
+    }
+
+    private fun counter() {
+
+        object : CountDownTimer(counter, 1000) {
+
+            override fun onTick(millisUntilFinished: Long) {
+                counter = millisUntilFinished
+            }
+
+            override fun onFinish() {
+                isNotice()
+            }
+
+        }.start()
+
+    }
+
+    fun init(
+        F14: Float,
+        F16: Float,
+        F20: Float,
+        F24: Float,
+        White: Int,
+        Gray1: Int,
+        Red1: Int,
+        TransParent: Int,
+        RoundOrange: Int,
+        Sdf: SimpleDateFormat,
+        Counter: Long,
+        Activity: Activity,
+        EndTime: String,
+        LlLeft: LinearLayout?,
+        BtnExtension: Button,
+        OrderSerNum: String?,
+        Gray5: Int,
+        DrawableGray6: Int,
+        Handler: Handler
+    ) {
+
+        f14 = F14
+        f16 = F16
+        f20 = F20
+        f24 = F24
+        white = White
+        red1 = Red1
+        gray1 = Gray1
+        gray5 = Gray5
+        drawableGray6 = DrawableGray6
+        transParent = TransParent
+        roundOrange10 = RoundOrange
+        sdf = Sdf
+        counter = Counter
+        activity = Activity
+        endTime = EndTime
+        llLeft = LlLeft
+        btnExtension = BtnExtension
+        orderSerNum = OrderSerNum.toString()
+        handler = Handler
+
+        today = listOpenSet.first().Date
+        counter()
+
+    }
+
+    private fun image() {
+
+        val ivArrow: ImageView = contentView.findViewById(R.id.iv_arrow_gray)
+        val ivClose: ImageView = contentView.findViewById(R.id.iv_close_orange)
+
+        val drawable = context.getDrawable(R.drawable.icon_arrow_time)?.resize(dpToPx(48f), dpToPx(32f), null)
+        ivArrow.setImageDrawable(drawable)
+        ivArrow.scaleType = ImageView.ScaleType.CENTER
+        ivArrow.contentDescription = context?.getString(R.string.todo)
+
+        initImage(context, ivClose, R.drawable.icon_close_orange)
+
+        ivClose.setOnClickListener {
+            dismiss()
+        }
+
+    }
+
+    private fun text() {
+
+        val tvTodayMon: TextView = contentView.findViewById(R.id.tv_today_month)
+        val tvTodayDay: TextView = contentView.findViewById(R.id.tv_today_day)
+        val tvTodayWeek: TextView = contentView.findViewById(R.id.tv_today_week)
+        tvStartTime = contentView.findViewById(R.id.tv_start_time)
+        tvEndTime = contentView.findViewById(R.id.tv_end_time)
+        val tvHour: TextView = contentView.findViewById(R.id.tv_hour)
+        val tvMinute: TextView = contentView.findViewById(R.id.tv_minute)
+        tvNotice = contentView.findViewById(R.id.tv_notice)
+        val tvLineTop: TextView = contentView.findViewById(R.id.line1)
+        val tvLineDown: TextView = contentView.findViewById(R.id.line3)
+
+        tvTodayDay.setTypeface(null, Typeface.BOLD)
+        tvStartTime?.setTypeface(null, Typeface.BOLD)
+        tvEndTime?.setTypeface(null, Typeface.BOLD)
+
+        tvTodayMon.text = StringBuilder(today.substring(5, 7).toInt().toString()).append(context.getString(R.string.Month))
+        tvTodayDay.text = today.substring(8, 10).toInt().toString()
+        tvTodayWeek.text = StringBuilder(context.getString(R.string.week)).append(getDayWeek(today))
+
+        tvHour.text = context.getString(R.string.Hour)
+        tvMinute.text = context.getString(R.string.Minute)
+
+        arrayOf(tvTodayMon, tvTodayDay, tvTodayWeek, tvStartTime, tvEndTime, tvHour, tvMinute).forEach { tv ->
+            tv?.let { setTextColorBackground(context, it, gray1, transParent, f24) }
+        }
+
+        tvTodayMon.textSize = f16
+        tvTodayWeek.textSize = f14
+        tvHour.textSize = f20
+        tvMinute.textSize = f20
+
+        tvNotice?.text = context.getString(R.string.Insufficient_opening_hours_please_choose_another_time_thank_you)
+        setTextColorBackground(context, tvNotice!!, transParent, transParent, f14)
+
+        tvLineTop.setBackgroundColor(context.getColor(R.color.light_gray6))
+        tvLineDown.setBackgroundColor(context.getColor(R.color.light_gray6))
+
+    }
+
+    private fun number() {
+
+        numberHour = contentView.findViewById(R.id.numberPickerHour)
+        numberMin = contentView.findViewById(R.id.numberPickerMinute)
+
+        initNumberPicker()
+
+        numberHour?.setOnValueChangedListener { _, _, newVal ->
+            hourPosition = newVal
+        }
+        numberMin?.setOnValueChangedListener { _, _, newVal ->
+            minPosition = newVal
+        }
+
+    }
+
+    private fun button() {
+
+        button = contentView.findViewById(R.id.button)
+        button?.text = context.getString(R.string.Overtime)
+        setTextColorBackground(context, button!!, white, roundOrange10, f16)
+
+        button?.setOnClickListener {
+
+            progress?.visibility = View.VISIBLE
+
+            val extendTimeSec = listHour[hourPosition].toInt() * 60 * 60 * 1000 + listMinute[minPosition].toInt() * 60 * 1000
+
+            //Log.d("取得popup ", "exTime $extendTimeSec distanceTime $distanceEndDateTimeSec")
+
+            when {
+
+                extendTimeSec < 15 * 60 * 1000 -> { // extend < 15m
+                    tvNotice?.text = context.getString(R.string.The_opening_time_is_less_than_15_minutes_please_choose_again_thank_you)
+                    tvNotice?.setTextColor(context.getColor(red1))
+                }
+                extendTimeSec > distanceTimeSec -> { // extend > 開放時間
+                    tvNotice?.text = context.getString(R.string.Extend_the_time_beyond_the_opening_hours_please_re_select_thank_you)
+                    tvNotice?.setTextColor(context.getColor(red1))
+                }
+                else -> { // 15 min + extend < distance
+
+                    val extendEndDateTimeSec = endDateTimeSec + extendTimeSec
+                    date.time = extendEndDateTimeSec
+                    val extendEndDateTime = sdf.format(date)
+                    handler = object : Handler() {
+                        override fun handleMessage(msg: Message) {
+                            val msgOrder = msg?.data?.getSerializable("ExtendOrder")
+                            if (msg?.what == 2 && msgOrder != null) {
+                                val order = (msgOrder as EkiOrder)
+                                removeMessages(msg?.what, msg.data)
+                                endDateTime = order.ReservaTime.endDateTime().time.toString().substring(0, 5)
+                                if(endDateTime == str04 || endDateTime == str24){ // startTime = 24:00
+                                    tvStartTime?.text = str24
+                                    tvEndTime?.text = str24
+                                    numberHour?.setList(arrayListOf("0"))
+                                    numberMin?.setList(arrayListOf("00"))
+                                }else { // 只能延長一次
+                                    hourMin(distanceEndDateTimeSec, extendEndDateTimeSec)
+                                    tvStartTime?.text = order.ReservaTime.endDateTime().time.toString().substring(0, 5) // order endTime == tvStartTime numberHour?.setList(listHour)numberMin?.setList(listMinute)
+                                    val sP = setSp(context, "CheckOutExtendTime")
+                                    val editor = sP.edit()
+                                    editor.putString("startTime",order.ReservaTime.startDateTime().toString()).apply()
+                                }
+                                isNotice()
+                                tvNotice?.text = context.getString(R.string.You_can_only_extend_the_time_once_please_re_order_thank_you)
+                                //Log.d("取得popup ", "order ${order.LocSerial} endDateTime $endDateTime startDateTime ${order.ReservaTime.startDateTime()}")
+                            }
+                            super.handleMessage(msg)
+                        }
+                    }
+                    CheckOutExtendTimeData().data(handler, context, progress, tvNotice, orderSerNum, extendEndDateTime, transParent, red1)
+                }
+
+            }
+
+            progress?.visibility = View.GONE
+
+        }
+
+    }
+
+    private fun initNumberPicker() {
+
+        //Log.d("取得pop","Counter " + counter.toInt())
+
+        if (counter.toInt() != 0) {
+
+            //Log.d("取得pop","listOpenSet1 " + listOpenSet.size)
+
+            listOpenSet.also {
+
+                    //Log.d("取得pop","listOpenSet2 " + listOpenSet.first().startDateTime() + " " + listOpenSet.first().endDateTime())
+
+                    if (it.isNotEmpty()) {
+
+                        endDateTimeSec = sdfToDate(endTime, sdf).time
+                        date.time = sdfToDate(endTime, sdf).time
+                        endDateTime = sdf.format(date)
+
+                        //Log.d("取得EndDateTime ", endDateTime)
+
+                        tvStartTime?.text = endDateTime.substring(11, 16)
+
+                        distanceEndDateTimeSec = if (it.size > 1) {
+                            sdfToDate(it[it.size - 1].endDateTime().toString(), sdf).time
+                        } else {
+                            sdfToDate(it.first().endDateTime().toString(), sdf).time
+                        }
+
+                        date.time = distanceEndDateTimeSec
+                        tvEndTime?.text =
+                        if(sdf.format(date).substring(11, 16) == str04){
+                            str24
+                        } else {
+                            sdf.format(date).substring(11, 16)
+                        }
+                        distanceTimeSec = distanceEndDateTimeSec - endDateTimeSec
+                        hourMin(distanceEndDateTimeSec, endDateTimeSec)
+                        //Log.d("取得pop", "listOpenSet3 distanceEndDateTimeSec $distanceEndDateTimeSec endDateTimeSec $endDateTimeSec distanceTimeSec $distanceTimeSec")
+
+                    } else { // 開放時間不足
+
+                        isNotice()
+                        tvNotice?.text = context.getString(R.string.Insufficient_opening_hours_please_find_other_parking_spaces_thank_you)
+
+                    }
+
+                }
+
+        } else { // 超時
+
+            isNotice()
+            tvNotice?.text = context.getString(R.string.Timed_out)
+
+        }
+
+    }
+
+    private fun isNotice() {
+
+        llLeft?.isEnabled = false
+        btnFalse(btnExtension)
+        btnFalse(button)
+        tvNotice?.setTextColor(context.getColor(red1))
+
+    }
+
+    private fun btnFalse(btn: Button?) {
+
+        btn?.isEnabled = false
+        btn?.setTextColor(context.getColor(gray5))
+        btn?.background = context.getDrawable(drawableGray6)
+
+    }
+
+    private fun hourMin(endSec: Long, startSec: Long) {
+
+        listHour = ArrayList()
+        listMinute = ArrayList()
+
+        hour = ((endSec - startSec) / 1000 / 60 / 60).toInt() // hour size
+        min = (((endSec - startSec / 1000 / 60) % 60) / 15).toInt() // min size
+
+        //Log.d("取得pop", "Hour $hour Min $min")
+
+        for (h in 0 until hour + 1) {
+            listHour.add(h.toString())
+        }
+        listHour.sortByDescending { listHour[listHour.size - 1] == it }
+        listHour.notNull { numberHour?.setList(it) } // start max
+
+        listMinute.add(str02)
+        for (m in 1 until 4) {
+            listMinute.add((15 * m).toString())
+        }
+        listMinute.sortByDescending { it == listMinute[min] } // start min
+        listMinute.notNull { numberMin?.setList(it) }
+
+    }
+
+    override fun setData(data: ArrayList<OpenSet>?) {
+//        Log.w("$TAG setData->$data")
+        data.notNull {
+            listOpenSet = ArrayList(it)
+        }
+    }
+
+    override fun popGravity(): Int = Gravity.BOTTOM
+    override fun blurBackground(): Boolean = false
+    override fun backEnable(): Boolean = false
+    override fun outSideDismiss(): Boolean = true
+    override fun setUpView() {
+        image()
+        text()
+        number()
+        button()
+    }
+    override fun layoutRes(): Int = R.layout.popup_checkout_extension
+    override fun showAnim(): Animation? = SimpleAnimationUtils.bottomPopUp()
+    override fun closeAnim(): Animation? = SimpleAnimationUtils.bottomDown()
+}

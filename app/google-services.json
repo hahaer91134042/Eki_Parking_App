@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "120481981215",
+    "firebase_url": "https://papaya-2256d.firebaseio.com",
+    "project_id": "papaya-2256d",
+    "storage_bucket": "papaya-2256d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:120481981215:android:a01bb10c2834960867462a",
+        "android_client_info": {
+          "package_name": "com.eki.parking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "120481981215-64l1a6h90ofutgeakp949d33gj93oc4s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnQpJv3gnhs-lvoSbtTRr4EdJuhJ9xPdE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "120481981215-64l1a6h90ofutgeakp949d33gj93oc4s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

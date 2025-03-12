@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:paddingTop="30dp"
+        android:paddingBottom="20dp"
+        >
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="40dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="40dp" />
+
+        <com.eki.parking.View.widget.RegisterProcessBar
+            android:id="@+id/registerProcessBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline20"
+            app:layout_constraintStart_toEndOf="@+id/guideline18"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+
+        <com.eki.parking.View.widget.UserIconCameraView
+            android:id="@+id/userIconCameraView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline20"
+            app:layout_constraintStart_toEndOf="@+id/guideline18"
+            app:layout_constraintTop_toBottomOf="@+id/registerProcessBar" />
+
+        <LinearLayout
+            android:id="@+id/inputFrame"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline20"
+            app:layout_constraintStart_toEndOf="@+id/guideline18"
+            app:layout_constraintTop_toBottomOf="@+id/userIconCameraView">
+
+            <com.eki.parking.View.widget.UnderLineEditTextMsgView
+                android:id="@+id/nickNameInputView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ule_headerIcon="@drawable/icon_nickname"
+                app:ule_inputType="TEXT"
+                app:ule_input_textSize="@dimen/text_size_6"
+                app:ule_line_color="@color/light_gray5"
+                app:ule_line_error_color="@color/color_red"
+                app:ule_input_hint="@string/Please_enter_a_nickname"
+
+                />
+
+            <com.eki.parking.View.widget.UnderLineSmsView
+                android:id="@+id/smsTexView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                />
+
+            <com.eki.parking.View.widget.UnderLineEditTextMsgView
+                android:id="@+id/pwdInputView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                app:ule_headerIcon="@drawable/icon_pwd"
+                app:ule_inputType="PWD"
+                app:ule_input_textSize="@dimen/text_size_6"
+                app:ule_line_color="@color/light_gray5"
+                app:ule_line_error_color="@color/color_red"
+                app:ule_max_input_num="32"
+                app:ule_input_hint="@string/At_least_8_digits_in_case_and_1_each"
+                />
+            <com.eki.parking.View.widget.UnderLineEditTextMsgView
+                android:id="@+id/pwdCheckView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                app:ule_headerIcon="@drawable/icon_pwd"
+                app:ule_inputType="PWD"
+                app:ule_input_textSize="@dimen/text_size_6"
+                app:ule_line_color="@color/light_gray5"
+                app:ule_line_error_color="@color/color_red"
+                app:ule_max_input_num="32"
+                app:ule_input_hint="@string/Please_enter_the_same_password_again"
+                />
+
+            <com.eki.parking.View.widget.UnderLineEditTextMsgView
+                android:id="@+id/mailInputView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                app:ule_headerIcon="@drawable/icon_mail"
+                app:ule_inputType="TEXT"
+                app:ule_input_textSize="@dimen/text_size_6"
+                app:ule_line_color="@color/light_gray5"
+                app:ule_line_error_color="@color/color_red"
+                app:ule_input_hint="@string/Please_enter_email"
+
+                />
+
+            <com.eki.parking.View.PrivacyPolicyView
+                android:id="@+id/policyCheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="5dp"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/toNextBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:enabled="false"
+            android:background="@drawable/selector_next_step_orange"
+            app:layout_constraintEnd_toStartOf="@+id/guideline20"
+            app:layout_constraintTop_toBottomOf="@+id/inputFrame"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
+

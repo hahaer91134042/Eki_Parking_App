@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/parentView"
+        android:background="@color/color_white">
+
+        <com.eki.parking.View.widget.UserIconCameraView
+            android:id="@+id/carIconView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="32dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="32dp" />
+
+        <LinearLayout
+            android:id="@+id/carNameFrame"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/carIconView"
+            app:layout_constraintStart_toEndOf="@+id/guideline19"
+            app:layout_constraintEnd_toStartOf="@+id/guideline21">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/Car_Name"
+                android:textColor="@color/text_color_2"
+                android:textSize="@dimen/text_size_14" />
+
+            <com.eki.parking.View.widget.UnderLineEditTextMsgView
+                android:id="@+id/carNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ule_input_textSize="@dimen/text_size_6"
+                app:ule_line_color="@color/light_gray5"
+                app:ule_line_error_color="@color/color_red" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/carNumberFrame"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            app:layout_constraintTop_toBottomOf="@+id/carNameFrame"
+            app:layout_constraintStart_toEndOf="@+id/guideline19"
+            app:layout_constraintEnd_toStartOf="@+id/guideline21">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/License_plate_number"
+                android:textColor="@color/text_color_2"
+                android:textSize="@dimen/text_size_14" />
+
+            <com.eki.parking.View.widget.UnderLineEditTextMsgView
+                android:id="@+id/carNumberInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ule_input_textSize="@dimen/text_size_6"
+                app:ule_line_color="@color/light_gray5"
+                app:ule_line_error_color="@color/color_red" />
+
+        </LinearLayout>
+        <!--<LinearLayout
+            android:id="@+id/carBrandFrame"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            app:layout_constraintTop_toBottomOf="@+id/carNumberFrame"
+            app:layout_constraintStart_toEndOf="@+id/guideline19"
+            app:layout_constraintEnd_toStartOf="@+id/guideline21"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/Car_brand"
+                android:textColor="@color/text_color_2"
+                android:textSize="@dimen/text_size_16"
+                />
+            <com.eki.parking.View.widget.UnderLineEditTextMsgView
+                android:id="@+id/carBrandInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ule_input_textSize="@dimen/text_size_6"
+                app:ule_line_color="@color/light_gray5"
+                app:ule_line_error_color="@color/color_red"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/brandSeriesFrame"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            app:layout_constraintTop_toBottomOf="@+id/carBrandFrame"
+            app:layout_constraintStart_toEndOf="@+id/guideline19"
+            app:layout_constraintEnd_toStartOf="@+id/guideline21"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/Brand_series"
+                android:textColor="@color/text_color_2"
+                android:textSize="@dimen/text_size_16"
+                />
+            <com.eki.parking.View.widget.UnderLineEditTextMsgView
+                android:id="@+id/brandSeriesInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ule_input_textSize="@dimen/text_size_6"
+                app:ule_line_color="@color/light_gray5"
+                app:ule_line_error_color="@color/color_red"
+                />
+        </LinearLayout> -->
+        <LinearLayout
+            android:id="@+id/carTypeFrame"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            app:layout_constraintTop_toBottomOf="@+id/carNumberFrame"
+            app:layout_constraintStart_toEndOf="@+id/guideline19"
+            app:layout_constraintEnd_toStartOf="@+id/guideline21">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/SteamLocomotive_Type"
+                android:textColor="@color/text_color_2"
+                android:textSize="@dimen/text_size_14" />
+
+            <com.eki.parking.View.widget.UnderLineEditTextMsgView
+                android:id="@+id/carTypeInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ule_input_textSize="@dimen/text_size_6"
+                app:ule_line_color="@color/light_gray5"
+                app:ule_line_error_color="@color/color_red" />
+
+        </LinearLayout>
+
+        <include
+            android:id="@+id/determinBtn"
+            layout="@layout/statebutton_orange"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline21"
+            app:layout_constraintStart_toEndOf="@+id/guideline19"
+            app:layout_constraintTop_toBottomOf="@+id/carTypeFrame" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
+

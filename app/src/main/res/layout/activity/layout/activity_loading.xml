@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.percentlayout.widget.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bgLoader"
+    >
+
+    <View
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/color_white"
+    />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/logoIconImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:lottie_fileName="opening02.json"
+        app:lottie_loop="false"
+        app:lottie_autoPlay="false"
+    />
+<!--    app:layout_heightPercent="17%"-->
+<!--    app:layout_widthPercent="60%"-->
+
+<!--    <com.eki.parking.View.widget.LogoImgView-->
+<!--        android:id="@+id/logoIconImg"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        app:layout_heightPercent="17%"-->
+<!--        app:layout_widthPercent="60%"-->
+<!--        />-->
+
+    <!--app:layout_heightPercent="10%"-->
+    <!--app:layout_widthPercent="85%"-->
+
+</androidx.percentlayout.widget.PercentRelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentView"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:padding="10dp"
+    android:gravity="center"
+    android:background="@color/color_white"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <LinearLayout
+            android:id="@+id/startFrame"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="7"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.hill.devlibs.widget.AutoSizeTextView
+                android:id="@+id/startDateText"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:text="123456789"
+                android:textColor="@color/dark_gray1" />
+
+            <com.hill.devlibs.widget.AutoSizeTextView
+                android:id="@+id/startTimeText"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="123456789"
+                android:textColor="@color/light_gray7" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="2"
+            app:layout_constraintStart_toEndOf="@+id/startFrame"
+            app:layout_constraintEnd_toStartOf="@+id/endFrame"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/icon_arrow_time" />
+
+        <LinearLayout
+            android:id="@+id/endFrame"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.hill.devlibs.widget.AutoSizeTextView
+                android:id="@+id/endDateText"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:text="end date"
+                android:textColor="@color/dark_gray1" />
+
+            <com.hill.devlibs.widget.AutoSizeTextView
+                android:id="@+id/endTimeText"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:text="end time"
+                android:textColor="@color/Eki_red_1" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.hill.devlibs.widget.AutoSizeTextView
+        android:id="@+id/alarm_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Eki_red_1"
+        android:textSize="@dimen/text_size_16"
+        android:gravity="center_vertical"
+        android:text="alarm msg"
+        />
+
+    <FrameLayout
+        android:id="@+id/btnFrame"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:padding="5dp"
+        >
+
+
+
+    </FrameLayout>
+
+</LinearLayout>

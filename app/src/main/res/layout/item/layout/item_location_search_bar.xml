@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="75dp"
+    android:orientation="horizontal"
+    android:paddingVertical="3dp">
+
+    <LinearLayout
+        android:id="@+id/ll_steamLocomotive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="7dp"
+        android:paddingEnd="7dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:background="@drawable/shape_round_stroke_white"
+        >
+
+        <com.hill.devlibs.widget.AutoSizeTextView
+            android:id="@+id/tv_steamLocomotive"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:text="@string/Steam_locomotive"
+            android:gravity="center"
+            android:textColor="@color/text_color_1"
+            />
+
+        <ImageView
+            android:id="@+id/iv_steamLocomotive"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:paddingStart="10dp"
+            android:src="@drawable/icon_close_orange"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="7dp"
+        android:paddingEnd="7dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:background="@drawable/shape_round_stroke_white"
+        android:layout_marginStart="8dp"
+        >
+
+        <com.hill.devlibs.widget.AutoSizeTextView
+            android:id="@+id/tv_car"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:text="@string/Car"
+            android:gravity="center"
+            android:textColor="@color/text_color_1"
+            />
+
+        <ImageView
+            android:id="@+id/iv_car"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:paddingStart="10dp"
+            android:src="@drawable/icon_close_orange"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_locomotive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="7dp"
+        android:paddingEnd="7dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:background="@drawable/shape_round_stroke_white"
+        android:layout_marginStart="8dp"
+        >
+
+        <com.hill.devlibs.widget.AutoSizeTextView
+            android:id="@+id/tv_locomotive"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:text="@string/Locomotive"
+            android:gravity="center"
+            android:textColor="@color/text_color_1"
+            />
+
+        <ImageView
+            android:id="@+id/iv_locomotive"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:paddingStart="10dp"
+            android:src="@drawable/icon_close_orange"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
